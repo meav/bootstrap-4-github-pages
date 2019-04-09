@@ -1,3 +1,8 @@
+---
+layout: page
+title: Bootstrap 4 Github Pages
+---
+
 <details>
 
   <summary><span style="font-size:2em;"><p align="center">Text</p></span></summary>
