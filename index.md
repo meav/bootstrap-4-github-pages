@@ -58,8 +58,8 @@
 
 <p>gg.gg/8zy29</p>
 
-</details>
 **
+</details>
 
 <p>http://www.mappedometer.com</p>
 
