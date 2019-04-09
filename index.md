@@ -4,13 +4,13 @@
 
   <summary><span style="font-size:2em;"><p align="center">Text</p></span></summary>
 
-<p href="http://txt.do/53bv4">http://txt.do/53bv4</p>
+<p><a href="http://txt.do/53bv4">http://txt.do/53bv4</a></p>
 
-<p href="https://github.com/meav/meav.github.io">https://github.com/meav/meav.github.io</p>
+<p><a href="https://github.com/meav/meav.github.io">https://github.com/meav/meav.github.io</a></p>
 
-<a href="https://github.com/meav/text">https://github.com/meav/text</a>
+<p><a href="https://github.com/meav/text">https://github.com/meav/text</a></p>
 
-<a href="https://github.com/meav/text/releases/latest">https://github.com/meav/text/releases/latest</a>
+<p><a href="https://github.com/meav/text/releases/latest">https://github.com/meav/text/releases/latest</a></p>
 
 </details>
 
@@ -34,7 +34,7 @@
 
 <details>
 
-  <summary><span style="font-size:1.5em;"><p>Milan</p></span></summary>
+  <summary><span style="font-size:1.2em;"><p>Milan</p></span></summary>
 
 <p>https://www.fullmatchesandshows.com/</p>
 
@@ -59,8 +59,7 @@
 <p>gg.gg/8zy29</p>
 
 </details>
-
----
+**
 
 <p>http://www.mappedometer.com</p>
 
