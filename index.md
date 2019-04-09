@@ -1,103 +1,168 @@
 ---
 layout: page
-title: Bootstrap 4 Github Pages
 ---
+<details>
 
-A [Bootstrap 4](https://getbootstrap.com/) start up project for [Github Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/).
+  <summary><span style="font-size:2em;"><p align="center">Text</p></span></summary>
 
-* A full Bootstrap 4 theme usable both on Github Pages and with a standalone Jekyll.
-* Recompiles Bootstrap from SCSS files, which allows to customize Bootstrap's variables and use Bootstrap themes.
-* Full support of Bootstrap's JavaScript plugins.
-* Supports all features of Github Pages and Jekyll.
+http://txt.do/53bv4
 
-## Setup Guide
+https://github.com/meav/meav.github.io
 
-### Fork this repository
+https://github.com/meav/text
 
-[Go to this repository page on Github](https://github.com/nicolas-van/bootstrap-4-github-pages) and click the `Fork` button on the top right of the page.
+https://github.com/meav/text/releases/latest
 
-### Rename your forked repository
+</details>
 
-Here we have two possibilities:
+***
 
-* **You want a user or organization website**
+<details>
 
-  In this case your website's URL will be `http://<your username>.github.io` where `<your username>` is your Github user name.
+  <summary><span style="font-size:2em;"><p align="center">Get link</p></span></summary>
 
-  Go in the `Settings` page of your repository and rename it to `<your username>.github.io`.
+<p>https://linksvip.net/</p>
 
-* **You want a project website**
+<p>http://taive.cf/?ref=vn-zoom.org</p>
 
-  In this case your website's URL will be `http://<your username>.github.io/<whatever you want>` where `<whatever you want>` can be any valid name for a Github repository.
+</details>
 
-  Go in the `Settings` page of your repository and rename it to `<whatever you want>`.
+***
 
-### Activate Github Pages on your repository
+<details>
 
-Go in the `Settings` page of your repository, in the `Github Pages`, under the `Source` parameter, choose `master branch` then `Save`.
+  <summary><span style="font-size:2em;"><p align="center">Linh tinh</p></span></summary>
 
-### That's it
+<details>
 
-Your Github Pages website with customizable Bootstrap 4 is now up and running, you can access it using the URL displayed by Github in the `Github Pages` settings.
+  <summary><span style="font-size:1em;"><p>Milan</p></span></summary>
 
-## Customization Guide
+<p>https://www.fullmatchesandshows.com/</p>
 
-### Modify the configuration
+<p>http://www.replaymatches.com/</p>
 
-You should at least edit the `_config.yml` file to edit your website's metadata, like the title, description and repository URL.
+<p>https://www.google.com/search?q=ac+milan#sie=t;/m/011v3;2;/m/03zv9;mt;fp;1;;</p>
 
-### Change your theme
+<p>https://www.fotmob.com/teams/8564/fixtures/</p>
 
-This website uses the [Minty](https://bootswatch.com/minty/) Bootstrap theme by default. And you don't want to use the same theme everyone else uses do you?
+<p>https://www.transfermarkt.com/ac-mailand/alletransfers/verein/5</p>
 
-You can of course modify anything in the `_includes`, `_layouts` and `_sass` folders to customize both the HTML or CSS of your website, possibly referring to the [Bootstrap documentation](https://getbootstrap.com/) or the [Jekyll documentation](https://jekyllrb.com/) when needed. This is a normal part of web development and it is outside the scope of this guide.
+</details>
 
-But if you don't know where to start I can recommend you to import a theme from [Bootswatch](https://bootswatch.com/).
+<details>
 
-* Go on [Bootswatch](https://bootswatch.com/) and choose a theme that you like.
-* Using the top bar, download its `_variables.scss` and `_bootswatch.scss` files.
-* Copy the content of `_variables.scss` in `_sass/_variables.scss`.
-* Copy the content of `_bootswatch.scss` in `_sass/_bootstrap_customization.scss`.
+  <summary><span style="font-size:1em;"><p>Sport Livestream</p></span></summary>
 
-That's it, you now have a totally different appearance for you website.
+<p>https://www.footybite.com</p>
 
-### Modify the content
+<p>https://acelisting.in/</p>
 
-You probably don't want the present guide to be the front page of your website, so you should edit the `index.md` file. You probably also want to edit or delete the `CONTRIBUTING.md`, `README.md` and `LICENSE.md` files.
+<p>gg.gg/8zy29</p>
 
-Aside from that you can of course create new pages and posts like with any Jekyll website by refering to the [Jekyll documentation](https://jekyllrb.com/).
+</details></p>
 
-### Run Jekyll on your computer to speed up testing
+<p>http://www.mappedometer.com</p>
 
-Editing your website's content or theme directly on Github is completely possible but, due to the time Github Pages takes to update your website, it will probably be much more effective to work using a local Jekyll installation.
+<p>http://www.oxfordlearnersdictionaries.com</p>
 
-To do so:
+<p>https://www.rabb.it/</p>
 
-* Install the [requirements for Jekyll](https://jekyllrb.com/docs/installation/).
-* Type `bundle install` at the root of your project to install the necessary Ruby dependencies.
-* Type `bundle exec jekyll serve` to launch the test Jekyll web server that will re-compile your work if you edit it.
-* You can then open `http://localhost:4000` in your web browser to see your work-in-progress website.
+<p>http://mirror.ufs.ac.za/</p>
 
-Please note that, to ensure maximum compatibility with Github Pages, the `Gemfile` of this project references the `github-pages` gem, not Jekyll directly. This implies some differences in behavior compared to the official documentation of Jekyll.
+<p>https://sourceforge.net/projects/thumbapps/files/</p>
 
-## Known issues
+<p>http://www.fakenamegenerator.com/</p>
 
-* Bootstrap 4 should normally be post-processed using [Autoprefixer](https://github.com/postcss/autoprefixer). Even if it is possible to use autoprefixer with Jekyll, it is not possible with a classic Github Pages installation without adding some kind of pre-processing before publication. Since this project mostly aims compatibility with Github Pages I prefer to keep it that way. The consequences of this choice is that some Bootstrap features could not work as expected on older browsers.
+<p>https://login.teamviewer.com/connect/Flash</p>
 
-## How to contribute
+<p>http://sachxua.net/forum/index.php?topic=16946.0</p>
 
-[See the contribution guide](https://github.com/nicolas-van/bootstrap-4-github-pages/blob/master/CONTRIBUTING.md).
+<p>http://thuvienphapluat.vn/</p>
 
-## Websites using Bootstrap 4 Github Pages
+<p>https://www.giaiphapexcel.com/diendan/forums/</p>
 
-* [My personal blog](https://nicolas-van.github.io/)
-* [the wavelet's profile](https://thewavelet.github.io/)
-* [roseblood.github.io](https://roseleblood.github.io/)
-* [colemannick.github.io](https://colemannick.github.io/)
-* [Betty and the Blushtones](http://bettyandtheblushtones.co.uk/)
-* [borislouis.github.io](https://borislouis.github.io/)
-* [dariusnwadike.github.io](https://dariusnwadike.github.io/)
+<details>
 
-## Other projects
+  <summary><span style="font-size:1em;"><p>Phim</p></span></summary>
 
-[Easy Markdown to Github Pages](https://nicolas-van.github.io/easy-markdown-to-github-pages/) which documents how to publish Markown files to Github Pages in the fastest way.
+<p>https://www.fshare.vn/folder/RNN23YCG3Q8L</p>
+
+<p>https://traibap.wordpress.com/2011/06/08/76/</p>
+
+<p>http://www.boxofficemojo.com/franchises/chart/?id=starwars.htm</p>
+
+<p>http://www.boxofficemojo.com/franchises/chart/?id=avengers.htm</p>
+
+</details>
+
+<details>
+
+  <summary><span style="font-size:1em;"><p>Nhac</p></span></summary>
+
+<p>http://itdmusic.me/</p>
+
+<p>https://ifxd.bid/</p>
+
+<p>http://www.jpopflac.com/</p>
+
+<p>http://digitalk7.com/</p>
+
+<p>https://ketnoidamme.vn/threads/tong-hop-nhung-ca-khuc-nhac-hoa-hay-nhat.1460/</p>
+
+<p>https://tieba.baidu.com/p/4100164746</p>
+
+<p>Pass: oricon</p>
+
+<p>http://tieba.baidu.com/p/4157572241</p>
+
+<p>http://www.162wp.com/yinle/2014-12-23/7915.html</p>
+
+</details>
+
+<details>
+
+  <summary><span style="font-size:1em;"><p>ebook</p></span></summary>
+
+<p>http://www.ebook777.com/</p>
+
+<p>https://www.facebook.com/hashtag/ebolicebook</p>
+
+<p>https://www.facebook.com/hashtag/ebolicelite</p>
+
+<p>https://www.wattpad.com/user/gabriel931000</p>
+
+<details>
+
+  <summary><span style="font-size:1em;"><p>tve-4u</p></span></summary>
+
+<p>http://tve-4u.org/threads/bo-gia-mario-puzo-doan-tu-huyen-trinh-huy-ninh.27205/</p>
+
+<p>http://tve-4u.org/threads/den-khong-hat-bong-watanabe-junichi-tu-sach-tinh-hoa-van-hoc.9656/</p>
+
+<p>http://tve-4u.org/threads/thanh-tri-archibald-joseph-cronin.10120/</p>
+
+<p>http://tve-4u.org/threads/thay-lang-tadeusz-dolega-mostowicz.14248/</p>
+
+</details>
+
+</details>
+
+<details>
+
+  <summary><span style="font-size:1em;"><p>Celtic Woman</p></span></summary>
+
+<p>http://tieba.baidu.com/p/3840006456</p>
+
+<p>http://tieba.baidu.com/p/3263526797</p>
+
+<p>http://tieba.baidu.com/p/2741106090</p>
+
+<p>http://tieba.baidu.com/p/4853103946</p>
+
+<p>https://www.fshare.vn/file/T60H1HW3BT</p>
+
+<p>https://www.fshare.vn/file/3J88719XM4EEJ73</p>
+
+</details>
+
+</details>
