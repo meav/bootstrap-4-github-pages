@@ -1,16 +1,14 @@
-***
-
 <details>
 
-  <summary><span style="font-size:2em;"><p align="center">| Text |</p></span></summary>
+  <summary><span style="font-size:2em;"><p align="center">Text</p></span></summary>
 
-| http://txt.do/53bv4 |
+<a href="http://txt.do/53bv4">http://txt.do/53bv4</a>
 
-| https://github.com/meav/meav.github.io |
+<a href="https://github.com/meav/meav.github.io">https://github.com/meav/meav.github.io</a>
 
-| https://github.com/meav/text |
+<a href="https://github.com/meav/text">https://github.com/meav/text</a>
 
-| https://github.com/meav/text/releases/latest |
+<a href="https://github.com/meav/text/releases/latest">https://github.com/meav/text/releases/latest</a>
 
 </details>
 
@@ -34,7 +32,7 @@
 
 <details>
 
-  <summary><span style="font-size:1em;"><p>Milan</p></span></summary>
+  <summary><span style="font-size:2em;"><p>Milan</p></span></summary>
 
 <p>https://www.fullmatchesandshows.com/</p>
 
