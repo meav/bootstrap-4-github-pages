@@ -1,8 +1,6 @@
 ***
 
-<details>
-
-  <summary><span style="font-size:2em;"><p align="center">Text</p></span></summary>
+<details><summary><span style="font-size:2em;"><p align="center">Text</p></span></summary>
 
 <p><a href="http://txt.do/53bv4">http://txt.do/53bv4</a></p>
 
@@ -16,9 +14,7 @@
 
 ***
 
-<details>
-
-  <summary><span style="font-size:2em;"><p align="center">Get link</p></span></summary>
+<details><summary><span style="font-size:2em;"><p align="center">Get link</p></span></summary>
 
 <p>https://linksvip.net/</p>
 
@@ -28,13 +24,9 @@
 
 ***
 
-<details>
+<details><summary><span style="font-size:2em;"><p align="center">Linh tinh</p></span></summary>
 
-  <summary><span style="font-size:2em;"><p align="center">Linh tinh</p></span></summary>
-
-<details>
-
-  <summary><span style="font-size:1.2em;"><p>Milan</p></span></summary>
+<details><summary><span style="font-size:1.2em;"><p>Milan</p></span></summary>
 
 <p>https://www.fullmatchesandshows.com/</p>
 
