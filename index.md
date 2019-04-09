@@ -4,9 +4,9 @@
 
   <summary><span style="font-size:2em;"><p align="center">Text</p></span></summary>
 
-<a href="http://txt.do/53bv4">http://txt.do/53bv4</a>
+<p href="http://txt.do/53bv4">http://txt.do/53bv4</p>
 
-<a href="https://github.com/meav/meav.github.io">https://github.com/meav/meav.github.io</a>
+<p href="https://github.com/meav/meav.github.io">https://github.com/meav/meav.github.io</p>
 
 <a href="https://github.com/meav/text">https://github.com/meav/text</a>
 
@@ -59,6 +59,8 @@
 <p>gg.gg/8zy29</p>
 
 </details>
+
+---
 
 <p>http://www.mappedometer.com</p>
 
