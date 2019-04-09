@@ -1,19 +1,16 @@
----
-layout: page
-title: Bootstrap 4 Github Pages
----
+***
 
 <details>
 
-  <summary><span style="font-size:2em;"><p align="center">Text</p></span></summary>
+  <summary><span style="font-size:2em;"><p align="center">| Text |</p></span></summary>
 
-http://txt.do/53bv4
+| http://txt.do/53bv4 |
 
-https://github.com/meav/meav.github.io
+| https://github.com/meav/meav.github.io |
 
-https://github.com/meav/text
+| https://github.com/meav/text |
 
-https://github.com/meav/text/releases/latest
+| https://github.com/meav/text/releases/latest |
 
 </details>
 
