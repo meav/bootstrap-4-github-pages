@@ -1,3 +1,5 @@
+***
+
 <details>
 
   <summary><span style="font-size:2em;"><p align="center">Text</p></span></summary>
@@ -32,7 +34,7 @@
 
 <details>
 
-  <summary><span style="font-size:2em;"><p>Milan</p></span></summary>
+  <summary><span style="font-size:1.5em;"><p>Milan</p></span></summary>
 
 <p>https://www.fullmatchesandshows.com/</p>
 
@@ -56,7 +58,7 @@
 
 <p>gg.gg/8zy29</p>
 
-</details></p>
+</details>
 
 <p>http://www.mappedometer.com</p>
 
