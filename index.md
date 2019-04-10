@@ -1,6 +1,6 @@
 ***
 
-<details><summary><span style="font-size:2em;"><p align="center">Text</p></span></summary>
+<p align="center"><details><summary><span style="font-size:2em;">Text</span></summary></p>
 
 <p><a href="http://txt.do/53bv4">http://txt.do/53bv4</a></p>
 
@@ -26,7 +26,7 @@
 
 <details><summary><span style="font-size:2em;"><p align="center">Linh tinh</p></span></summary>
 
-<details><summary><span style="font-size:1.2em;"><p> Milan</p></span></summary>
+<details><summary><span style="font-size:1.2em;"> Milan</span></summary>
 
 <p>https://www.fullmatchesandshows.com/</p>
 
