@@ -1,6 +1,6 @@
 ***
 
-<p align="center"><details><summary><span style="font-size:2em;">Text</p></span></summary>
+<details><summary><span style="font-size:2em;"><p align="center">Text</p></span></summary>
 
 <p><a href="http://txt.do/53bv4">http://txt.do/53bv4</a></p>
 
@@ -40,11 +40,12 @@
 
 <p>https://www.transfermarkt.com/ac-mailand/alletransfers/verein/5</p>
 
+**
 </details>
 
-<details>
-
-  <summary><span style="font-size:1em;"><p>Sport Livestream</p></span></summary>
+<details><summary><span style="font-size:1.2em;"> Sport Livestream</span></summary>
+  
+<p></p>
 
 <p>https://www.footybite.com</p>
 
@@ -75,9 +76,9 @@
 
 <p>https://www.giaiphapexcel.com/diendan/forums/</p>
 
-<details>
+<details><summary><span style="font-size:1.2em;"> Phim</span></summary>
 
-  <summary><span style="font-size:1em;"><p>Phim</p></span></summary>
+<p></p>
 
 <p>https://www.fshare.vn/folder/RNN23YCG3Q8L</p>
 
@@ -87,11 +88,10 @@
 
 <p>http://www.boxofficemojo.com/franchises/chart/?id=avengers.htm</p>
 
+**
 </details>
 
-<details>
-
-  <summary><span style="font-size:1em;"><p>Nhac</p></span></summary>
+<details><summary><span style="font-size:1.2em;"> Nhac</span></summary>
 
 <p>http://itdmusic.me/</p>
 
@@ -111,11 +111,12 @@
 
 <p>http://www.162wp.com/yinle/2014-12-23/7915.html</p>
 
+**
 </details>
 
-<details>
+<details><summary><span style="font-size:1.2em;"> ebook</span></summary>
 
-  <summary><span style="font-size:1em;"><p>ebook</p></span></summary>
+<p></p>
 
 <p>http://www.ebook777.com/</p>
 
@@ -125,9 +126,9 @@
 
 <p>https://www.wattpad.com/user/gabriel931000</p>
 
-<details>
+<details><summary><span style="font-size:1.2em;"> tve-4u</span></summary>
 
-  <summary><span style="font-size:1em;"><p>tve-4u</p></span></summary>
+<p></p>
 
 <p>http://tve-4u.org/threads/bo-gia-mario-puzo-doan-tu-huyen-trinh-huy-ninh.27205/</p>
 
@@ -139,11 +140,12 @@
 
 </details>
 
+**
 </details>
 
-<details>
+<details><summary><span style="font-size:1.2em;"> Celtic Woman</span></summary>
 
-  <summary><span style="font-size:1em;"><p>Celtic Woman</p></span></summary>
+<p></p>
 
 <p>http://tieba.baidu.com/p/3840006456</p>
 
