@@ -179,3 +179,93 @@
 </details>
 
 </details>
+
+***
+
+<details><summary><span style="font-size:2em;"><p align="center">Software</p></span></summary>
+
+<p><a href="https://docs.google.com/spreadsheets/d/1o5dmOw8jBCVGxFmlMOsKgoIKULMY7tk-TCSz67IJMc4/pubhtml#">https://docs.google.com/spreadsheets/d/1o5dmOw8jBCVGxFmlMOsKgoIKULMY7tk-TCSz67IJMc4/pubhtml#</a></p>
+
+<p><a href="https://cloud.mail.ru/public/Mv44/8Srx3zLUZ/Windows%2010%20IoT%20Core%2C%20Version%201809%20-%20MSDN/">https://cloud.mail.ru/public/Mv44/8Srx3zLUZ/Windows%2010%20IoT%20Core%2C%20Version%201809%20-%20MSDN/</a></p>
+
+<details><summary><span style="font-size:1.2em;"> Task Scheduler</span></summary>
+
+<p></p>
+
+<p>C:\Users\aa\Documents\WW1\ConEmuPack.171025\ConEmu.exe /MIN /Title ConEmu</p>
+
+<p>Fan case.bat</p>
+
+<p>@Echo off</p>
+
+<p>cmd.exe /c start /min "" "C:\Windows\notepad.exe" "C:\Users\a\Documents\(Empty)\WW\Fan case.txt"</p>
+
+<p>explorer "D:\Me Doanh\TH Tu Liem"</p>
+
+<p><a href="https://social.technet.microsoft.com/Forums/windows/en-US/0462579d-780a-460a-befd-90f755e902aa/how-to-schedule-a-task-on-resume-from-sleep?forum=itprovistaapps">https://social.technet.microsoft.com/Forums/windows/en-US/0462579d-780a-460a-befd-90f755e902aa/how-to-schedule-a-task-on-resume-from-sleep?forum=itprovistaapps</a></p>
+
+<p>Triggers</p>
+
+<p>Begin the task: "On an event"</p>
+
+<p>Log: System</p>
+
+<p>Source: Power-Troubleshooter</p>
+
+<p>Event ID: 1</p>
+
+**
+
+</details>
+
+<p></p>
+
+<details><summary><span style="font-size:1.2em;"> ConEmu</span></summary>
+
+<p></p>
+
+<p><a href="https://github.com/Maximus5/ConEmu">https://github.com/Maximus5/ConEmu</a></p>
+
+<p><a href="https://github.com/Maximus5/ConEmu/issues/1120">https://github.com/Maximus5/ConEmu/issues/1120</a></p>
+
+<details><summary><span style="font-size:1.2em;"> Tweaking the CmdInit.cmd file:</span></summary>
+
+<p></p>
+
+<p>Remove this: set ConEmuPrompt0=$E[m$E[32m$E]9;8;"USERNAME"$E\@$E]9;8;"COMPUTERNAME"$E\$S</p>
+
+<p>Edit last line to: PROMPT $E[23B$E[23A%ConEmuPrompt1%%ConEmuPrompt2%%ConEmuPrompt3%</p>
+
+**
+
+</details>
+
+<p></p>
+
+<p><a href="https://github.com/joonro/ConEmu-Color-Themes/blob/master/themes/monokai.xml">https://github.com/joonro/ConEmu-Color-Themes/blob/master/themes/monokai.xml</a></p>
+
+<p>chcp utf-8</p>
+
+<p>alias e="C:\Users\aa\Documents\WW1\CubicExplorerPortable\CubicExplorerPortable.exe" $*</p>
+
+**
+
+</details>
+
+<p></p>
+
+<p><a href="https://github.com/vatterspun/cubicexplorer">https://github.com/vatterspun/cubicexplorer</a></p>
+
+<p><a href="http://www.ltr-data.se/opencode.html/#ImDisk">http://www.ltr-data.se/opencode.html/#ImDisk</a></p>
+
+<p><a href="https://sourceforge.net/projects/imdisk-toolkit/">https://sourceforge.net/projects/imdisk-toolkit/</a></p>
+
+<p><a href="http://www.mitec.cz/tmx.html">http://www.mitec.cz/tmx.html</a></p>
+
+<p><a href="http://www.hexagora.com/en_dw_davperf.asp">http://www.hexagora.com/en_dw_davperf.asp</a></p>
+
+<p><a href="http://www.bandisoft.com/honeyview/">http://www.bandisoft.com/honeyview/</a></p>
+
+<p><a href="https://geekuninstaller.com/download">https://geekuninstaller.com/download</a></p>
+
+</details>
