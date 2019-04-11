@@ -16,9 +16,9 @@
 
 <details><summary><span style="font-size:2em;"><p align="center">Get link</p></span></summary>
 
-<p>https://linksvip.net/</p>
+<p><a href="https://linksvip.net/">https://linksvip.net/</a></p>
 
-<p>http://taive.cf/?ref=vn-zoom.org</p>
+<p><a href="http://taive.cf/">http://taive.cf/</a></p>
 
 </details>
 
@@ -30,17 +30,18 @@
 
 <p></p>
 
-<p>https://www.fullmatchesandshows.com/</p>
+<p><a href="https://www.fullmatchesandshows.com/">https://www.fullmatchesandshows.com/</a></p>
 
-<p>http://www.replaymatches.com/</p>
+<p><a href="http://www.replaymatches.com/">http://www.replaymatches.com/</a></p>
 
-<p>https://www.google.com/search?q=ac+milan#sie=t;/m/011v3;2;/m/03zv9;mt;fp;1;;</p>
+<p><a href="https://www.google.com/search?q=ac+milan#sie=t;/m/011v3;2;/m/03zv9;mt;fp;1;;">https://www.google.com/search?q=ac+milan#sie=t;/m/011v3;2;/m/03zv9;mt;fp;1;;</a></p>
 
-<p>https://www.fotmob.com/teams/8564/fixtures/</p>
+<p><a href="https://www.fotmob.com/teams/8564/fixtures/">https://www.fotmob.com/teams/8564/fixtures/</a></p>
 
-<p>https://www.transfermarkt.com/ac-mailand/alletransfers/verein/5</p>
+<p><a href="https://www.transfermarkt.com/ac-mailand/alletransfers/verein/5">https://www.transfermarkt.com/ac-mailand/alletransfers/verein/5</a></p>
 
 **
+
 </details>
 
 <p></p>
@@ -49,50 +50,52 @@
   
 <p></p>
 
-<p>https://www.footybite.com</p>
+<p><a href="https://www.footybite.com">https://www.footybite.com</a></p>
 
-<p>https://acelisting.in/</p>
+<p><a href="https://acelisting.in/">https://acelisting.in/</a></p>
 
-<p>gg.gg/8zy29</p>
+<p><a href="gg.gg/8zy29">gg.gg/8zy29</a></p>
 
 **
+
 </details>
 
 <p></p>
 
-<p>http://www.mappedometer.com</p>
+<p><a href="http://www.mappedometer.com">http://www.mappedometer.com</a></p>
 
-<p>http://www.oxfordlearnersdictionaries.com</p>
+<p><a href="http://www.oxfordlearnersdictionaries.com">http://www.oxfordlearnersdictionaries.com</a></p>
 
-<p>https://www.rabb.it/</p>
+<p><a href="https://www.rabb.it/">https://www.rabb.it/</a></p>
 
-<p>http://mirror.ufs.ac.za/</p>
+<p><a href="http://mirror.ufs.ac.za/">http://mirror.ufs.ac.za/</a></p>
 
-<p>https://sourceforge.net/projects/thumbapps/files/</p>
+<p><a href="https://sourceforge.net/projects/thumbapps/files/">https://sourceforge.net/projects/thumbapps/files/</a></p>
 
-<p>http://www.fakenamegenerator.com/</p>
+<p><a href="http://www.fakenamegenerator.com/">http://www.fakenamegenerator.com/</a></p>
 
-<p>https://login.teamviewer.com/connect/Flash</p>
+<p><a href="https://login.teamviewer.com/connect/Flash">https://login.teamviewer.com/connect/Flash</a></p>
 
-<p>http://sachxua.net/forum/index.php?topic=16946.0</p>
+<p><a href="http://sachxua.net/forum/index.php?topic=16946.0">http://sachxua.net/forum/index.php?topic=16946.0</a></p>
 
-<p>http://thuvienphapluat.vn/</p>
+<p><a href="http://thuvienphapluat.vn/">http://thuvienphapluat.vn/</a></p>
 
-<p>https://www.giaiphapexcel.com/diendan/forums/</p>
+<p><a href="https://www.giaiphapexcel.com/diendan/forums/">https://www.giaiphapexcel.com/diendan/forums/</a></p>
 
 <details><summary><span style="font-size:1.2em;"> Phim</span></summary>
 
 <p></p>
 
-<p>https://www.fshare.vn/folder/RNN23YCG3Q8L</p>
+<p><a href="https://www.fshare.vn/folder/RNN23YCG3Q8L">https://www.fshare.vn/folder/RNN23YCG3Q8L</a></p>
 
-<p>https://traibap.wordpress.com/2011/06/08/76/</p>
+<p><a href="https://traibap.wordpress.com/2011/06/08/76/">https://traibap.wordpress.com/2011/06/08/76/</a></p>
 
-<p>http://www.boxofficemojo.com/franchises/chart/?id=starwars.htm</p>
+<p><a href="http://www.boxofficemojo.com/franchises/chart/?id=starwars.htm">http://www.boxofficemojo.com/franchises/chart/?id=starwars.htm</a></p>
 
-<p>http://www.boxofficemojo.com/franchises/chart/?id=avengers.htm</p>
+<p><a href="http://www.boxofficemojo.com/franchises/chart/?id=avengers.htm">http://www.boxofficemojo.com/franchises/chart/?id=avengers.htm</a></p>
 
 **
+
 </details>
 
 <p></p>
@@ -101,25 +104,26 @@
 
 <p></p>
 
-<p>http://itdmusic.me/</p>
+<p><a href="http://itdmusic.me/">http://itdmusic.me/</a></p>
 
-<p>https://ifxd.bid/</p>
+<p><a href="https://ifxd.bid/">https://ifxd.bid/</a></p>
 
-<p>http://www.jpopflac.com/</p>
+<p><a href="http://www.jpopflac.com/">http://www.jpopflac.com/</a></p>
 
-<p>http://digitalk7.com/</p>
+<p><a href="http://digitalk7.com/">http://digitalk7.com/</a></p>
 
-<p>https://ketnoidamme.vn/threads/tong-hop-nhung-ca-khuc-nhac-hoa-hay-nhat.1460/</p>
+<p><a href="https://ketnoidamme.vn/threads/tong-hop-nhung-ca-khuc-nhac-hoa-hay-nhat.1460/">https://ketnoidamme.vn/threads/tong-hop-nhung-ca-khuc-nhac-hoa-hay-nhat.1460/</a></p>
 
-<p>https://tieba.baidu.com/p/4100164746</p>
+<p><a href="https://tieba.baidu.com/p/4100164746">https://tieba.baidu.com/p/4100164746</a></p>
 
-<p>Pass: oricon</p>
+<p>Pass:oricon</p>
 
-<p>http://tieba.baidu.com/p/4157572241</p>
+<p><a href="http://tieba.baidu.com/p/4157572241">http://tieba.baidu.com/p/4157572241</a></p>
 
-<p>http://www.162wp.com/yinle/2014-12-23/7915.html</p>
+<p><a href="http://www.162wp.com/yinle/2014-12-23/7915.html">http://www.162wp.com/yinle/2014-12-23/7915.html</a></p>
 
 **
+
 </details>
 
 <p></p>
@@ -128,27 +132,28 @@
 
 <p></p>
 
-<p>http://www.ebook777.com/</p>
+<p><a href="http://www.ebook777.com/">http://www.ebook777.com/</a></p>
 
-<p>https://www.facebook.com/hashtag/ebolicebook</p>
+<p><a href="https://www.facebook.com/hashtag/ebolicebook">https://www.facebook.com/hashtag/ebolicebook</a></p>
 
-<p>https://www.facebook.com/hashtag/ebolicelite</p>
+<p><a href="https://www.facebook.com/hashtag/ebolicelite">https://www.facebook.com/hashtag/ebolicelite</a></p>
 
-<p>https://www.wattpad.com/user/gabriel931000</p>
+<p><a href="https://www.wattpad.com/user/gabriel931000">https://www.wattpad.com/user/gabriel931000</a></p>
 
 <details><summary><span style="font-size:1.2em;"> tve-4u</span></summary>
 
 <p></p>
 
-<p>http://tve-4u.org/threads/bo-gia-mario-puzo-doan-tu-huyen-trinh-huy-ninh.27205/</p>
+<p><a href="http://tve-4u.org/threads/bo-gia-mario-puzo-doan-tu-huyen-trinh-huy-ninh.27205/">http://tve-4u.org/threads/bo-gia-mario-puzo-doan-tu-huyen-trinh-huy-ninh.27205/</a></p>
 
-<p>http://tve-4u.org/threads/den-khong-hat-bong-watanabe-junichi-tu-sach-tinh-hoa-van-hoc.9656/</p>
+<p><a href="http://tve-4u.org/threads/den-khong-hat-bong-watanabe-junichi-tu-sach-tinh-hoa-van-hoc.9656/">http://tve-4u.org/threads/den-khong-hat-bong-watanabe-junichi-tu-sach-tinh-hoa-van-hoc.9656/</a></p>
 
-<p>http://tve-4u.org/threads/thanh-tri-archibald-joseph-cronin.10120/</p>
+<p><a href="http://tve-4u.org/threads/thanh-tri-archibald-joseph-cronin.10120/">http://tve-4u.org/threads/thanh-tri-archibald-joseph-cronin.10120/</a></p>
 
-<p>http://tve-4u.org/threads/thay-lang-tadeusz-dolega-mostowicz.14248/</p>
+<p><a href="http://tve-4u.org/threads/thay-lang-tadeusz-dolega-mostowicz.14248/">http://tve-4u.org/threads/thay-lang-tadeusz-dolega-mostowicz.14248/</a></p>
 
 **
+
 </details>
 
 </details>
@@ -159,17 +164,17 @@
 
 <p></p>
 
-<p>http://tieba.baidu.com/p/3840006456</p>
+<p><a href="http://tieba.baidu.com/p/3840006456">http://tieba.baidu.com/p/3840006456</a></p>
 
-<p>http://tieba.baidu.com/p/3263526797</p>
+<p><a href="http://tieba.baidu.com/p/3263526797">http://tieba.baidu.com/p/3263526797</a></p>
 
-<p>http://tieba.baidu.com/p/2741106090</p>
+<p><a href="http://tieba.baidu.com/p/2741106090">http://tieba.baidu.com/p/2741106090</a></p>
 
-<p>http://tieba.baidu.com/p/4853103946</p>
+<p><a href="http://tieba.baidu.com/p/4853103946">http://tieba.baidu.com/p/4853103946</a></p>
 
-<p>https://www.fshare.vn/file/T60H1HW3BT</p>
+<p><a href="https://www.fshare.vn/file/T60H1HW3BT">https://www.fshare.vn/file/T60H1HW3BT</a></p>
 
-<p>https://www.fshare.vn/file/3J88719XM4EEJ73</p>
+<p><a href="https://www.fshare.vn/file/3J88719XM4EEJ73">https://www.fshare.vn/file/3J88719XM4EEJ73</a></p>
 
 </details>
 
