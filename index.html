@@ -286,3 +286,12 @@ layout: default
 <p><a href="https://geekuninstaller.com/download" target="_blank">https://geekuninstaller.com/download</a></p>
     </div>
 </div>
+
+<script>
+    $(document).ready(function() { 
+  $('#section-A a').click(function (e) {
+      e.preventDefault();
+      $('a[href="' + $(this).attr('href') + '"]').tab('show');
+  })
+});
+  </script>
