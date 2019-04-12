@@ -1,42 +1,46 @@
 ---
 layout: default
 ---
-<div class="container">
-  <div class="row">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 
-    <h1>Bootstrap Tabs</h1>
+<section id="section-A">
 
-    <div class="tabbable">
-      <ul class="nav nav-tabs">
-        <li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
-        <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
-        <li><a href="#tab3" data-toggle="tab">Section 3</a></li>
-      </ul>
-      <div class="tab-content">
-        <div class="tab-pane active" id="tab1">
-          <p>I'm in Section 1.</p>
-        </div>
-        <div class="tab-pane" id="tab2">
-          <p>I'm in Section 2.</p>
-        </div>
-        <div class="tab-pane" id="tab3">
-          <p>I'm in Section 3.</p>
-        </div>
-      </div>
-    </div>
+  <blockquote class="blockquote">
+    <p>Some text here ...
+      <a href="#tab-1">Tab 1 hyperlink text</a> blablabla
+      <a href="#tab-2">Tab 2 hyperlink text</a> and blabla
+      <a href="#tab-3">Tab 3 hyperlink text</a> and blabla
+      <a href="#tab-4">Tab 4 hyperlink text</a> and bla.
+    </p>
+  </blockquote>
 
+</section>
+
+
+<div id="section-B">
+
+  <ul class="nav nav-pills">
+    <li class="active"><a href="#tab-1" data-toggle="tab">Tab 1 title</a></li>
+    <li class=""><a href="#tab-2" data-toggle="tab">Tab 2 title</a></li>
+    <li class=""><a href="#tab-3" data-toggle="tab">Tab 3 title</a></li>
+    <li class=""><a href="#tab-4" data-toggle="tab">Tab 4 title</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="tab-1" class="tab-pane active">Tab 1 Lorem ipsum …</div>
+    <div id="tab-2" class="tab-pane">Tab 2 Lorem ipsum …</div>
+    <div id="tab-3" class="tab-pane">Tab 3 Lorem ipsum …</div>
+    <div id="tab-4" class="tab-pane">Tab 4 Lorem ipsum …</div>
   </div>
+
 </div>
   <script>
-    $(function(){
-  var hash = window.location.hash;
-  hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-
-  $('.nav-tabs a').click(function (e) {
-    $(this).tab('show');
-    var scrollmem = $('body').scrollTop();
-    window.location.hash = this.hash;
-    $('html,body').scrollTop(scrollmem);
-  });
+    $(document).ready(function() {
+  $('#section-A a').click(function(e) {
+    e.preventDefault();
+    $('a[href="' + $(this).attr('href') + '"]').tab('show');
+  })
 });
   </script>
