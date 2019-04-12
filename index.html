@@ -5,6 +5,32 @@ layout: default
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 
+<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+  <a class="dropdown-item" href="#tab-1" data-toggle="tab"><span style="font-size:2em;">Text</span></a>
+    <a class="dropdown-item" href="#tab-2" data-toggle="tab"><span style="font-size:2em;">Get link</span></a>
+    <a class="dropdown-item" href="#tab-3" data-toggle="tab"><span style="font-size:2em;">Linh tinh</span></a>
+    <a class="dropdown-item" href="#tab-4" data-toggle="tab"><span style="font-size:2em;">Software</span></a>
+    <a class="dropdown-item" href="#tab-5" data-toggle="tab"><span style="font-size:2em;">Tip</span></a>
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="#">More options</a>
+    <ul class="dropdown-menu">
+      <a class="dropdown-item" href="#tab-6" data-toggle="tab"><span style="font-size:2em;">Check Laptop</span></a>
+    <a class="dropdown-item" href="#tab-7" data-toggle="tab"><span style="font-size:2em;">Check Hardware</span></a>
+    <a class="dropdown-item" href="#tab-8" data-toggle="tab"><span style="font-size:2em;">Search bar</span></a>
+    <a class="dropdown-item" href="#tab-9" data-toggle="tab"><span style="font-size:2em;">Account</span></a>
+    <a class="dropdown-item" href="#tab-10" data-toggle="tab"><span style="font-size:2em;">TV Film</span></a>
+    <a class="dropdown-item" href="#tab-11" data-toggle="tab"><span style="font-size:2em;">desktop.ini trong Fonts</span></a>
+    <a class="dropdown-item" href="#tab-12" data-toggle="tab"><span style="font-size:2em;">Default app open file type</span></a>
+    <a class="dropdown-item" href="#tab-13" data-toggle="tab"><span style="font-size:2em;">Start 2 app</span></a>
+    <a class="dropdown-item" href="#tab-14" data-toggle="tab"><span style="font-size:2em;">Macro</span></a>
+    <a class="dropdown-item" href="#tab-15" data-toggle="tab"><span style="font-size:2em;">Stylish</span></a>
+    <a class="dropdown-item" href="#tab-16" data-toggle="tab"><span style="font-size:2em;">Brother HL-2240D</span></a>
+    <a class="dropdown-item" href="#tab-17" data-toggle="tab"><span style="font-size:2em;">Đạp xe</span></a>
+    <a class="dropdown-item" href="#tab-18" data-toggle="tab"><span style="font-size:2em;">Mail</span></a>
+    </ul>
+  </li>
+</ul>
+
  <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Dropdown button
@@ -286,12 +312,3 @@ layout: default
 <p><a href="https://geekuninstaller.com/download" target="_blank">https://geekuninstaller.com/download</a></p>
     </div>
 </div>
-
-<script>
-    $(document).ready(function() { 
-  $('#section-A a').click(function (e) {
-      e.preventDefault();
-      $('a[href="' + $(this).attr('href') + '"]').tab('show');
-  })
-});
-  </script>
