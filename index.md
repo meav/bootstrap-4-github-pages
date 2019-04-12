@@ -54,7 +54,7 @@
 
 <p><a href="https://acelisting.in/" target="_blank">https://acelisting.in/</a></p>
 
-<p><a href="gg.gg/8zy29" target="_blank">gg.gg/8zy29</a></p>
+<p><a href="https://gg.gg/8zy29" target="_blank">gg.gg/8zy29</a></p>
 
 **
 
