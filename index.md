@@ -2,13 +2,13 @@
 
 <details><summary><span style="font-size:2em;"><p align="center">Text</p></span></summary>
 
-<a href="http://txt.do/53bv4" target="_blank">http://txt.do/53bv4</a>
+<p><a href="http://txt.do/53bv4" target="_blank">http://txt.do/53bv4</a></p>
 
-<a href="https://github.com/meav/meav.github.io" target="_blank">https://github.com/meav/meav.github.io</a>
+<p><a href="https://github.com/meav/meav.github.io" target="_blank">https://github.com/meav/meav.github.io</a></p>
 
-<a href="https://github.com/meav/text" target="_blank">https://github.com/meav/text</a>
+<p><a href="https://github.com/meav/text" target="_blank">https://github.com/meav/text</a></p>
 
-<a href="https://github.com/meav/text/releases/latest" target="_blank">https://github.com/meav/text/releases/latest</a>
+<p><a href="https://github.com/meav/text/releases/latest" target="_blank">https://github.com/meav/text/releases/latest</a></p>
 
 </details>
 
