@@ -201,7 +201,7 @@ layout: default
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
-$('#btnFilter').click(function() {
-  $(this).parents('.dropdown').find('button.dropdown-toggle').dropdown('toggle')
+$('.dropdown-item').on('click', function(){
+    $('.dropdown-toggle').dropdown('toggle');
 });
 </script>
