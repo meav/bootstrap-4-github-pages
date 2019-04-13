@@ -1,34 +1,594 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<nav class="navbar fixed-top navbar-dark bg-primary">
-   <a class="navbar-brand" href="#">Navbar</a>
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-collapse collapse" id="collapsingNavbar">
-        <ul class="navbar-nav">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Text</title>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-offcanvas">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="navbar-nav navbar-top">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">Home</span></a>
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#myAlert" data-toggle="collapse">Wow</a>
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" href="#!" id="dropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownExample">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
             </li>
         </ul>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">About</a>
-            </li>
-        </ul>
+        <button class="navbar-toggler navbar-toggler-right navbar-icon" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar bar1"></span>
+            <span class="icon-bar bar2"></span>
+            <span class="icon-bar bar3"></span>
+        </button>
+        <div class="navbar-collapse collapse ml-auto" id="navbar-mobile">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-image">
+                    <img src="" alt="">
+                </li>
+                <li class="nav-item">
+                    <a href="#!" class="nav-link">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!" class="nav-link">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!" class="nav-link">Link</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 
+<div class="wrapper mt-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron">
+                    <h1>Hello, world!</h1>
+                    <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <h2>Heading</h2>
+                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script js>
-$('.navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
+/*!
+ * Offcanvas Sidebar v0.1
+ * Copyright 2017 - present Morten Sørensen (https://moso.io)
+ * Licensed under the MIT license
+ * --------------------------------------------------------------
+ * Script that clones the current Bootstrap markup,
+ * and inserts it into a sidebar with some smooth animations
+ *
+ * - Built to work with Bootstrap 4 and supports multiple navbars
+ * - Fully customizable with comments
+ */
+
+var window_height;
+var window_width;
+var navbar_initialized = false;
+var nav_toggle;
+
+var offCanvas = {
+    sidenav: {
+        // Sidenav is not visible by default.
+        // Change to 1 if necessary
+        sidenav_visible: 0
+    },
+    initSideNav: function initSideNav() {
+        if (!navbar_initialized) {
+            var $nav = $('nav');
+
+            // Add the offcanvas class to the navbar if it's not initialized
+            $nav.addClass('navbar-offcanvas');
+
+            // Clone relevant navbars
+            var $navtop = $nav.find('.navbar-top').first().clone(true);
+            var $navbar = $nav.find('.navbar-collapse').first().clone(true);
+
+            // Let's start with some empty vars
+            var ul_content = '';
+            var top_content = '';
+
+            // Set min-height of the new sidebar to the screen height
+            $navbar.css('min-height', window.screen.height);
+
+            // Take the content of .navbar-top
+            $navtop.each(function() {
+                var navtop_content = $(this).html();
+                top_content = top_content + navtop_content;
+            });
+
+            // Take the content of .navbar-collapse
+            $navbar.children('ul').each(function() {
+                var nav_content = $(this).html();
+                ul_content = ul_content + nav_content;
+            });
+
+            // Wrap the new content inside an <ul>
+            ul_content = '<ul class="navbar-nav sidebar-nav">' + ul_content + '</ul>';
+
+            // Insert the html content into our cloned content
+            $navbar.html(ul_content);
+            $navtop.html(top_content);
+
+            // Append the navbar to body,
+            // and insert the content of the navicons navbar just below the logo/nav-image
+            $('body').append($navbar);
+            $('.nav-image').after($navtop);
+
+
+            // Set the toggle-variable to the Bootstrap navbar-toggler button
+            var $toggle = $('.navbar-toggler');
+
+            // Add/remove classes on toggle and set the visiblity of the sidenav,
+            // and append the overlay. Also if the user clicks the overlay,
+            // the sidebar will close
+            $toggle.on('click', function () {
+                if (offCanvas.sidenav.sidenav_visible == 1) {
+                    $('html').removeClass('nav-open');
+                    offCanvas.sidenav.sidenav_visible = 0;
+                    $('#overlay').remove();
+                    setTimeout(function() {
+                        $toggle.removeClass('toggled');
+                    }, 300);
+                } else {
+                    setTimeout(function() {
+                        $toggle.addClass('toggled');
+                    }, 300);
+
+                    // Add the overlay and make it close the sidenav on click
+                    var div = '<div id="overlay"></div>';
+                    $(div).appendTo("body").on('click', function() {
+                        $('html').removeClass('nav-open');
+                        offCanvas.sidenav.sidenav_visible = 0;
+                        $('#overlay').remove();
+                        setTimeout(function() {
+                            $toggle.removeClass('toggled');
+                        }, 300);
+                    });
+
+                    $('html').addClass('nav-open');
+                    offCanvas.sidenav.sidenav_visible = 1;
+                }
+            });
+            // Set navbar to initialized
+            navbar_initialized = true;
+        }
+    }
+};
+
+$(document).ready(function () {
+    window_width = $(window).width();
+
+    nav_toggle = $('nav').hasClass('navbar-offcanvas') ? true : false;
+
+    // Responsive checks
+    if (window_width < 992 || nav_toggle) {
+        offCanvas.initSideNav();
+    }
+
+    // Close the sidebar if the user clicks a link or a dropdown-item,
+    // and close the sidebar
+    $('.nav-link:not(.dropdown-toggle), .dropdown-item').on('click', function () {
+        var $toggle = $('.navbar-toggler');
+
+        $('html').removeClass('nav-open');
+        offCanvas.sidenav.sidenav_visible = 0;
+        setTimeout(function () {
+            $toggle.removeClass('toggled');
+        }, 300);
+    });
 });
-</script>
+
+$(window).resize(function () {
+    window_width = $(window).width();
+    
+    // More responsive checks if the user resize the browser
+    if (window_width < 992) {
+        offCanvas.initSideNav();
+    }
+
+    if (window_width > 992 && !nav_toggle) {
+        $('nav').removeClass('navbar-offcanvas');
+        offCanvas.sidenav.sidenav_visible = 1;
+        navbar_initialized = false;
+    }
+});</script>
+
+<style CSS>
+// Some variables
+$navbar-height: 75px;
+$sidebar-width: 424px;
+
+$off-canvas: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+
+
+.wrapper {
+    transition: $off-canvas;
+}
+
+.navbar {
+    height: $navbar-height;
+    transition: all .5s .1s;
+}
+
+.navbar-offcanvas {
+    z-index: 1030;
+    
+    .container-fluid {
+        position: relative;
+        padding: 0;
+        transform: translate3d(0px, 0, 0);
+        transition: $off-canvas;
+    }
+    
+    .navbar-top {
+        display: none;
+        
+        @media (min-width: 992px) {
+            display: flex;
+            margin-left: auto;
+        }
+        
+        .nav-item {
+            margin-right: 22px;
+            text-align: center;
+            
+            .nav-link {
+                @media (max-width: 991px) {
+                    color: #000;
+                }
+            }
+        }
+    }
+    
+    .navbar-toggler {
+        padding: 0;
+        border: 0;
+        outline: none;
+        
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
+        
+        @media (min-width: 768px) {
+            display: block;
+        }
+        
+        .icon-bar {
+            display: block;
+            position: relative;
+            width: 24px;
+            height: 2px;
+            border-radius: 1px;
+            background-color: #fff;
+            
+            + .icon-bar {
+                margin-top: 4px;
+            }
+            
+            &.bar1 {
+                top: 0;
+                outline: 1px solid transparent;
+                animation: topbar-back 500ms 0s;
+                animation-fill-mode: forwards;
+            }
+            
+            &.bar2 {
+                outline: 1px solid transparent;
+                opacity: 1;
+            }
+            
+            &.bar3 {
+                bottom: 0;
+                outline: 1px solid transparent;
+                animation: bottombar-back 500ms 0s;
+                animation-fill-mode: forwards;
+            }
+        }
+        
+        &.toggled {
+            .icon-bar {
+                &.bar1 {
+                    top: 6px;
+                    animation: topbar-x 500ms 0s;
+                    animation-fill-mode: forwards;
+                }
+                
+                &.bar2 {
+                    opacity: 0;
+                }
+                
+                &.bar3 {
+                    bottom: 6px;
+                    animation: bottombar-x 500ms 0s;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    }    
+    
+    .navbar-collapse.collapse,
+    .navbar-collapse.collapse.in,
+    .navbar-collapse.collapsing {
+        display: none !important;
+    }
+}
+
+.nav-open {
+    .navbar-collapse {
+        transform: translate3d(0px, 0, 0);        
+    }
+    
+    .navbar > .container-fluid {
+        transform: translate3d(-#{$sidebar-width}, 0, 0);
+        
+        @media (max-width: 991px) {
+            transform: translate3d(-#{$sidebar-width / 1.5}, 0, 0);
+        }
+    }
+    
+    .wrapper {
+        transform: translate3d(-150px, 0, 0);
+    }
+}
+
+body > .navbar-collapse {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    right: -10px;
+    width: $sidebar-width;
+    height: 100%;
+    padding: 60px 1rem;
+    background-color: #fff;
+    border-left: 1px solid #e3e3e3;
+    text-align: center;
+    visibility: visible;    
+    overflow-y: visible;
+    transform: translate3d($sidebar-width, 0, 0);
+    transition: $off-canvas;
+    z-index: 1032;
+    
+    &:after {
+        content: "";
+        position: absolute;
+        top: 28px;
+        left: -20px;
+        border-left: 10px solid #fff;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid transparent;
+        transform: rotate(180deg);
+        transition: $off-canvas;
+        z-index: 1032;
+    }
+    
+    @media (max-width: 991px) {
+        width: $sidebar-width / 1.5;
+    }
+    
+    .nav-image {
+        margin-bottom: 65px;
+        
+        img {
+            display: block;
+            margin: 0 auto;
+            border: 1px solid rgba(0,0,0,.14); // MOCKUP
+            width: 91px;
+            height: 69px;            
+        }
+    }
+    
+    .navbar-top {
+        margin: 0 !important;
+        flex-direction: column;
+        
+        @media (min-width: 992px) {
+            display: none;
+        }
+            
+        li {
+            text-align: center;
+            
+            a {
+                display: block;
+                padding: .5rem 1rem;
+                font-weight: 700;
+                color: #000;
+                
+                &:hover,
+                &:focus {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    
+    .nav-link,
+    .dropdown-toggle {
+        font-weight: 700;
+        color: #222;
+        transition: color .2s ease-out;
+        
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+        
+        &.disabled {
+            color: rgba(0,0,0,.35);
+            
+            &:hover,
+            &:focus {
+                cursor: not-allowed;
+            }
+        }
+    }
+}
+
+body > .navbar-top {
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+body > #overlay {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: calc(#{$sidebar-width / 1.5} - 10px);
+    width: 100%;
+    height: 100%;    
+    opacity: 0;
+    overflow-x: hidden;
+    z-index: 1029;
+    
+    @media (min-width: 992px) {
+        right: calc(#{$sidebar-width} - 10px);
+    }
+}
+
+
+// ANIMATIONS
+@keyframes topbar-x {
+    0% {
+        top: 0px;
+        transform: rotate(0deg);
+    }
+
+    45% {
+        top: 6px;
+        transform: rotate(145deg);
+    }
+
+    75% {
+        transform: rotate(130deg);
+    }
+
+    100% {
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes topbar-back {
+    0% {
+        top: 6px;
+        transform: rotate(135deg);
+    }
+
+    45% {
+        transform: rotate(-10deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        top: 0px;
+        transform: rotate(0);
+    }
+}
+
+@keyframes bottombar-x {
+    0% {
+        bottom: 0px;
+        transform: rotate(0deg);
+    }
+
+    45% {
+        bottom: 6px;
+        transform: rotate(-145deg);
+    }
+
+    75% {
+        transform: rotate(-130deg);
+    }
+
+    100% {
+        transform: rotate(-135deg);
+    }
+}
+
+@keyframes bottombar-back {
+    0% {
+        bottom: 6px;
+        transform: rotate(-135deg);
+    }
+
+    45% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        bottom: 0px;
+        transform: rotate(0);
+    }
+}</style>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
