@@ -6,22 +6,15 @@ layout: default
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+<ul class="nav navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#tab-1" data-toggle="tab" data-toggle="collapse"><span style="font-size:1.5em;">Text</span></a>
+          <a class="nav-link" href="#tab-1" data-toggle="tab"><span style="font-size:1.5em;">Text</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#tab-2" data-toggle="tab"><span style="font-size:1.5em;">Get link</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#tab-3" data-toggle="tab" data-toggle="collapse"><span style="font-size:1.5em;">Linh tinh</span></a>
+          <a class="nav-link" href="#tab-3" data-toggle="tab"><span style="font-size:1.5em;">Linh tinh</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#tab-4" data-toggle="tab"><span style="font-size:1.5em;">Software</span></a>
@@ -29,18 +22,15 @@ layout: default
         <li class="nav-item">
           <a class="nav-link" href="#tab-5" data-toggle="tab"><span style="font-size:1.5em;">Tip</span></a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:1.5em;">More</span></a>
-             <div class="dropdown-menu">
-                <a class="dropdown-item" href="#tab-6" data-toggle="tab"><span style="font-size:1.5em;">Check Laptop</span></a>
-                <a class="dropdown-item" href="#tab-7" data-toggle="tab"><span style="font-size:1.5em;">Check Hardware</span></a>
-                <a class="dropdown-item" href="#tab-8" data-toggle="tab"><span style="font-size:1.5em;">Search bar</span></a>
-             </div>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label" style="font-size:1.5em;">More</span> <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#tab-6" data-toggle="tab"><span style="font-size:1.5em;">Check Laptop</span></a></li>
+                <li><a href="#tab-7" data-toggle="tab"><span style="font-size:1.5em;">Check Hardware</span></a></li>
+                <li><a href="#tab-8" data-toggle="tab"><span style="font-size:1.5em;">Search bar</span></a></li>
+            </ul>
         </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    </ul>
 
 <div class="tab-content">
   <div id="tab-1" class="tab-pane">
