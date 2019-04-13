@@ -8,245 +8,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Text</title>
-  </head>
-  <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-offcanvas">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <ul class="navbar-nav navbar-top">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" role="button" href="#!" id="dropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownExample">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-        </ul>
-        <button class="navbar-toggler navbar-toggler-right navbar-icon" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon-bar bar1"></span>
-            <span class="icon-bar bar2"></span>
-            <span class="icon-bar bar3"></span>
-        </button>
-        <div class="navbar-collapse collapse ml-auto" id="navbar-mobile">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-image">
-                    <img src="" alt="">
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="nav-link">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="nav-link">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="nav-link">Link</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<div class="wrapper mt-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="jumbotron">
-                    <h1>Hello, world!</h1>
-                    <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
-                <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script js>
-/*!
- * Offcanvas Sidebar v0.1
- * Copyright 2017 - present Morten Sørensen (https://moso.io)
- * Licensed under the MIT license
- * --------------------------------------------------------------
- * Script that clones the current Bootstrap markup,
- * and inserts it into a sidebar with some smooth animations
- *
- * - Built to work with Bootstrap 4 and supports multiple navbars
- * - Fully customizable with comments
- */
-
-var window_height;
-var window_width;
-var navbar_initialized = false;
-var nav_toggle;
-
-var offCanvas = {
-    sidenav: {
-        // Sidenav is not visible by default.
-        // Change to 1 if necessary
-        sidenav_visible: 0
-    },
-    initSideNav: function initSideNav() {
-        if (!navbar_initialized) {
-            var $nav = $('nav');
-
-            // Add the offcanvas class to the navbar if it's not initialized
-            $nav.addClass('navbar-offcanvas');
-
-            // Clone relevant navbars
-            var $navtop = $nav.find('.navbar-top').first().clone(true);
-            var $navbar = $nav.find('.navbar-collapse').first().clone(true);
-
-            // Let's start with some empty vars
-            var ul_content = '';
-            var top_content = '';
-
-            // Set min-height of the new sidebar to the screen height
-            $navbar.css('min-height', window.screen.height);
-
-            // Take the content of .navbar-top
-            $navtop.each(function() {
-                var navtop_content = $(this).html();
-                top_content = top_content + navtop_content;
-            });
-
-            // Take the content of .navbar-collapse
-            $navbar.children('ul').each(function() {
-                var nav_content = $(this).html();
-                ul_content = ul_content + nav_content;
-            });
-
-            // Wrap the new content inside an <ul>
-            ul_content = '<ul class="navbar-nav sidebar-nav">' + ul_content + '</ul>';
-
-            // Insert the html content into our cloned content
-            $navbar.html(ul_content);
-            $navtop.html(top_content);
-
-            // Append the navbar to body,
-            // and insert the content of the navicons navbar just below the logo/nav-image
-            $('body').append($navbar);
-            $('.nav-image').after($navtop);
-
-
-            // Set the toggle-variable to the Bootstrap navbar-toggler button
-            var $toggle = $('.navbar-toggler');
-
-            // Add/remove classes on toggle and set the visiblity of the sidenav,
-            // and append the overlay. Also if the user clicks the overlay,
-            // the sidebar will close
-            $toggle.on('click', function () {
-                if (offCanvas.sidenav.sidenav_visible == 1) {
-                    $('html').removeClass('nav-open');
-                    offCanvas.sidenav.sidenav_visible = 0;
-                    $('#overlay').remove();
-                    setTimeout(function() {
-                        $toggle.removeClass('toggled');
-                    }, 300);
-                } else {
-                    setTimeout(function() {
-                        $toggle.addClass('toggled');
-                    }, 300);
-
-                    // Add the overlay and make it close the sidenav on click
-                    var div = '<div id="overlay"></div>';
-                    $(div).appendTo("body").on('click', function() {
-                        $('html').removeClass('nav-open');
-                        offCanvas.sidenav.sidenav_visible = 0;
-                        $('#overlay').remove();
-                        setTimeout(function() {
-                            $toggle.removeClass('toggled');
-                        }, 300);
-                    });
-
-                    $('html').addClass('nav-open');
-                    offCanvas.sidenav.sidenav_visible = 1;
-                }
-            });
-            // Set navbar to initialized
-            navbar_initialized = true;
-        }
-    }
-};
-
-$(document).ready(function () {
-    window_width = $(window).width();
-
-    nav_toggle = $('nav').hasClass('navbar-offcanvas') ? true : false;
-
-    // Responsive checks
-    if (window_width < 992 || nav_toggle) {
-        offCanvas.initSideNav();
-    }
-
-    // Close the sidebar if the user clicks a link or a dropdown-item,
-    // and close the sidebar
-    $('.nav-link:not(.dropdown-toggle), .dropdown-item').on('click', function () {
-        var $toggle = $('.navbar-toggler');
-
-        $('html').removeClass('nav-open');
-        offCanvas.sidenav.sidenav_visible = 0;
-        setTimeout(function () {
-            $toggle.removeClass('toggled');
-        }, 300);
-    });
-});
-
-$(window).resize(function () {
-    window_width = $(window).width();
-    
-    // More responsive checks if the user resize the browser
-    if (window_width < 992) {
-        offCanvas.initSideNav();
-    }
-
-    if (window_width > 992 && !nav_toggle) {
-        $('nav').removeClass('navbar-offcanvas');
-        offCanvas.sidenav.sidenav_visible = 1;
-        navbar_initialized = false;
-    }
-});</script>
-
 <style CSS>
 // Some variables
 $navbar-height: 75px;
@@ -584,6 +345,191 @@ body > #overlay {
         transform: rotate(0);
     }
 }</style>
+
+    <title>Text</title>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-offcanvas">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="navbar-nav navbar-top">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" role="button" href="#!" id="dropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownExample">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right navbar-icon" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar bar1"></span>
+            <span class="icon-bar bar2"></span>
+            <span class="icon-bar bar3"></span>
+        </button>
+        <div class="navbar-collapse collapse ml-auto" id="navbar-mobile">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-image">
+                    <img src="" alt="">
+                </li>
+                <li class="nav-item">
+                    <a href="#!" class="nav-link">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!" class="nav-link">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#!" class="nav-link">Link</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script js>
+/*!
+ * Offcanvas Sidebar v0.1
+ * Copyright 2017 - present Morten Sørensen (https://moso.io)
+ * Licensed under the MIT license
+ * --------------------------------------------------------------
+ * Script that clones the current Bootstrap markup,
+ * and inserts it into a sidebar with some smooth animations
+ *
+ * - Built to work with Bootstrap 4 and supports multiple navbars
+ * - Fully customizable with comments
+ */
+
+var window_height;
+var window_width;
+var navbar_initialized = false;
+var nav_toggle;
+
+var offCanvas = {
+    sidenav: {
+        // Sidenav is not visible by default.
+        // Change to 1 if necessary
+        sidenav_visible: 0
+    },
+    initSideNav: function initSideNav() {
+        if (!navbar_initialized) {
+            var $nav = $('nav');
+
+            // Add the offcanvas class to the navbar if it's not initialized
+            $nav.addClass('navbar-offcanvas');
+
+            // Clone relevant navbars
+            var $navtop = $nav.find('.navbar-top').first().clone(true);
+            var $navbar = $nav.find('.navbar-collapse').first().clone(true);
+
+            // Let's start with some empty vars
+            var ul_content = '';
+            var top_content = '';
+
+            // Set min-height of the new sidebar to the screen height
+            $navbar.css('min-height', window.screen.height);
+
+            // Take the content of .navbar-top
+            $navtop.each(function() {
+                var navtop_content = $(this).html();
+                top_content = top_content + navtop_content;
+            });
+
+            // Take the content of .navbar-collapse
+            $navbar.children('ul').each(function() {
+                var nav_content = $(this).html();
+                ul_content = ul_content + nav_content;
+            });
+
+            // Wrap the new content inside an <ul>
+            ul_content = '<ul class="navbar-nav sidebar-nav">' + ul_content + '</ul>';
+
+            // Insert the html content into our cloned content
+            $navbar.html(ul_content);
+            $navtop.html(top_content);
+
+            // Append the navbar to body,
+            // and insert the content of the navicons navbar just below the logo/nav-image
+            $('body').append($navbar);
+            $('.nav-image').after($navtop);
+
+
+            // Set the toggle-variable to the Bootstrap navbar-toggler button
+            var $toggle = $('.navbar-toggler');
+
+            // Add/remove classes on toggle and set the visiblity of the sidenav,
+            // and append the overlay. Also if the user clicks the overlay,
+            // the sidebar will close
+            $toggle.on('click', function () {
+                if (offCanvas.sidenav.sidenav_visible == 1) {
+                    $('html').removeClass('nav-open');
+                    offCanvas.sidenav.sidenav_visible = 0;
+                    $('#overlay').remove();
+                    setTimeout(function() {
+                        $toggle.removeClass('toggled');
+                    }, 300);
+                } else {
+                    setTimeout(function() {
+                        $toggle.addClass('toggled');
+                    }, 300);
+
+                    // Add the overlay and make it close the sidenav on click
+                    var div = '<div id="overlay"></div>';
+                    $(div).appendTo("body").on('click', function() {
+                        $('html').removeClass('nav-open');
+                        offCanvas.sidenav.sidenav_visible = 0;
+                        $('#overlay').remove();
+                        setTimeout(function() {
+                            $toggle.removeClass('toggled');
+                        }, 300);
+                    });
+
+                    $('html').addClass('nav-open');
+                    offCanvas.sidenav.sidenav_visible = 1;
+                }
+            });
+            // Set navbar to initialized
+            navbar_initialized = true;
+        }
+    }
+};
+
+$(document).ready(function () {
+    window_width = $(window).width();
+
+    nav_toggle = $('nav').hasClass('navbar-offcanvas') ? true : false;
+
+    // Responsive checks
+    if (window_width < 992 || nav_toggle) {
+        offCanvas.initSideNav();
+    }
+
+    // Close the sidebar if the user clicks a link or a dropdown-item,
+    // and close the sidebar
+    $('.nav-link:not(.dropdown-toggle), .dropdown-item').on('click', function () {
+        var $toggle = $('.navbar-toggler');
+
+        $('html').removeClass('nav-open');
+        offCanvas.sidenav.sidenav_visible = 0;
+        setTimeout(function () {
+            $toggle.removeClass('toggled');
+        }, 300);
+    });
+});
+
+$(window).resize(function () {
+    window_width = $(window).width();
+    
+    // More responsive checks if the user resize the browser
+    if (window_width < 992) {
+        offCanvas.initSideNav();
+    }
+
+    if (window_width > 992 && !nav_toggle) {
+        $('nav').removeClass('navbar-offcanvas');
+        offCanvas.sidenav.sidenav_visible = 1;
+        navbar_initialized = false;
+    }
+});</script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
