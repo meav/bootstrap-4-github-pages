@@ -196,5 +196,9 @@ layout: default
 </div>
 
 <script js>
-$(".navbar-nav>li>a:not('.dropdown-toggle')") .on('click', function () { $('.navbar-collapse').collapse('hide'); }
+$('.navbar-nav li a').on('click', function(){
+    if(!$( this ).hasClass('dropdown-toggle')){
+        $('.navbar-collapse').collapse('hide');
+    }
+});
 </script>
