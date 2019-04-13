@@ -6,14 +6,13 @@ layout: default
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+<nav class="navbar fixed-top navbar-dark bg-primary">
+    <a class="navbar-brand" href="https://meav.github.io/"><span style="font-size:1.5em;">Text</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+    <div class="navbar-collapse collapse" id="collapsingNavbar">
+        <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="#tab-1" data-toggle="tab"><span style="font-size:1.5em;">Text</span></a>
         </li>
@@ -39,7 +38,6 @@ layout: default
         </li>
       </ul>
     </div>
-  </div>
 </nav>
 
 <div class="tab-content">
