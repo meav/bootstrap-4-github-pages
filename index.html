@@ -1,545 +1,198 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+---
+layout: default
+---
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 
-    <title>Text</title>
-	
-<style CSS>
-// Some variables
-$navbar-height: 75px;
-$sidebar-width: 424px;
-
-$off-canvas: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
-
-
-.wrapper {
-    transition: $off-canvas;
-}
-
-.navbar {
-    height: $navbar-height;
-    transition: all .5s .1s;
-}
-
-.navbar-offcanvas {
-    z-index: 1030;
-    
-    .container-fluid {
-        position: relative;
-        padding: 0;
-        transform: translate3d(0px, 0, 0);
-        transition: $off-canvas;
-    }
-    
-    .navbar-top {
-        display: none;
-        
-        @media (min-width: 992px) {
-            display: flex;
-            margin-left: auto;
-        }
-        
-        .nav-item {
-            margin-right: 22px;
-            text-align: center;
-            
-            .nav-link {
-                @media (max-width: 991px) {
-                    color: #000;
-                }
-            }
-        }
-    }
-    
-    .navbar-toggler {
-        padding: 0;
-        border: 0;
-        outline: none;
-        
-        &:hover,
-        &:focus {
-            cursor: pointer;
-        }
-        
-        @media (min-width: 768px) {
-            display: block;
-        }
-        
-        .icon-bar {
-            display: block;
-            position: relative;
-            width: 24px;
-            height: 2px;
-            border-radius: 1px;
-            background-color: #fff;
-            
-            + .icon-bar {
-                margin-top: 4px;
-            }
-            
-            &.bar1 {
-                top: 0;
-                outline: 1px solid transparent;
-                animation: topbar-back 500ms 0s;
-                animation-fill-mode: forwards;
-            }
-            
-            &.bar2 {
-                outline: 1px solid transparent;
-                opacity: 1;
-            }
-            
-            &.bar3 {
-                bottom: 0;
-                outline: 1px solid transparent;
-                animation: bottombar-back 500ms 0s;
-                animation-fill-mode: forwards;
-            }
-        }
-        
-        &.toggled {
-            .icon-bar {
-                &.bar1 {
-                    top: 6px;
-                    animation: topbar-x 500ms 0s;
-                    animation-fill-mode: forwards;
-                }
-                
-                &.bar2 {
-                    opacity: 0;
-                }
-                
-                &.bar3 {
-                    bottom: 6px;
-                    animation: bottombar-x 500ms 0s;
-                    animation-fill-mode: forwards;
-                }
-            }
-        }
-    }    
-    
-    .navbar-collapse.collapse,
-    .navbar-collapse.collapse.in,
-    .navbar-collapse.collapsing {
-        display: none !important;
-    }
-}
-
-.nav-open {
-    .navbar-collapse {
-        transform: translate3d(0px, 0, 0);        
-    }
-    
-    .navbar > .container-fluid {
-        transform: translate3d(-#{$sidebar-width}, 0, 0);
-        
-        @media (max-width: 991px) {
-            transform: translate3d(-#{$sidebar-width / 1.5}, 0, 0);
-        }
-    }
-    
-    .wrapper {
-        transform: translate3d(-150px, 0, 0);
-    }
-}
-
-body > .navbar-collapse {
-    display: block !important;
-    position: fixed;
-    top: 0;
-    right: -10px;
-    width: $sidebar-width;
-    height: 100%;
-    padding: 60px 1rem;
-    background-color: #fff;
-    border-left: 1px solid #e3e3e3;
-    text-align: center;
-    visibility: visible;    
-    overflow-y: visible;
-    transform: translate3d($sidebar-width, 0, 0);
-    transition: $off-canvas;
-    z-index: 1032;
-    
-    &:after {
-        content: "";
-        position: absolute;
-        top: 28px;
-        left: -20px;
-        border-left: 10px solid #fff;
-        border-top: 10px solid transparent;
-        border-bottom: 10px solid transparent;
-        border-right: 10px solid transparent;
-        transform: rotate(180deg);
-        transition: $off-canvas;
-        z-index: 1032;
-    }
-    
-    @media (max-width: 991px) {
-        width: $sidebar-width / 1.5;
-    }
-    
-    .nav-image {
-        margin-bottom: 65px;
-        
-        img {
-            display: block;
-            margin: 0 auto;
-            border: 1px solid rgba(0,0,0,.14); // MOCKUP
-            width: 91px;
-            height: 69px;            
-        }
-    }
-    
-    .navbar-top {
-        margin: 0 !important;
-        flex-direction: column;
-        
-        @media (min-width: 992px) {
-            display: none;
-        }
-            
-        li {
-            text-align: center;
-            
-            a {
-                display: block;
-                padding: .5rem 1rem;
-                font-weight: 700;
-                color: #000;
-                
-                &:hover,
-                &:focus {
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-    
-    .nav-link,
-    .dropdown-toggle {
-        font-weight: 700;
-        color: #222;
-        transition: color .2s ease-out;
-        
-        &:hover,
-        &:focus {
-            text-decoration: none;
-        }
-        
-        &.disabled {
-            color: rgba(0,0,0,.35);
-            
-            &:hover,
-            &:focus {
-                cursor: not-allowed;
-            }
-        }
-    }
-}
-
-body > .navbar-top {
-    @media (min-width: 992px) {
-        display: none;
-    }
-}
-
-body > #overlay {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: auto;
-    right: calc(#{$sidebar-width / 1.5} - 10px);
-    width: 100%;
-    height: 100%;    
-    opacity: 0;
-    overflow-x: hidden;
-    z-index: 1029;
-    
-    @media (min-width: 992px) {
-        right: calc(#{$sidebar-width} - 10px);
-    }
-}
-
-
-// ANIMATIONS
-@keyframes topbar-x {
-    0% {
-        top: 0px;
-        transform: rotate(0deg);
-    }
-
-    45% {
-        top: 6px;
-        transform: rotate(145deg);
-    }
-
-    75% {
-        transform: rotate(130deg);
-    }
-
-    100% {
-        transform: rotate(135deg);
-    }
-}
-
-@keyframes topbar-back {
-    0% {
-        top: 6px;
-        transform: rotate(135deg);
-    }
-
-    45% {
-        transform: rotate(-10deg);
-    }
-
-    75% {
-        transform: rotate(5deg);
-    }
-
-    100% {
-        top: 0px;
-        transform: rotate(0);
-    }
-}
-
-@keyframes bottombar-x {
-    0% {
-        bottom: 0px;
-        transform: rotate(0deg);
-    }
-
-    45% {
-        bottom: 6px;
-        transform: rotate(-145deg);
-    }
-
-    75% {
-        transform: rotate(-130deg);
-    }
-
-    100% {
-        transform: rotate(-135deg);
-    }
-}
-
-@keyframes bottombar-back {
-    0% {
-        bottom: 6px;
-        transform: rotate(-135deg);
-    }
-
-    45% {
-        transform: rotate(10deg);
-    }
-
-    75% {
-        transform: rotate(-5deg);
-    }
-
-    100% {
-        bottom: 0px;
-        transform: rotate(0);
-    }
-}
-
-</style>
-
-  </head>
-  <body>
-<nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-offcanvas">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <ul class="navbar-nav navbar-top">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" role="button" href="#!" id="dropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownExample">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-        </ul>
-        <button class="navbar-toggler navbar-toggler-right navbar-icon" type="button" data-toggle="collapse" data-target="#navbar-mobile" aria-controls="navbar-mobile" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon-bar bar1"></span>
-            <span class="icon-bar bar2"></span>
-            <span class="icon-bar bar3"></span>
-        </button>
-        <div class="navbar-collapse collapse ml-auto" id="navbar-mobile">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-image">
-                    <img src="" alt="">
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="nav-link">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="nav-link">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#!" class="nav-link">Link</a>
-                </li>
-            </ul>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#tab-1" data-toggle="tab"><span style="font-size:1.5em;">Text</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tab-2" data-toggle="tab"><span style="font-size:1.5em;">Get link</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tab-3" data-toggle="tab"><span style="font-size:1.5em;">Linh tinh</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tab-4" data-toggle="tab"><span style="font-size:1.5em;">Software</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tab-5" data-toggle="tab"><span style="font-size:1.5em;">Tip</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:1.5em;">More</span></a>
+             <div class="dropdown-menu">
+                <a class="dropdown-item" href="#tab-6" data-toggle="tab"><span style="font-size:1.5em;">Check Laptop</span></a>
+                <a class="dropdown-item" href="#tab-7" data-toggle="tab"><span style="font-size:1.5em;">Check Hardware</span></a>
+                <a class="dropdown-item" href="#tab-8" data-toggle="tab"><span style="font-size:1.5em;">Search bar</span></a>
+             </div>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>
-  
-<script js>
-/*!
- * Offcanvas Sidebar v0.1
- * Copyright 2017 - present Morten Sørensen (https://moso.io)
- * Licensed under the MIT license
- * --------------------------------------------------------------
- * Script that clones the current Bootstrap markup,
- * and inserts it into a sidebar with some smooth animations
- *
- * - Built to work with Bootstrap 4 and supports multiple navbars
- * - Fully customizable with comments
- */
 
-var window_height;
-var window_width;
-var navbar_initialized = false;
-var nav_toggle;
-
-var offCanvas = {
-    sidenav: {
-        // Sidenav is not visible by default.
-        // Change to 1 if necessary
-        sidenav_visible: 0
-    },
-    initSideNav: function initSideNav() {
-        if (!navbar_initialized) {
-            var $nav = $('nav');
-
-            // Add the offcanvas class to the navbar if it's not initialized
-            $nav.addClass('navbar-offcanvas');
-
-            // Clone relevant navbars
-            var $navtop = $nav.find('.navbar-top').first().clone(true);
-            var $navbar = $nav.find('.navbar-collapse').first().clone(true);
-
-            // Let's start with some empty vars
-            var ul_content = '';
-            var top_content = '';
-
-            // Set min-height of the new sidebar to the screen height
-            $navbar.css('min-height', window.screen.height);
-
-            // Take the content of .navbar-top
-            $navtop.each(function() {
-                var navtop_content = $(this).html();
-                top_content = top_content + navtop_content;
-            });
-
-            // Take the content of .navbar-collapse
-            $navbar.children('ul').each(function() {
-                var nav_content = $(this).html();
-                ul_content = ul_content + nav_content;
-            });
-
-            // Wrap the new content inside an <ul>
-            ul_content = '<ul class="navbar-nav sidebar-nav">' + ul_content + '</ul>';
-
-            // Insert the html content into our cloned content
-            $navbar.html(ul_content);
-            $navtop.html(top_content);
-
-            // Append the navbar to body,
-            // and insert the content of the navicons navbar just below the logo/nav-image
-            $('body').append($navbar);
-            $('.nav-image').after($navtop);
-
-
-            // Set the toggle-variable to the Bootstrap navbar-toggler button
-            var $toggle = $('.navbar-toggler');
-
-            // Add/remove classes on toggle and set the visiblity of the sidenav,
-            // and append the overlay. Also if the user clicks the overlay,
-            // the sidebar will close
-            $toggle.on('click', function () {
-                if (offCanvas.sidenav.sidenav_visible == 1) {
-                    $('html').removeClass('nav-open');
-                    offCanvas.sidenav.sidenav_visible = 0;
-                    $('#overlay').remove();
-                    setTimeout(function() {
-                        $toggle.removeClass('toggled');
-                    }, 300);
-                } else {
-                    setTimeout(function() {
-                        $toggle.addClass('toggled');
-                    }, 300);
-
-                    // Add the overlay and make it close the sidenav on click
-                    var div = '<div id="overlay"></div>';
-                    $(div).appendTo("body").on('click', function() {
-                        $('html').removeClass('nav-open');
-                        offCanvas.sidenav.sidenav_visible = 0;
-                        $('#overlay').remove();
-                        setTimeout(function() {
-                            $toggle.removeClass('toggled');
-                        }, 300);
-                    });
-
-                    $('html').addClass('nav-open');
-                    offCanvas.sidenav.sidenav_visible = 1;
-                }
-            });
-            // Set navbar to initialized
-            navbar_initialized = true;
-        }
-    }
-};
-
-$(document).ready(function () {
-    window_width = $(window).width();
-
-    nav_toggle = $('nav').hasClass('navbar-offcanvas') ? true : false;
-
-    // Responsive checks
-    if (window_width < 992 || nav_toggle) {
-        offCanvas.initSideNav();
-    }
-
-    // Close the sidebar if the user clicks a link or a dropdown-item,
-    // and close the sidebar
-    $('.nav-link:not(.dropdown-toggle), .dropdown-item').on('click', function () {
-        var $toggle = $('.navbar-toggler');
-
-        $('html').removeClass('nav-open');
-        offCanvas.sidenav.sidenav_visible = 0;
-        setTimeout(function () {
-            $toggle.removeClass('toggled');
-        }, 300);
-    });
-});
-
-$(window).resize(function () {
-    window_width = $(window).width();
-    
-    // More responsive checks if the user resize the browser
-    if (window_width < 992) {
-        offCanvas.initSideNav();
-    }
-
-    if (window_width > 992 && !nav_toggle) {
-        $('nav').removeClass('navbar-offcanvas');
-        offCanvas.sidenav.sidenav_visible = 1;
-        navbar_initialized = false;
-    }
-});
-</script>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
-
-
-  </body>
-</html>
+<div class="tab-content">
+  <div id="tab-1" class="tab-pane">
+    <p></p>
+    <p><a href="http://txt.do/53bv4" target="_blank">http://txt.do/53bv4</a></p>
+    <p><a href="https://github.com/meav/meav.github.io" target="_blank">https://github.com/meav/meav.github.io</a></p>
+	<p><a href="https://github.com/meav/text" target="_blank">https://github.com/meav/text</a></p>
+	<p><a href="https://github.com/meav/text/releases/latest" target="_blank">https://github.com/meav/text/releases/latest</a></p>
+  </div>
+  <div id="tab-2" class="tab-pane">
+    <p></p>
+    <p><a href="https://linksvip.net/" target="_blank">https://linksvip.net/</a></p>
+	<p><a href="http://taive.cf/" target="_blank">http://taive.cf/</a></p>
+  </div>
+  <div id="tab-3" class="tab-pane">
+    <p></p>
+    <details><summary><span style="font-size:1.2em;"> Milan</span></summary>
+	  <p></p>
+	  <p><a href="https://www.fullmatchesandshows.com/" target="_blank">https://www.fullmatchesandshows.com/</a></p>
+	  <p><a href="http://www.replaymatches.com/" target="_blank">http://www.replaymatches.com/</a></p>
+	  <p><a href="https://www.google.com/search?q=ac+milan#sie=t;/m/011v3;2;/m/03zv9;mt;fp;1;;" target="_blank">https://www.google.com/search?q=ac+milan#sie=t;/m/011v3;2;/m/03zv9;mt;fp;1;;</a></p>
+	  <p><a href="https://www.fotmob.com/teams/8564/fixtures/" target="_blank">https://www.fotmob.com/teams/8564/fixtures/</a></p>
+	  <p><a href="https://www.transfermarkt.com/ac-mailand/alletransfers/verein/5" target="_blank">https://www.transfermarkt.com/ac-mailand/alletransfers/verein/5</a></p>
+	  **
+	</details>
+	<p></p>
+	<details><summary><span style="font-size:1.2em;"> Sport Livestream</span></summary>
+	  <p></p>
+	  <p><a href="https://www.footybite.com" target="_blank">https://www.footybite.com</a></p>
+	  <p><a href="https://acelisting.in/" target="_blank">https://acelisting.in/</a></p>
+	  <p><a href="http://gg.gg/8zy29" target="_blank">gg.gg/8zy29</a></p>
+	  **
+	  </details>
+	<p></p>
+	<p><a href="http://www.mappedometer.com" target="_blank">http://www.mappedometer.com</a></p>
+	<p><a href="http://www.oxfordlearnersdictionaries.com" target="_blank">http://www.oxfordlearnersdictionaries.com</a></p>
+	<p><a href="https://www.rabb.it/" target="_blank">https://www.rabb.it/</a></p>
+	<p><a href="http://mirror.ufs.ac.za/" target="_blank">http://mirror.ufs.ac.za/</a></p>
+	<p><a href="https://sourceforge.net/projects/thumbapps/files/" target="_blank">https://sourceforge.net/projects/thumbapps/files/</a></p>
+	<p><a href="http://www.fakenamegenerator.com/" target="_blank">http://www.fakenamegenerator.com/</a></p>
+	<p><a href="https://login.teamviewer.com/connect/Flash" target="_blank">https://login.teamviewer.com/connect/Flash</a></p>
+	<p><a href="http://sachxua.net/forum/index.php?topic=16946.0" target="_blank">http://sachxua.net/forum/index.php?topic=16946.0</a></p>
+	<p><a href="http://thuvienphapluat.vn/" target="_blank">http://thuvienphapluat.vn/</a></p>
+	<p><a href="https://www.giaiphapexcel.com/diendan/forums/" target="_blank">https://www.giaiphapexcel.com/diendan/forums/</a></p>
+	<details><summary><span style="font-size:1.2em;"> Phim</span></summary>
+	  <p></p>
+	  <p><a href="https://www.fshare.vn/folder/RNN23YCG3Q8L" target="_blank">https://www.fshare.vn/folder/RNN23YCG3Q8L</a></p>
+	  <p><a href="https://traibap.wordpress.com/2011/06/08/76/" target="_blank">https://traibap.wordpress.com/2011/06/08/76/</a></p>
+	  <p><a href="http://www.boxofficemojo.com/franchises/chart/?id=starwars.htm" target="_blank">http://www.boxofficemojo.com/franchises/chart/?id=starwars.htm</a></p>
+	  <p><a href="http://www.boxofficemojo.com/franchises/chart/?id=avengers.htm" target="_blank">http://www.boxofficemojo.com/franchises/chart/?id=avengers.htm</a></p>
+	  **
+	  </details>
+	<p></p>
+	<details><summary><span style="font-size:1.2em;"> Nhac</span></summary>
+	  <p></p>
+	  <p><a href="http://itdmusic.me/" target="_blank">http://itdmusic.me/</a></p>
+	  <p><a href="https://ifxd.bid/" target="_blank">https://ifxd.bid/</a></p>
+	  <p><a href="http://www.jpopflac.com/" target="_blank">http://www.jpopflac.com/</a></p>
+	  <p><a href="http://digitalk7.com/" target="_blank">http://digitalk7.com/</a></p>
+	  <p><a href="https://ketnoidamme.vn/threads/tong-hop-nhung-ca-khuc-nhac-hoa-hay-nhat.1460/" target="_blank">https://ketnoidamme.vn/threads/tong-hop-nhung-ca-khuc-nhac-hoa-hay-nhat.1460/</a></p>
+	  <p><a href="https://tieba.baidu.com/p/4100164746" target="_blank">https://tieba.baidu.com/p/4100164746</a></p>
+	  <p>Pass:oricon</p>
+	  <p><a href="http://tieba.baidu.com/p/4157572241" target="_blank">http://tieba.baidu.com/p/4157572241</a></p>
+	  <p><a href="http://www.162wp.com/yinle/2014-12-23/7915.html" target="_blank">http://www.162wp.com/yinle/2014-12-23/7915.html</a></p>
+	  **
+	  </details>
+	<p></p>
+	<details><summary><span style="font-size:1.2em;"> ebook</span></summary>
+	  <p></p>
+	  <p><a href="http://www.ebook777.com/" target="_blank">http://www.ebook777.com/</a></p>
+	  <p><a href="https://www.facebook.com/hashtag/ebolicebook" target="_blank">https://www.facebook.com/hashtag/ebolicebook</a></p>
+	  <p><a href="https://www.facebook.com/hashtag/ebolicelite" target="_blank">https://www.facebook.com/hashtag/ebolicelite</a></p>
+	  <p><a href="https://www.wattpad.com/user/gabriel931000" target="_blank">https://www.wattpad.com/user/gabriel931000</a></p>
+	  <details><summary><span style="font-size:1.2em;"> tve-4u</span></summary>
+	    <p></p>
+		<p><a href="http://tve-4u.org/threads/bo-gia-mario-puzo-doan-tu-huyen-trinh-huy-ninh.27205/" target="_blank">http://tve-4u.org/threads/bo-gia-mario-puzo-doan-tu-huyen-trinh-huy-ninh.27205/</a></p>
+		<p><a href="http://tve-4u.org/threads/den-khong-hat-bong-watanabe-junichi-tu-sach-tinh-hoa-van-hoc.9656/" target="_blank">http://tve-4u.org/threads/den-khong-hat-bong-watanabe-junichi-tu-sach-tinh-hoa-van-hoc.9656/</a></p>
+		<p><a href="http://tve-4u.org/threads/thanh-tri-archibald-joseph-cronin.10120/" target="_blank">http://tve-4u.org/threads/thanh-tri-archibald-joseph-cronin.10120/</a></p>
+		<p><a href="http://tve-4u.org/threads/thay-lang-tadeusz-dolega-mostowicz.14248/" target="_blank">http://tve-4u.org/threads/thay-lang-tadeusz-dolega-mostowicz.14248/</a></p>
+		**
+	  </details>
+	</details>
+	<p></p>
+	<details><summary><span style="font-size:1.2em;"> Celtic Woman</span></summary>
+	  <p></p>
+	  <p><a href="http://tieba.baidu.com/p/3840006456" target="_blank">http://tieba.baidu.com/p/3840006456</a></p>
+	  <p><a href="http://tieba.baidu.com/p/3263526797" target="_blank">http://tieba.baidu.com/p/3263526797</a></p>
+	  <p><a href="http://tieba.baidu.com/p/2741106090" target="_blank">http://tieba.baidu.com/p/2741106090</a></p>
+	  <p><a href="http://tieba.baidu.com/p/4853103946" target="_blank">http://tieba.baidu.com/p/4853103946</a></p>
+	  <p><a href="https://www.fshare.vn/file/T60H1HW3BT" target="_blank">https://www.fshare.vn/file/T60H1HW3BT</a></p>
+	  <p><a href="https://www.fshare.vn/file/3J88719XM4EEJ73" target="_blank">https://www.fshare.vn/file/3J88719XM4EEJ73</a></p>
+	</details>
+  </div>
+  <div id="tab-4" class="tab-pane">
+    <p></p>
+    <p><a href="https://docs.google.com/spreadsheets/d/1o5dmOw8jBCVGxFmlMOsKgoIKULMY7tk-TCSz67IJMc4/pubhtml#" target="_blank">https://docs.google.com/spreadsheets/d/1o5dmOw8jBCVGxFmlMOsKgoIKULMY7tk-TCSz67IJMc4/pubhtml#</a></p>
+	<p><a href="https://cloud.mail.ru/public/Mv44/8Srx3zLUZ/Windows%2010%20IoT%20Core%2C%20Version%201809%20-%20MSDN/" target="_blank">https://cloud.mail.ru/public/Mv44/8Srx3zLUZ/Windows%2010%20IoT%20Core%2C%20Version%201809%20-%20MSDN/</a></p>
+	<details><summary><span style="font-size:1.2em;"> Task Scheduler</span></summary>
+	  <p></p>
+	  <p>C:\Users\aa\Documents\WW1\ConEmuPack.171025\ConEmu.exe /MIN /Title ConEmu</p>
+	  <p>Fan case.bat</p>
+	  <p>@Echo off</p>
+	  <p>cmd.exe /c start /min "" "C:\Windows\notepad.exe" "C:\Users\a\Documents\(Empty)\WW\Fan case.txt"</p>
+	  <p>explorer "D:\Me Doanh\TH Tu Liem"</p>
+	  <p><a href="https://social.technet.microsoft.com/Forums/windows/en-US/0462579d-780a-460a-befd-90f755e902aa/how-to-schedule-a-task-on-resume-from-sleep?forum=itprovistaapps" target="_blank">https://social.technet.microsoft.com/Forums/windows/en-US/0462579d-780a-460a-befd-90f755e902aa/how-to-schedule-a-task-on-resume-from-sleep?forum=itprovistaapps</a></p>
+	  <p>Triggers</p>
+	  <p>Begin the task: "On an event"</p>
+	  <p>Log: System</p>
+	  <p>Source: Power-Troubleshooter</p>
+	  <p>Event ID: 1</p>
+	  **
+	  </details>
+	<p></p>
+	<details><summary><span style="font-size:1.2em;"> ConEmu</span></summary>
+	  <p></p>
+	  <p><a href="https://github.com/Maximus5/ConEmu" target="_blank">https://github.com/Maximus5/ConEmu</a></p>
+	  <p><a href="https://github.com/Maximus5/ConEmu/issues/1120" target="_blank">https://github.com/Maximus5/ConEmu/issues/1120</a></p>
+	  <details><summary><span style="font-size:1.2em;"> Tweaking the CmdInit.cmd file:</span></summary>
+		<p></p>
+		<p>Remove this: set ConEmuPrompt0=$E[m$E[32m$E]9;8;"USERNAME"$E\@$E]9;8;"COMPUTERNAME"$E\$S</p>
+		<p>Edit last line to: PROMPT $E[23B$E[23A%ConEmuPrompt1%%ConEmuPrompt2%%ConEmuPrompt3%</p>
+		**
+	  </details>
+	  <p></p>
+	  <p><a href="https://github.com/joonro/ConEmu-Color-Themes/blob/master/themes/monokai.xml" target="_blank">https://github.com/joonro/ConEmu-Color-Themes/blob/master/themes/monokai.xml</a></p>
+	  <p>chcp utf-8</p>
+	  <p>alias e="C:\Users\aa\Documents\WW1\CubicExplorerPortable\CubicExplorerPortable.exe" $*</p>
+	  **
+	</details>
+	<p></p>
+	<p><a href="https://github.com/vatterspun/cubicexplorer" target="_blank">https://github.com/vatterspun/cubicexplorer</a></p>
+	<p><a href="http://www.ltr-data.se/opencode.html/#ImDisk" target="_blank">http://www.ltr-data.se/opencode.html/#ImDisk</a></p>
+	<p><a href="https://sourceforge.net/projects/imdisk-toolkit/" target="_blank">https://sourceforge.net/projects/imdisk-toolkit/</a></p>
+	<p><a href="http://www.mitec.cz/tmx.html" target="_blank">http://www.mitec.cz/tmx.html</a></p>
+	<p><a href="http://www.hexagora.com/en_dw_davperf.asp" target="_blank">http://www.hexagora.com/en_dw_davperf.asp</a></p>
+	<p><a href="http://www.bandisoft.com/honeyview/" target="_blank">http://www.bandisoft.com/honeyview/</a></p>
+	<p><a href="https://geekuninstaller.com/download" target="_blank">https://geekuninstaller.com/download</a></p>
+  </div>
+  <div id="tab-5" class="tab-pane">
+    <p></p>
+    <p>5</p>
+  </div>
+  <div id="tab-6" class="tab-pane">
+    <p></p>
+    <p>6</p>
+  </div>
+  <div id="tab-7" class="tab-pane">
+    <p></p>
+    <p>7</p>
+  </div>
+  <div id="tab-8" class="tab-pane">
+    <p></p>
+    <p>8</p>
+  </div>
+</div>
