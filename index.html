@@ -6,12 +6,6 @@ layout: default
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
 
-<script>
-$('.navbar-nav>li>a').on('click', function(){
-    $('.navbar-collapse').collapse('hide');
-});
-</script>
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -36,7 +30,7 @@ $('.navbar-nav>li>a').on('click', function(){
           <a class="nav-link" href="#tab-5" data-toggle="tab"><span style="font-size:1.5em;">Tip</span></a>
         </li>
         <li class="nav-item dropdown">
-          <a class="dropdown-toggle disabled" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:1.5em;">More</span></a>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:1.5em;">More</span></a>
              <div class="dropdown-menu">
                 <a class="dropdown-item" href="#tab-6" data-toggle="tab"><span style="font-size:1.5em;">Check Laptop</span></a>
                 <a class="dropdown-item" href="#tab-7" data-toggle="tab"><span style="font-size:1.5em;">Check Hardware</span></a>
@@ -202,3 +196,9 @@ $('.navbar-nav>li>a').on('click', function(){
     <p>8</p>
   </div>
 </div>
+
+<script>
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+</script>
