@@ -197,4 +197,12 @@ $('.navbar-nav li a').on('click', function(){
         $('.navbar-collapse').collapse('hide');
     }
 });
+$('#myTab a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+$('#myTab a[href="#tab-1"]').tab('show')
+$(function () {
+    $('#myTab li:last-child a').tab('show')
+  })
 </script>
