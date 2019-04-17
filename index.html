@@ -454,7 +454,7 @@ $('.nav li a').on('click', function(){
     if(!$( this ).hasClass('dropdown-toggle')){
         $('.navbar-collapse').collapse('hide');
     }
-	else {$('.dropdown-menu').animate({
+	else {$('div.dropdown-menu').animate({
     scrollTop: $("#dropdown-item-1").offset().top-$("#dropdown-item-1").innerHeight()
 	}, 1000);}
 });
