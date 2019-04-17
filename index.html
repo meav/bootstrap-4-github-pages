@@ -454,8 +454,11 @@ $('.nav li a').on('click', function(){
     if(!$( this ).hasClass('dropdown-toggle')){
         $('.navbar-collapse').collapse('hide');
     }
-	else {$('.dropdown-menu').animate({
-    scrollTop: $("#dropdown-item-1").offset().top
-	}, 1000);}
+	else
+  var ele = $(this).find("li>a:contains('More')");
+  var posi = ele.offset().top-ele.innerHeight();
+  $('.dropdown-menu').animate({
+        scrollTop: posi
+    }, 1000);
 });
 </script>
