@@ -454,11 +454,8 @@ $('.nav li a').on('click', function(){
     if(!$( this ).hasClass('dropdown-toggle')){
         $('.navbar-collapse').collapse('hide');
     }
-	else
-  var ele = $(this).find("li>a:contains('Check Laptop')");
-  var posi = ele.offset().top-ele.innerHeight();
-  $('.dropdown-menu').animate({
-        scrollTop: posi
-    }, 1000);
+	else {$('.dropdown-menu').animate({
+    scrollTop: $("#dropdown-item-1").offset().top-$("#dropdown-item-1").innerHeight()
+	}, 1000);}
 });
 </script>
