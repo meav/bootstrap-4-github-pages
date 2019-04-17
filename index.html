@@ -454,8 +454,9 @@ $('.nav li a').on('click', function(){
     if(!$( this ).hasClass('dropdown-toggle')){
         $('.navbar-collapse').collapse('hide');
     }
-	else {$('div.dropdown-menu').animate({
-    scrollTop: $("#dropdown-item-1").offset().top-$("#dropdown-item-1").innerHeight()
+	else {$('div.navbar-collapse').animate({
+var $foo = $("div.navbar-collapse");
+$foo.scrollTop($foo.scrollTop() + 75);
 	}, 1000);}
 });
 </script>
