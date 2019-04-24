@@ -26,37 +26,19 @@ layout: default
         <li class="nav-item dropdown">
 		  <a class="nav-link toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:1.5em;color:red;">More</span></a>
 		  <ul class="dropdown-menu multi-column columns-2" style="background-color: #78C1AD;width: 100%;right: auto; left: 50%;-webkit-transform: translate(-50%, 0);-o-transform: translate(-50%, 0);transform: translate(-50%, 0);">
-			<div class="row justify-content-center text-center">
-			  <div class="col-sm-4">
-	            <ul class="nav flex-column nav-pills nav-justified multi-column-dropdown list-unstyled ">
 		          <li><a class="dropdown-item" href="#tab-6" data-toggle="tab"><span style="font-size:1.5em;color:red;">Check Laptop</span></a></li>
 		          <li><a class="dropdown-item" href="#tab-7" data-toggle="tab"><span style="font-size:1.5em;color:red;">Check Hardware</span></a></li>
 		          <li><a class="dropdown-item" href="#tab-8" data-toggle="tab"><span style="font-size:1.5em;color:red;">Search bar</span></a></li>
 		          <li><a class="dropdown-item" href="#tab-9" data-toggle="tab"><span style="font-size:1.5em;color:red;">Account</span></a></li>
-	            </ul>
-              </div>
-              <div class="col-sm-4">
-	            <ul class="nav flex-column nav-pills nav-justified multi-column-dropdown list-unstyled">
 		          <li><a class="dropdown-item" href="#tab-10" data-toggle="tab"><span style="font-size:1.5em;color:red;">TV Film</span></a></li>
 		          <li><a class="dropdown-item" href="#tab-11" data-toggle="tab"><span style="font-size:1.5em;color:red;">desktop.ini trong Fonts</span></a></li>
 		          <li><a class="dropdown-item" href="#tab-12" data-toggle="tab"><span style="font-size:1.5em;color:red;">Default app open file type</span></a></li>
 		          <li><a class="dropdown-item" href="#tab-13" data-toggle="tab"><span style="font-size:1.5em;color:red;">Start 2 app</span></a></li>
-	            </ul>
-              </div>
-              <div class="col-sm-4">
-	            <ul class="nav flex-column nav-pills nav-justified multi-column-dropdown list-unstyled">
 		          <li><a class="dropdown-item" href="#tab-14" data-toggle="tab"><span style="font-size:1.5em;color:red;">Macro</span></a></li>
 		          <li><a class="dropdown-item" href="#tab-15" data-toggle="tab"><span style="font-size:1.5em;color:red;">Stylish</span></a></li>
 		          <li><a class="dropdown-item" href="#tab-16" data-toggle="tab"><span style="font-size:1.5em;color:red;">Brother HL-2240D</span></a></li>
 		          <li><a class="dropdown-item" href="#tab-17" data-toggle="tab"><span style="font-size:1.5em;color:red;">Đạp xe</span></a></li>
-	            </ul>
-              </div>
-		      <div>
-	            <ul class="nav flex-column nav-pills nav-justified multi-column-dropdown list-unstyled">
 		            <li><a class="dropdown-item" href="#tab-18" data-toggle="tab"><span style="font-size:1.5em;color:red;">Mail</span></a></li>
-	            </ul>
-              </div>
-			</div>
 		  </ul>
 		</li>
       </ul>
@@ -714,7 +696,45 @@ layout: default
   </div>
   <div id="tab-14" class="tab-pane">
     <p></p>
-    <p>14</p>
+    <details><summary><span style="font-size:1.2em;"> Macro Insert Blank Page Word</span></summary>
+	  <p></p>
+	  <p>Sub Macro2()</p>
+	  <p>'</p>
+	  <p>' Macro2 Macro</p>
+	  <p>'</p>
+	  <p>'</p>
+	  <p>Dim objPages As Pages</p>
+	  <p>Dim i, n, j, m, truoc, sau</p>
+	  <p>Set objPage = ActiveDocument.ActiveWindow.Panes(1).Pages</p>
+	  <p>j = 0</p>
+	  <p>n = objPage.Count 'Tong so trang cua tai lieu</p>
+	  <p> </p>
+	  <p>For i = 1 To n - 1 Step 1</p>
+	  <p> Selection.EndKey Unit:=wdStory 'Di den trang cuoi</p>
+	  <p> Selection.HomeKey Unit:=wdStory 'Di len trang dau (1)</p>
+	  <p> Selection.GoTo What:=wdGoToPage, Which:=wdGoToNext, Count:=i + j 'truot den trang thu i + j (1)</p>
+	  <p> Selection.EndKey Unit:=wdLine, Extend:=wdExtend 'Chon het dong</p>
+	  <p> Selection.HomeKey Unit:=wdLine 've dau dong</p>
+	  <p> truoc = objPage.Count 'SL trang truoc khi chen</p>
+	  <p> Selection.InsertNewPage 'Chen trang moi</p>
+	  <p> sau = objPage.Count 'SL trang sau khi chen</p>
+	  <p> If truoc = sau Then</p>
+	  <p> Selection.InsertNewPage 'Chen trang moi (EP DONG BO)</p>
+	  <p> sau = objPage.Count 'Cap nhat SL trang sau khi chen ep dong bo</p>
+	  <p> End If</p>
+	  <p> j = j + 1</p>
+	  <p> Selection.EndKey Unit:=wdStory 'Di den trang cuoi</p>
+	  <p> Selection.HomeKey Unit:=wdStory 'Di len trang dau (1)</p>
+	  <p>Next</p>
+	  <p>Selection.EndKey Unit:=wdStory 'Di den trang cuoi</p>
+	  <p>Selection.InsertNewPage 'Chen trang moi cho trang cuoi cung</p>
+	  <p>m = MsgBox("XONG", vbOK, "MA LEM KHOANG")</p>
+	  <p>'(1) Luon xuat phat tu trang dau de truot xuong i + j trang</p>
+	  <p>End Sub </p>
+	  **
+	</details>
+	<p></p>
+	
   </div>
   <div id="tab-15" class="tab-pane">
     <p></p>
