@@ -652,15 +652,59 @@ layout: default
   </div>
   <div id="tab-10" class="tab-pane">
     <p></p>
-    <p>10</p>
+    <p><a href="https://redbyhbo.com/movie/?view=evergreen_love" target="_blank">https://redbyhbo.com/movie/?view=evergreen_love</a></p>
+	<p><a href="https://www.redbyhbo.com/movie/?view=taipei_exchanges" target="_blank">https://www.redbyhbo.com/movie/?view=taipei_exchanges</a></p>
+	<p><a href="https://www.redbyhbo.com/movie/?view=our_meal_for_tomorrow" target="_blank">https://www.redbyhbo.com/movie/?view=our_meal_for_tomorrow</a></p>
+    <p><a href="http://www.redbyhbo.com/movie/?view=have_a_song_on_your_lips" target="_blank">http://www.redbyhbo.com/movie/?view=have_a_song_on_your_lips</a></p>
+    <p><a href="http://www.redbyhbo.com/movie/?view=solomon_s_perjury_part_1_suspicion" target="_blank">http://www.redbyhbo.com/movie/?view=solomon_s_perjury_part_1_suspicion</a></p>
+	<p><a href="http://www.redbyhbo.com/movie/?view=solomon_s_perjury_part_2_judgement" target="_blank">http://www.redbyhbo.com/movie/?view=solomon_s_perjury_part_2_judgement</a></p>
+	<p><a href="https://redbyhbo.com/movie/?view=thread_of_lies" target="_blank">https://redbyhbo.com/movie/?view=thread_of_lies</a></p>
+    <p><a href="https://redbyhbo.com/movie/?view=wood_job" target="_blank">https://redbyhbo.com/movie/?view=wood_job</a></p>
+    <p><a href="http://hboasia.com/HBO/en-vn/shows/the-intern-1018429/" target="_blank">http://hboasia.com/HBO/en-vn/shows/the-intern-1018429/</a></p>
+	<p><a href="http://hboasia.com/HBO/en-vn/shows/eye-in-the-sky-1018862/" target="_blank">http://hboasia.com/HBO/en-vn/shows/eye-in-the-sky-1018862/</a></p>
+	<p><a href="http://hboasia.com/HBO/en-vn/shows/star-wars-episode-iv-a-new-hope-1023990/" target="_blank">http://hboasia.com/HBO/en-vn/shows/star-wars-episode-iv-a-new-hope-1023990/</a></p>
+    <p><a href="http://hboasia.com/HBO/en-vn/shows/star-wars-episode-v-the-empire-strikes-back-1022963/" target="_blank">http://hboasia.com/HBO/en-vn/shows/star-wars-episode-v-the-empire-strikes-back-1022963/</a></p>
+    <p><a href="http://hboasia.com/HBO/en-vn/shows/star-wars-episode-vi-return-of-the-jedi-1022964/" target="_blank">http://hboasia.com/HBO/en-vn/shows/star-wars-episode-vi-return-of-the-jedi-1022964/</a></p>
+	<p><a href="http://hboasia.com/HBO/en-vn/shows/star-wars-episode-i-the-phantom-menace-1022960/" target="_blank">http://hboasia.com/HBO/en-vn/shows/star-wars-episode-i-the-phantom-menace-1022960/</a></p>
+	<p><a href="http://hboasia.com/HBO/en-vn/shows/star-wars-episode-ii-attack-of-the-clones-1022961/" target="_blank">http://hboasia.com/HBO/en-vn/shows/star-wars-episode-ii-attack-of-the-clones-1022961/</a></p>
+	<p><a href="http://hboasia.com/HBO/en-vn/shows/star-wars-episode-iii-revenge-of-the-sith-1022962/" target="_blank">http://hboasia.com/HBO/en-vn/shows/star-wars-episode-iii-revenge-of-the-sith-1022962/</a></p>
+	<p><a href="http://hboasia.com/HBO/en-vn/shows/star-wars-episode-vii-the-force-awakens-1023534/" target="_blank">http://hboasia.com/HBO/en-vn/shows/star-wars-episode-vii-the-force-awakens-1023534/</a></p>
   </div>
   <div id="tab-11" class="tab-pane">
     <p></p>
-    <p>11</p>
+    <p>[.ShellClassInfo]</p>
+	<p>UICLSID={BD84B380-8CA2-1069-AB1D-08000948F534}</p>
   </div>
   <div id="tab-12" class="tab-pane">
     <p></p>
-    <p>12</p>
+    <details><summary><span style="font-size:1.2em;"> </span></summary>
+	  <p></p>
+	  <p>4. Ở khung bên trái, tìm tới khóa sau:</p>
+	  <p>HKEY_CLASSES_ROOT\.exe</p>
+	  <p>5. Ở khung bên phải, thay đổi giá trị của khóa Default thành exefile</p>
+	  <p>Để thay đổi giá trị của khóa Default, bạn nháy đúp vào khóa đó rồi gõ giá trị vào, ấn OK.</p>
+	  <p>6. Ở khung bên trái, tìm tới khóa sau:</p>
+	  <p>HKEY_CLASSES_ROOT\exefile\shell\open\command</p>
+	  <p>Ở khung bên phải, đổi giá trị của khóa Default thành:</p>
+	  <p>“%1″ %*</p>
+	  <p>Xong, giờ đóng Registry Editor lại, khởi động lại máy và thử chạy file EXE xem sao. </p>
+	  **
+	</details>
+	<p></p>
+    <details><summary><span style="font-size:1.2em;"> </span></summary>
+	  <p></p>
+	  <p>Create a new empty file called something like foo.exe.</p>
+	  <p>Go to a file with the extension you want to reset and Open with.... Make sure Always use this app to open .&lt;extension&gt; files is ticked. Then Look for another app on this PC and choose the foo.exe you just created.</p>
+	  <p>Delete foo.exe.</p>
+	  <p>Double click the file again and dismiss the Open with box (this might not be necessary).</p>
+	  <p>Now open regedit and delete the following keys:</p>
+	  <p>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.&lt;extension&gt;</p>
+	  <p>HKEY_CLASSES_ROOT\.&lt;extension&gt;</p>
+	  <p>HKEY_CLASSES_ROOT\Applications\foo.exe</p>
+	  <p>Log off and in again.</p>
+	  **
+	</details>
+	<p></p>
   </div>
   <div id="tab-13" class="tab-pane">
     <p></p>
