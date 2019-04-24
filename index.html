@@ -24,7 +24,7 @@ layout: default
           <a class="nav-link" id="scroll-item" href="#tab-5" data-toggle="tab"><span style="font-size:1.5em;color:red;">Tip</span></a>
         </li>
 <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:1.5em;color:red;">More</span></a>
+          <a class="nav-link toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:1.5em;color:red;">More</span></a>
             <div class="dropdown-menu text-center" style="background-color: #78C1AD;right: auto; left: 50%;-webkit-transform: translate(-50%, 0);-o-transform: translate(-50%, 0);transform: translate(-50%, 0);">
               <a class="dropdown-item" href="#tab-6" data-toggle="tab"><span style="font-size:1.5em;color:red;">Check Laptop</span></a>
               <a class="dropdown-item" href="#tab-7" data-toggle="tab"><span style="font-size:1.5em;color:red;">Check Hardware</span></a>
@@ -748,7 +748,28 @@ layout: default
   </div>
   <div id="tab-15" class="tab-pane">
     <p></p>
-    <p>15</p>
+    <details><summary><span style="font-size:1.2em;"> Outlook</span></summary>
+	  <p></p>
+	  <p><a href="https://userstyles.org/styles/102922/remove-outlook-com-ad-bar-and-reclaim-space" target="_blank">https://userstyles.org/styles/102922/remove-outlook-com-ad-bar-and-reclaim-space</a></p>
+	  <p>/**</p>
+	  <p>* Remove the right ad bar of Outlook.com and reclaim the space</p>
+	  <p>* @author Xiangyu Bu (xybu92@live.com)</p>
+	  <p>*/</p>
+	  <p>@-moz-document domain(live.com)</p>
+	  <p>{</p>
+	  <p>/* For old Outlook.com */</p>
+	  <p>#RightRailContainer { display: none; }</p>
+	  <p>.WithRightRail { right: 0 !important; }</p>
+	  <p>/* For new Outlook.com */</p>
+	  <p>._n_h { display: none; width: 0; }</p>
+	  <p>#primaryContainer div[style*="right: 165px;"] { right: 0 !important; }   /* For Outlook.com Beta */</p>
+	  <p>#app > div > div:nth-child(2) > div > div > div:nth-child(4) {display: none}</p>
+	  <p>#app > div > div:nth-child(2) > div > div:nth-child(2) {display: none}</p>
+	  <p>}</p>
+	  **
+	</details>
+	<p></p>
+	
   </div>
   <div id="tab-16" class="tab-pane">
     <p></p>
