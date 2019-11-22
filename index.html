@@ -1143,6 +1143,147 @@ layout: default
 			**
 		</details>
 		<p></p>
+		<details><summary><span style="font-size:1.2em;"> RibbonControl</span></summary>
+			<p></p>
+			<p>Option Explicit</p>
+			<p>Public Declare Function ShellExecute Lib "shell32.dll" Alias "ShellExecuteA" (ByVal hWnd As Long, ByVal lpOperation As String, ByVal lpFile As String, ByVal lpParameters As String, ByVal lpDirectory As String, ByVal nShowCmd As Long) As Long</p>
+			<p>Public Declare Sub ShowUConvert Lib "UAWord.dll" (ByVal WordApp As Variant)</p>
+			<p>Public Declare Sub ShowUCase Lib "UAWord.dll" (ByVal WordApp As Variant)</p>
+			<p>Public myRibbon As IRibbonUI</p>
+			<p></p>
+			<p>Sub Onload(ribbon As IRibbonUI)</p>
+			<p>'Creates a ribbon instance for use in this project</p>
+			<p>Set myRibbon = ribbon</p>
+			<p>End Sub</p>
+			<p></p>
+			<p>Sub MyBtnMacro(ByVal control As IRibbonControl)</p>
+			<p>Dim u1 As Variant</p>
+			<p>Dim u2 As Variant</p>
+			<p>Dim u3 As Variant</p>
+			<p>Dim u4 As Variant</p>
+			<p>Dim u5 As Variant</p>
+			<p>Dim u6 As Variant</p>
+			<p></p>
+			<p>Select Case control.ID</p>
+			<p>Case Is = "goiU1"</p>
+			<p>u1 = Malemkhoang.UConvert</p>
+			<p>Case Is = "goiU2"</p>
+			<p>u2 = Malemkhoang.UStandard</p>
+			<p>Case Is = "goiU3"</p>
+			<p>u3 = Malemkhoang.URepair</p>
+			<p>Case Is = "goiU4"</p>
+			<p>u4 = Malemkhoang.UCheckUnicode</p>
+			<p>Case Is = "goiU5"</p>
+			<p>u5 = Malemkhoang.UAbout</p>
+			<p>Case Is = "goiU6"</p>
+			<p>u6 = Malemkhoang.UHelp</p>
+			<p>Case Else</p>
+			<p>'Do nothing</p>
+			<p>End Select</p>
+			<p>End Sub</p>
+			**
+		</details>
+		<p></p>
+		<details><summary><span style="font-size:1.2em;"> Malemkhoang</span></summary>
+			<p></p>
+			<p>Option Explicit</p>
+			<p></p>
+			<p>Function UCheckUnicode()</p>
+			<p>MsgBox "Ma Lem Khoang sua lai chuc nang nay.", vbOKOnly + vbInformation</p>
+			<p>End Function</p>
+			<p></p>
+			<p>Function VietNamFont(NFont As String) As Boolean</p>
+			<p>VietNamFont = (InStr(NFont, "Vn") > 0) Or (InStr(NFont, "VN") > 0)</p>
+			<p>End Function</p>
+			<p></p>
+			<p>Function CreateUItems(UObj As Object)</p>
+			<p>Const UCountItem = 7</p>
+			<p>Dim i As Byte</p>
+			<p>Dim UCaptions, UActions, UFaces, UShortcuts</p>
+			<p>UCaptions = Array( _</p>
+			<p>"&Chuyen doi Ma/Font van ban", "Chuan &hoa chu HOA/thuong/Chuan ...", _</p>
+			<p>"Khac phuc &loi go tieng viet", "Kiem tra van ban Unicode", "&Gioi thieu phan mem", _</p>
+			<p>"http://www.naman.com.vn", "Huong &dan su dung chuong trinh")</p>
+			<p></p>
+			<p>UActions = Array("UConvert", "UStandard", "URepair", "UCheckUnicode", "UAbout", "UVisit", "UHelp")</p>
+			<p></p>
+			<p>UFaces = Array(159, 252, 212, 2, 59, 343, 273)</p>
+			<p></p>
+			<p>On Error Resume Next</p>
+			<p>For i = 0 To UCountItem - 1</p>
+			<p>With UObj.Controls.Add</p>
+			<p>.BeginGroup = (i = 5 Or i = 7)</p>
+			<p>.Caption = UCaptions(i)</p>
+			<p>.OnAction = UActions(i)</p>
+			<p>.FaceId = UFaces(i)</p>
+			<p>End With</p>
+			<p>Next i</p>
+			<p>End Function</p>
+			<p></p>
+			<p>Function UConvert()</p>
+			<p>Call ShowUConvert(Application)</p>
+			<p>End Function</p>
+			<p></p>
+			<p>Function UStandard()</p>
+			<p>Call ShowUCase(Application)</p>
+			<p>End Function</p>
+			<p></p>
+			<p>Function CreateUToolBar()</p>
+			<p>On Error Resume Next</p>
+			<p>Const UName = "UConvert_1.3"</p>
+			<p>Dim UTool As CommandBar, UMenu As CommandBarControl</p>
+			<p>CommandBars(UName).Delete</p>
+			<p>Set UTool = CommandBars.Add(UName, , False)</p>
+			<p>UTool.Visible = True</p>
+			<p>Call CreateUItems(UTool)</p>
+			<p></p>
+			<p>CommandBars("Menu Bar").Controls(UName).Delete</p>
+			<p>Set UMenu = CommandBars("Menu Bar").Controls.Add(Type:=msoControlPopup)</p>
+			<p>UMenu.Caption = "&" & UName</p>
+			<p>UMenu.BeginGroup = True</p>
+			<p>Call CreateUItems(UMenu) </p>
+			<p>End Function</p>
+			<p></p>
+			<p>Function UVisit()</p>
+			<p>On Error Resume Next</p>
+			<p>'ShellExecute 0, "open", "http://www.naman.com.vn", 0, 0, 3</p>
+			<p>End Function</p>
+			<p></p>
+			<p>Function UHelp()</p>
+			<p>On Error Resume Next</p>
+			<p>'ShellExecute 0, "open", "http://www.naman.com.vn/Help", 0, 0, 3</p>
+			<p>MsgBox "Dung 3 chuc nang: Chuyen ma, Chuan hoa, Sua loi", vbOKOnly + vbInformation</p>
+			<p>End Function</p>
+			<p></p>
+			<p>Function URepair()</p>
+			<p>With Options</p>
+			<p>.SmartCutPaste = False</p>
+			<p>.CheckSpellingAsYouType = False</p>
+			<p>.CheckGrammarAsYouType = False</p>
+			<p>.SuggestSpellingCorrections = False</p>
+			<p>.CheckGrammarWithSpelling = False</p>
+			<p>.AutoFormatAsYouTypeReplaceQuotes = False</p>
+			<p>End With</p>
+			<p>With AutoCorrect</p>
+			<p>.CorrectInitialCaps = False</p>
+			<p>.CorrectSentenceCaps = False</p>
+			<p>.CorrectDays = False</p>
+			<p>.CorrectCapsLock = False</p>
+			<p>.ReplaceText = False</p>
+			<p>End With</p>
+			<p>MsgBox "Da thiet lap moi truong tieng viet !", vbOKOnly + vbInformation</p>
+			<p>End Function</p>
+			<p></p>
+			<p>Function UAbout()</p>
+			<p>MsgBox "Ma Lem Khoang bo sung", vbOKOnly + vbInformation</p>
+			<p>End Function</p>
+			<p></p>
+			<p>Sub MakeToolBar()</p>
+			<p>CreateUToolBar</p>
+			<p>End Sub</p>
+			**
+		</details>
+		<p></p>
 	</div>
 	<div id="tab-15" class="tab-pane">
 		<p></p>
