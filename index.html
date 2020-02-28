@@ -1485,6 +1485,7 @@ layout: default
 		<p>hpduyenpham@gmail.com </p>
 	</div>
 </div>
+<script src="/assets/javascript/jquery.bootstrap-autohidingnavbar.js">
 <script js>
 $('.nav li a').on('click', function(){
 if(!$( this ).hasClass('dropdown-toggle')){
@@ -1493,14 +1494,5 @@ $('.navbar-collapse').collapse('hide');
 else {$('.nav').animate({ scrollTop: $("#scroll-item").offset().top }, 50);
 }
 });
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.bottom = "0";
-  } else {
-    document.getElementById("navbar").style.bottom = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+$("div.navbar.fixed-top").autoHidingNavbar();
 </script>
