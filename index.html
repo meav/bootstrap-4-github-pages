@@ -30,7 +30,7 @@ layout: default
 						<a class="dropdown-item" href="#tab-8" data-toggle="tab"><span style="font-size:1.5em;color:red;">Search bar</span></a>
 						<a class="dropdown-item" href="#tab-9" data-toggle="tab"><span style="font-size:1.5em;color:red;">Account</span></a>
 						<a class="dropdown-item" href="#tab-10" data-toggle="tab"><span style="font-size:1.5em;color:red;">TV Film</span></a>
-						<a class="dropdown-item-11" href="#tab-11" data-toggle="tab"><span style="font-size:1.5em;color:red;">desktop.ini trong Fonts</span></a>
+						<a id="dropdown-item-11" class="dropdown-item" href="#tab-11" data-toggle="tab"><span style="font-size:1.5em;color:red;">desktop.ini trong Fonts</span></a>
 						<a class="dropdown-item" href="#tab-12" data-toggle="tab"><span style="font-size:1.5em;color:red;">Default app open file type</span></a>
 						<a class="dropdown-item" href="#tab-13" data-toggle="tab"><span style="font-size:1.5em;color:red;">Start 2 app</span></a>
 						<a class="dropdown-item" href="#tab-14" data-toggle="tab"><span style="font-size:1.5em;color:red;">Macro</span></a>
@@ -1490,15 +1490,7 @@ $('.nav li a').on('click', function(){
 if(!$( this ).hasClass('dropdown-toggle')){
 $('.navbar-collapse').collapse('hide');
 }
-else {
-if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-$('.nav').animate({ scrollTop: $($(hash).offset().top
-      }, 2000, function(){
-window.location.hash = hash;
-      });
-    }
-  });
+else {$('.nav').animate({ scrollTop: $("#dropdown-item-11").offset().top }, 2000);
+}
 });
 </script>
