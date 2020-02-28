@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<nav class="navbar fixed-top navbar-dark bg-primary justify-content-center">
+<nav class="navbar fixed-bottom navbar-dark bg-primary justify-content-center">
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
 		<span style="font-size:1.5em;color:red;">Text</span>
 	</button>
@@ -1490,7 +1490,7 @@ $('.nav li a').on('click', function(){
 if(!$( this ).hasClass('dropdown-toggle')){
 $('.navbar-collapse').collapse('hide');
 }
-else {$('.nav').animate({ scrollTop: $("#scroll-item").offset().top }, 1000);
+else {$('.nav').animate({ scrollTop: $("#scroll-item").offset().top }, 500);
 }
 });
 </script>
