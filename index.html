@@ -1490,7 +1490,15 @@ $('.nav li a').on('click', function(){
 if(!$( this ).hasClass('dropdown-toggle')){
 $('.navbar-collapse').collapse('hide');
 }
-else {$('.nav').animate({ scrollTop: $("#dropdown-item-11").offset().top }, 2000);
-}
+else {
+if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+$('.nav').animate({ scrollTop: $($(hash).offset().top
+      }, 2000, function(){
+window.location.hash = hash;
+      });
+    }
+  });
 });
 </script>
