@@ -43,7 +43,7 @@ layout: default
 		</ul>
 	</div>
 </nav>
-<div class="tab-content"  id="scroll-item">
+<div class="tab-content">
 	<div id="tab-0" class="tab-pane show active">
 		<p></p>
 		<details><summary><span style="font-size:1.2em;"> BỆNH VIỆN E</span></summary>
@@ -1490,7 +1490,7 @@ $('.nav li a').on('click', function(){
 if(!$( this ).hasClass('dropdown-toggle')){
 $('.navbar-collapse').collapse('hide');
 }
-else {$('.nav').animate({ scrollTop: $("#scroll-item").offset().top }, 2000);
+else {$('.nav').animate({ scrollTop: $("#scroll-item").offset().top }, 'slow');
 }
 });
 
