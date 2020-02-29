@@ -1486,16 +1486,6 @@ layout: default
 	</div>
 </div>
 <script js>
-var myElement = document.getElementById('collapsingNavbar');
-var topPos = myElement.offsetTop;
-$('.nav li a').on('click', function(){
-if(!$( this ).hasClass('dropdown-toggle')){
-$('.navbar-collapse').collapse('hide');
-}
-else {document.getElementById('scroll-item').scrollTop = topPos;
-}
-});
-
 $(function() {
     $('a[data-toggle="tab"]').on('click', function(e) {
         window.localStorage.setItem('activeTab', $(e.target).attr('href'));
