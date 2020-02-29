@@ -6,7 +6,7 @@ layout: default
 		<span style="font-size:1.5em;color:red;">Text</span>
 	</button>
 	<div class="navbar-collapse collapse" id="collapsingNavbar">
-		<ul id="navscroll" class="nav flex-column nav-pills nav-justified pre-scrollable" style="overflow-x: hidden;overflow-y: auto;">
+		<ul class="nav flex-column nav-pills nav-justified pre-scrollable" style="overflow-x: hidden;overflow-y: scroll;scroll-behavior: smooth;">
 			<li class="nav-item">
 				<a class="nav-link" href="#tab-1" data-toggle="tab"><span style="font-size:1.5em;color:red;">Text</span></a>
 			</li>
@@ -1486,13 +1486,4 @@ layout: default
 	</div>
 </div>
 <script js>
-var myElement = document.getElementById('navscroll');
-var topPos = myElement.offsetTop;
-$('.nav li a').on('click', function(){
-if(!$( this ).hasClass('dropdown-toggle')){
-$('.navbar-collapse').collapse('hide');
-}
-else {$('.nav').animate({document.getElementById('collapsingNavbar').scrollTop = topPos}, 1000);
-}
-});
 </script>
