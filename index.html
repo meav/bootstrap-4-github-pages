@@ -22,6 +22,9 @@ layout: default
 			<li class="nav-item">
 				<a class="nav-link" href="#tab-5" data-toggle="tab"><span style="font-size:1.5em;color:red;">Tip</span></a>
 			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#tab-18" data-toggle="tab"><span style="font-size:1.5em;color:red;">Mail</span></a>
+			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:1.5em;color:red;">More</span></a>
 					<div class="dropdown-menu text-center" style="background-color: #78C1AD;right: auto; left: 50%;-webkit-transform: translate(-50%, 0);-o-transform: translate(-50%, 0);transform: translate(-50%, 0);">
@@ -37,7 +40,6 @@ layout: default
 						<a class="dropdown-item" href="#tab-15" data-toggle="tab"><span style="font-size:1.5em;color:red;">Stylish</span></a>
 						<a class="dropdown-item" href="#tab-16" data-toggle="tab"><span style="font-size:1.5em;color:red;">Brother HL-2240D</span></a>
 						<a class="dropdown-item" href="#tab-17" data-toggle="tab"><span style="font-size:1.5em;color:red;">Đạp xe</span></a>
-						<a class="dropdown-item" href="#tab-18" data-toggle="tab"><span style="font-size:1.5em;color:red;">Mail</span></a>
 					</div>
 			</li>
 		</ul>
@@ -1493,4 +1495,15 @@ $('.navbar-collapse').collapse('hide');
 else {$('.nav').animate({ scrollTop: $("#scroll-item").offset().top }, 2000);
 }
 });
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("scroll-item").style.bottom = "0";
+  } else {
+    document.getElementById("scroll-item").style.bottom = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+};
 </script>
