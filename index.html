@@ -6,7 +6,7 @@ layout: default
 		<span style="font-size:1.5em;color:red;">Text</span>
 	</button>
 	<div class="navbar-collapse collapse" id="collapsingNavbar">
-		<ul class="nav flex-column nav-pills nav-justified pre-scrollable" style="overflow-x: hidden;overflow-y: auto;">
+		<ul id="navscroll" class="nav flex-column nav-pills nav-justified pre-scrollable" style="overflow-x: hidden;overflow-y: auto;">
 			<li class="nav-item">
 				<a class="nav-link" href="#tab-1" data-toggle="tab"><span style="font-size:1.5em;color:red;">Text</span></a>
 			</li>
@@ -34,7 +34,7 @@ layout: default
 						<a class="dropdown-item" href="#tab-12" data-toggle="tab"><span style="font-size:1.5em;color:red;">Default app open file type</span></a>
 						<a class="dropdown-item" href="#tab-13" data-toggle="tab"><span style="font-size:1.5em;color:red;">Start 2 app</span></a>
 						<a class="dropdown-item" href="#tab-14" data-toggle="tab"><span style="font-size:1.5em;color:red;">Macro</span></a>
-						<a id="dropdownitem11" class="dropdown-item" href="#tab-15" data-toggle="tab"><span style="font-size:1.5em;color:red;">Stylish</span></a>
+						<a class="dropdown-item" href="#tab-15" data-toggle="tab"><span style="font-size:1.5em;color:red;">Stylish</span></a>
 						<a class="dropdown-item" href="#tab-16" data-toggle="tab"><span style="font-size:1.5em;color:red;">Brother HL-2240D</span></a>
 						<a class="dropdown-item" href="#tab-17" data-toggle="tab"><span style="font-size:1.5em;color:red;">Đạp xe</span></a>
 						<a class="dropdown-item" href="#tab-18" data-toggle="tab"><span style="font-size:1.5em;color:red;">Mail</span></a>
@@ -1486,11 +1486,13 @@ layout: default
 	</div>
 </div>
 <script js>
+var myElement = document.getElementById('navscroll');
+var topPos = myElement.offsetTop;
 $('.nav li a').on('click', function(){
 if(!$( this ).hasClass('dropdown-toggle')){
 $('.navbar-collapse').collapse('hide');
 }
-else {$('.nav').animate({document.getElementById("dropdownitem11").scrollIntoView()}, 1000);
+else {$('.nav').animate({document.getElementById('collapsingNavbar').scrollTop = topPos;}, 1000);
 }
 });
 </script>
