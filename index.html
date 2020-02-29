@@ -1,16 +1,6 @@
 ---
 layout: default
 ---
-<script js>
-$('.nav li a').on('click', function(){
-if(!$( this ).hasClass('dropdown-toggle')){
-$('.navbar-collapse').collapse('hide');
-}
-else {$('.nav').animate(scrollTop(500), 2000);
-}
-});
-</script>
-
 <nav class="navbar fixed-bottom navbar-dark bg-primary justify-content-center">
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
 		<span style="font-size:1.5em;color:red;">Text</span>
@@ -1495,3 +1485,12 @@ else {$('.nav').animate(scrollTop(500), 2000);
 		<p>hpduyenpham@gmail.com </p>
 	</div>
 </div>
+<script js>
+$('.nav li a').on('click', function(){
+if(!$( this ).hasClass('dropdown-toggle')){
+$('.navbar-collapse').collapse('hide');
+}
+else {$('.nav').animate(scrollTop(500), 2000);
+}
+});
+</script>
