@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<nav class="navbar fixed-bottom navbar-dark bg-primary justify-content-center" id="scroll-item">
+<nav class="navbar fixed-bottom navbar-dark bg-primary justify-content-center" id="navbarbottom">
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
 		<span style="font-size:1.5em;color:red;">Text</span>
 	</button>
@@ -1498,9 +1498,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("scroll-item").style.bottom = "0";
+    document.getElementById("navbarbottom").style.bottom = "0";
   } else {
-    document.getElementById("scroll-item").style.bottom = "-60px";
+    document.getElementById("navbarbottom").style.bottom = "-60px";
   }
   prevScrollpos = currentScrollPos;
 };
