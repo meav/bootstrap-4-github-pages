@@ -17,10 +17,10 @@ layout: default
 				<a class="nav-link" href="#tab-3" data-toggle="tab"><span style="font-size:1.5em;color:red;">Linh tinh</span></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#tab-4" data-toggle="tab"><span style="font-size:1.5em;color:red;">Software</span></a>
+				<a class="nav-link" id="scroll-item" href="#tab-4" data-toggle="tab"><span style="font-size:1.5em;color:red;">Software</span></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" id="scroll-item" href="#tab-5" data-toggle="tab"><span style="font-size:1.5em;color:red;">Tip</span></a>
+				<a class="nav-link" href="#tab-5" data-toggle="tab"><span style="font-size:1.5em;color:red;">Tip</span></a>
 			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span style="font-size:1.5em;color:red;">More</span></a>
@@ -1486,6 +1486,14 @@ layout: default
 	</div>
 </div>
 <script js>
+$('.nav li a').on('click', function(){
+if(!$( this ).hasClass('dropdown-toggle')){
+$('.navbar-collapse').collapse('hide');
+}
+else {$('.nav').animate({ scrollTop: $("#scroll-item").offset().top }, 1000);
+}
+});
+
 $(function() {
     $('a[data-toggle="tab"]').on('click', function(e) {
         window.localStorage.setItem('activeTab', $(e.target).attr('href'));
