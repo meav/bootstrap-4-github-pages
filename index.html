@@ -361,7 +361,9 @@ layout: default
 			<p><a href="https://github.com/Maximus5/ConEmu/issues/1120" target="_blank">https://github.com/Maximus5/ConEmu/issues/1120</a></p>
 			<details><summary><span style="font-size:1.2em;"> Tweaking the CmdInit.cmd file:</span></summary>
 				<p></p>
+				<p>Add: echo %date:~0,3%day %date:~7,2%/%date:~4,2%/%date:~10,4% (dd/mm/yyyy)&time /T</p>
 				<p>Remove this: set ConEmuPrompt0=$E[m$E[32m$E]9;8;"USERNAME"$E\@$E]9;8;"COMPUTERNAME"$E\$S</p>
+				<p>Edit: set ConEmuPrompt2=$_$E[90mAdmin$$</p>
 				<p>Edit last line to: PROMPT $E[23B$E[23A%ConEmuPrompt1%%ConEmuPrompt2%%ConEmuPrompt3%</p>
 				**
 			</details>
