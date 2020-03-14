@@ -550,8 +550,7 @@ layout: default
 			<p><a href="https://rclone.org/downloads/" target="_blank">https://rclone.org/downloads/</a></p>
 			<p>--update --ignore-size --progress -v --dry-run --log-file=log "D:\Me Doanh\TH Tu Liem" "vtd:TH Tu Liem"</p>
 			<p>tree --dry-run --dirsfirst --human --level 1 "onedrivebusiness:/Phan mem"</p>
-			<p>--progress -v copyto "C:\Users\a\Desktop\mpv-i686-20170913.iso" "onedrivebusiness:/Phan mem/Portable/mpv-i686-20170913.iso"</p>
-			<p>--include /Facebook/** --log-file=log --dry-run --progress -v copyto C:\Users\a\Documents\(Empty)\1 "onedrivebusiness:/Phan mem"</p>
+			<p>--log-file=log --dry-run --progress -v --include /Facebook/** --multi-thread-streams=0 --bwlimit=M copy "C:\Users\a\Desktop\mpv-i686-20170913.iso" "onedrivebusiness:/Phan mem/Portable"</p>
 			<p>listremotes --long</p>
 			<p>about onedrivebusiness:</p>
 			<p>version --check</p>
