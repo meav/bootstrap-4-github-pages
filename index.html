@@ -1327,7 +1327,7 @@ layout: default
 			<p></p>
 			<p><a href="https://userstyles.org/styles/102922/remove-outlook-com-ad-bar-and-reclaim-space" target="_blank">https://userstyles.org/styles/102922/remove-outlook-com-ad-bar-and-reclaim-space</a></p>
 			<p></p>
-			<pre class="prettyprint linenums">
+			<pre class="prettyprint linenums lang-css">
 /**
 * Remove the right ad bar of Outlook.com and reclaim the space
 * @author Xiangyu Bu (xybu92@live.com)
@@ -1339,7 +1339,8 @@ layout: default
 .WithRightRail { right: 0 !important; }
 /* For new Outlook.com */
 ._n_h { display: none; width: 0; }
-#primaryContainer div[style*="right: 165px;"] { right: 0 !important; }   /* For Outlook.com Beta */
+#primaryContainer div[style*="right: 165px;"] { right: 0 !important; }
+/* For Outlook.com Beta */
 #app > div > div:nth-child(2) > div > div > div:nth-child(4) {display: none}
 #app > div > div:nth-child(2) > div > div:nth-child(2) {display: none}
 }</pre>
