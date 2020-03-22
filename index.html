@@ -1348,12 +1348,11 @@ layout: default
 		<p></p>
 		<details><summary><span style="font-size:1.2em;"> Thiendia.com</span></summary>
 			<p></p>
-			<pre class="prettyprint linenums">
-@-moz-document domain("thiendia.cc")
+			<pre  class="line-numbers"><code class="language-css">@-moz-document domain("thiendia.cc")
 {
 div.mainContent {min-width: 80% !important; padding-left: 100px ! important;}
 div.sidebar {display:none !important;}
-}</pre>
+}</code></pre>
 			**
 		</details>
 		<p></p>
@@ -1365,10 +1364,9 @@ div.sidebar {display:none !important;}
 		<p></p>
 		<details><summary><span style="font-size:1.2em;"> Popjav</span></summary>
 			<p></p>
-			<pre class="prettyprint linenums">
-@-moz-document domain("popjav.tv") {
+			<pre  class="line-numbers"><code class="language-css">@-moz-document domain("popjav.tv") {
 .video_list { transform: scale(1.3,1.3) ; margin-top: 600px; margin-bottom: 600px}
-}</pre>
+}</code></pre>
 			**
 		</details>
 		<p></p>
@@ -1378,22 +1376,20 @@ div.sidebar {display:none !important;}
 				<p></p>
 				<p><a href="https://userstyles.org/styles/126245/facebook-w-o-login-nag" target="_blank">https://userstyles.org/styles/126245/facebook-w-o-login-nag</a></p>
 				<p></p>
-				<pre class="prettyprint linenums">
-@-moz-document domain("facebook.com") {
+				<pre  class="line-numbers"><code class="language-css">@-moz-document domain("facebook.com") {
 @namespace url(http://www.w3.org/1999/xhtml);
 3 ._5hn6, .generic_dialog_modal, .generic_dialog_fixed_overflow, ._67m7 {display:none !important;}
-}</pre>
+}</code></pre>
 				**
 			</details>
 			<p></p>
 			<details><summary><span style="font-size:1.2em;"> </span></summary>
 				<p></p>
-				<pre class="prettyprint linenums">
-@-moz-document domain("m.facebook.com") {
+				<pre  class="line-numbers"><code class="language-css">@-moz-document domain("m.facebook.com") {
 body { width: 500px }
 html { margin-left: 300px }
 * { font-size: 16pt; line-height: 1.5 }
-}</pre>
+}</code></pre>
 			</details>
 			<p></p>
 			**
@@ -1401,8 +1397,7 @@ html { margin-left: 300px }
 		<p></p>
 		<details><summary><span style="font-size:1.2em;"> Firefox</span></summary>
 			<p></p>
-			<pre class="prettyprint linenums">
-/* Center tab */
+			<pre  class="line-numbers"><code class="language-css">/* Center tab */
 #TabsToolbar .tabbrowser-tabs { display: inline-block; text-align: center; }
 #TabsToolbar .tabbrowser-tab { width: 300px !important }
 /* Status Text */
@@ -1420,7 +1415,7 @@ statuspanel { left: 0px !important; right: 0px !important; text-align: center !i
 .tab-close-button { visibility: hidden !important; margin-left: -16px !important; }
 .tabbrowser-tab:not([selected]):hover .tab-close-button { visibility: visible !important; margin-left: 0px !important; }
 /* Addon Manager */
-@-moz-document url(about:addons) {#category-discover {display:none }}</pre>
+@-moz-document url(about:addons) {#category-discover {display:none }}</code></pre>
 			<p></p>
 			**
 			<details><summary><span style="font-size:1.2em;"> Context Menu</span></summary>
@@ -1429,11 +1424,10 @@ statuspanel { left: 0px !important; right: 0px !important; text-align: center !i
 				<p><a href="http://forums.mozillazine.org/viewtopic.php?f=38&t=192879" target="_blank">http://forums.mozillazine.org/viewtopic.php?f=38&t=192879</a></p>
 				<p><a href="http://kb.mozillazine.org/Chrome_element_names_and_IDs" target="_blank">http://kb.mozillazine.org/Chrome_element_names_and_IDs</a></p>
 				<p></p>
-				<pre class="prettyprint linenums">
-menupopup > menu, menupopup > menuitem,
+				<pre  class="line-numbers"><code class="language-css">menupopup > menu, menupopup > menuitem,
 popup > menu, popup > menuitem
 { font-family: Segoe UI !important;
-font-size: 14pt !important }</pre>
+font-size: 14pt !important }</code></pre>
 			</details>
 			<p></p>
 			**
@@ -1441,15 +1435,14 @@ font-size: 14pt !important }</pre>
 		<p></p>
 		<details><summary><span style="font-size:1.2em;"> Clickable Text</span></summary>
 			<p></p>
-			<pre class="prettyprint linenums">
-/*TEXT link to Clickable Hyperlink*/
+			<pre  class="line-numbers"><code class="language-js">/*TEXT link to Clickable Hyperlink*/
 var clearLink,excludedTags,filter,linkMixInit,linkPack,linkify,observePage,observer,setLink,url_regexp,xpath;url_regexp=/((https?:\/\/|www\.)[\x21-\x7e]+[\w\/]|(\w[\w._-]+\.(com|cn|org|net|info|tv|cc))(\/[\x21-\x7e]*[\w\/])?|ed2k:\/\/[\x21-\x7e]+\|\/|thunder:\/\/[\x21-\x7e]+=)/gi;
 clearLink=function(a){var b;a=null!=(b=a.originalTarget)?b:a.target;if(null!=a&amp;&amp;"a"===a.localName&amp;&amp;-1!==a.className.indexOf("texttolink")&amp;&amp;(b=a.getAttribute("href"),0!==b.indexOf("http")&amp;&amp;0!==b.indexOf("ed2k://")&amp;&amp;0!==b.indexOf("thunder://")))return a.setAttribute("href","http://"+b)};document.addEventListener("mouseover",clearLink);
 setLink=function(a){if(null!=a&amp;&amp;-1===a.parentNode.className.indexOf("texttolink")&amp;&amp;"#cdata-section"!==a.nodeName){var b=a.textContent.replace(url_regexp,'&lt;a href="$1" target="_blank" class="texttolink"&gt;$1&lt;/a&gt;');if(a.textContent.length!==b.length){var c=document.createElement("span");c.innerHTML=b;return a.parentNode.replaceChild(c,a)}}};excludedTags="a svg canvas applet input button area pre embed frame frameset head iframe img option map meta noscript object script style textarea code".split(" ");
 xpath="//text()[not(ancestor::"+excludedTags.join(") and not(ancestor::")+")]";filter=new RegExp("^("+excludedTags.join("|")+")$","i");linkPack=function(a,b){var c,d;if(b+1E4&lt;a.snapshotLength){var e=c=b;for(d=b+1E4;b&lt;=d?c&lt;=d:c&gt;=d;e=b&lt;=d?++c:--c)setLink(a.snapshotItem(e));setTimeout(function(){return linkPack(a,b+1E4)},15)}else for(e=c=b,d=a.snapshotLength;b&lt;=d?c&lt;=d:c&gt;=d;e=b&lt;=d?++c:--c)setLink(a.snapshotItem(e))};
 linkify=function(a){a=document.evaluate(xpath,a,null,XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE,null);return linkPack(a,0)};observePage=function(a){for(a=document.createTreeWalker(a,NodeFilter.SHOW_TEXT,{acceptNode:function(a){if(!filter.test(a.parentNode.localName))return NodeFilter.FILTER_ACCEPT}},!1);a.nextNode();)setLink(a.currentNode)};
 observer=new window.MutationObserver(function(a){var b,c;var d=0;for(b=a.length;d&lt;b;d++){var e=a[d];if("childList"===e.type){var g=e.addedNodes;var f=0;for(c=g.length;f&lt;c;f++)e=g[f],observePage(e)}}});linkMixInit=function(){if(window===window.top&amp;&amp;""!==window.document.title)return linkify(document.body),observer.observe(document.body,{childList:!0,subtree:!0})};
-var clearlinkF=function(a){url=a.getAttribute("href");if(0!==url.indexOf("http")&amp;&amp;0!==url.indexOf("ed2k://")&amp;&amp;0!==url.indexOf("thunder://"))return a.setAttribute("href","http://"+url)},clearlinkE=function(){for(var a=document.getElementsByClassName("texttolink"),b=0;b&lt;a.length;b++)clearlinkF(a[b])};setTimeout(clearlinkE,1500);setTimeout(linkMixInit,100);</pre>
+var clearlinkF=function(a){url=a.getAttribute("href");if(0!==url.indexOf("http")&amp;&amp;0!==url.indexOf("ed2k://")&amp;&amp;0!==url.indexOf("thunder://"))return a.setAttribute("href","http://"+url)},clearlinkE=function(){for(var a=document.getElementsByClassName("texttolink"),b=0;b&lt;a.length;b++)clearlinkF(a[b])};setTimeout(clearlinkE,1500);setTimeout(linkMixInit,100);</code></pre>
 			**
 		</details>
 		<p></p>
@@ -1542,3 +1535,4 @@ $(document).on("click", function(e) {
 $('.navbar-collapse').collapse('hide');
 });
 </script>
+<script src="prism/prism.js"></script>
