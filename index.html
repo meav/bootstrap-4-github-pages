@@ -505,13 +505,14 @@ layout: default
 		<details><summary><span style="font-size:1.2em;"> Clipboard</span></summary>
 			<p></p>
 			<p></p>
-			<pre  class="line-numbers"><code class="language-batch">C:\Windows\System32\cmd.exe /C echo | set /p=[URL]|clip</code></pre>
+			<pre  class="line-numbers"><code class="language-batch">echo | set /p=[URL]|clip</code></pre>
 			**
 		</details>
 		<p></p>
 		<details><summary><span style="font-size:1.2em;"> Textfile</span></summary>
 			<p></p>
-			<pre  class="line-numbers"><code class="language-batch">echo url=[URL] >> C:\Users\vhd\Desktop\1.txt
+			<pre  class="line-numbers"><code class="language-batch">@echo off
+echo url=[URL] >> C:\Users\vhd\Desktop\1.txt
 echo referer=[REFERER] >> C:\Users\vhd\Desktop\1.txt
 echo cookie=[COOKIE] >> C:\Users\vhd\Desktop\1.txt</code></pre>
 			**
@@ -520,15 +521,14 @@ echo cookie=[COOKIE] >> C:\Users\vhd\Desktop\1.txt</code></pre>
 		<details><summary><span style="font-size:1.2em;"> Wget</span></summary>
 			<p></p>
 			<p><a href="https://www.gnu.org/software/wget/faq.html#download" target="_blank">https://www.gnu.org/software/wget/faq.html#download</a></p>
-			<p>wget --continue --progress=bar:force:noscroll --output-document= --load-cookies</p>
+			<p>--continue --progress=bar:force:noscroll --output-document= --load-cookies</p>
 			**
 		</details>
 		<p></p>
 		<details><summary><span style="font-size:1.2em;"> Saldl</span></summary>
 			<p></p>
 			<p><a href="https://github.com/saldl/saldl" target="_blank">https://github.com/saldl/saldl</a></p>
-			<p>C:\Users\aa\Documents\WW1\saldl-win32\saldl-win32.exe</p>
-			<p>"C:\Users\a\Downloads\saldl-win32-v35.0.g36e89b3\saldl-win32.exe" --resume --status-refresh-interval=1 --root-dir=C:\Users\[username]\Desktop -CC --output-filename= --cookie-file= --single --connections=10 [--output-filename=FNAME] [--referer=REFERER] [--cookie-file=CFILE] [ --inline-cookies=COOKIE] [--post=POST] [--raw-post=RAWPOST] [--user-agent=UA] [--custom-headers=HEADERS] [URL] </p>
+			<p>--resume --status-refresh-interval=1 --root-dir=C:\Users\[username]\Desktop -CC --output-filename= --cookie-file= --single --connections=10 [--output-filename=FNAME] [--referer=REFERER] [--cookie-file=CFILE] [ --inline-cookies=COOKIE] [--post=POST] [--raw-post=RAWPOST] [--user-agent=UA] [--custom-headers=HEADERS] [URL] </p>
 			**
 		</details>
 		<p></p>
@@ -536,7 +536,6 @@ echo cookie=[COOKIE] >> C:\Users\vhd\Desktop\1.txt</code></pre>
 			<p></p>
 			<p><a href="https://github.com/axel-download-accelerator/axel" target="_blank">https://github.com/axel-download-accelerator/axel</a></p>
 			<p><a href="https://st0rage.org/~n2j3/?page_id=225717166" target="_blank">https://st0rage.org/~n2j3/?page_id=225717166</a></p>
-			<p>C:\Users\aa\Desktop\axel.exe</p>
 			<p>-n 10 [-U UA] [-o C:\Users\aa\Desktop\FNAME] [-H Cookie:COOKIE] [-H Referer:REFERER] [URL] </p>
 			**
 		</details>
@@ -1322,7 +1321,7 @@ echo cookie=[COOKIE] >> C:\Users\vhd\Desktop\1.txt</code></pre>
 			<p></p>
 			<p><a href="https://userstyles.org/styles/102922/remove-outlook-com-ad-bar-and-reclaim-space" target="_blank">https://userstyles.org/styles/102922/remove-outlook-com-ad-bar-and-reclaim-space</a></p>
 			<p></p>
-			<pre  class="line-numbers"><code class="language-css">/**
+			<pre  class="line-numbers white-space: pre-wrap"><code class="language-css rainbow-braces">/**
 * Remove the right ad bar of Outlook.com and reclaim the space
 * @author Xiangyu Bu (xybu92@live.com)
 */
