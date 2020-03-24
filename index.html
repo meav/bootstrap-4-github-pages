@@ -349,7 +349,7 @@ layout: default
 			<pre class="no-line-numbers"><code class="language-batch match-braces rainbow-braces">msg * /time:999999 Fan Case</code></pre>
 			<details><summary><kbd>Fan case.bat</kbd></summary>
 				<pre><code class="language-batch match-braces rainbow-braces">@Echo off
-cmd.exe /c start /min "" "C:\Windows\notepad.exe" "C:\Users\a\Documents\(Empty)\WW\Fan case.txt"</code></pre>
+cmd.exe /c start /min "" "C:\Windows\notepad.exe" "C:\Users\a\Documents\Empty\WW\Fan case.txt"</code></pre>
 			</details>
 			<pre class="no-line-numbers"><code class="language-batch match-braces rainbow-braces">cmd.exe /c explorer "D:\Me Doanh\TH Tu Liem"</code></pre>
 			<p><a href="https://social.technet.microsoft.com/Forums/windows/en-US/0462579d-780a-460a-befd-90f755e902aa/how-to-schedule-a-task-on-resume-from-sleep?forum=itprovistaapps" target="_blank">https://social.technet.microsoft.com/Forums/windows/en-US/0462579d-780a-460a-befd-90f755e902aa/how-to-schedule-a-task-on-resume-from-sleep?forum=itprovistaapps</a></p>
@@ -366,27 +366,26 @@ Event ID: 1</code></pre>
 			<p><a href="https://github.com/Maximus5/ConEmu" target="_blank">https://github.com/Maximus5/ConEmu</a></p>
 			<p><a href="https://github.com/Maximus5/ConEmu/issues/1120" target="_blank">https://github.com/Maximus5/ConEmu/issues/1120</a></p>
 			<details><summary><span style="font-size:1.2em;"> Tweaking the CmdInit.cmd file:</span></summary>
-				<p></p>
-				<p>Add: echo %date:~0,3%day %date:~7,2%/%date:~4,2%/%date:~10,4% (dd/mm/yyyy)&time /T</p>
-				<p>Remove this: set ConEmuPrompt0=$E[m$E[32m$E]9;8;"USERNAME"$E\@$E]9;8;"COMPUTERNAME"$E\$S</p>
-				<p>Edit: set ConEmuPrompt2=$_$E[90mAdmin$$</p>
-				<p>Edit last line to: PROMPT $E[23B$E[23A%ConEmuPrompt1%%ConEmuPrompt2%%ConEmuPrompt3%</p>
+				<pre><code class="language-batch match-braces rainbow-braces">Add: echo %date:~0,3%day %date:~7,2%/%date:~4,2%/%date:~10,4% (dd/mm/yyyy)&time /T
+Remove this: set ConEmuPrompt0=$E[m$E[32m$E]9;8;"USERNAME"$E\@$E]9;8;"COMPUTERNAME"$E\$S
+Edit: set ConEmuPrompt2=$_$E[90mAdmin$$
+Edit last line to: PROMPT $E[23B$E[23A%ConEmuPrompt1%%ConEmuPrompt2%%ConEmuPrompt3%</code></pre>
 				**
 			</details>
 			<p></p>
 			<p><a href="https://github.com/joonro/ConEmu-Color-Themes/blob/master/themes/monokai.xml" target="_blank">https://github.com/joonro/ConEmu-Color-Themes/blob/master/themes/monokai.xml</a></p>
-			<p>set PATH=C:\Users\a\Desktop;%PATH%</p>
-			<p>chcp utf-8</p>
-			<p>alias e=explorer $*</p>
-			<p>alias facebook=explorer "C:\Users\vhd\Music\centbrowser_3.4.3.39\Facebook.lnk"</p>
-			<p>C:\Users\vhd\Music\saldl-win32\saldl-win32.exe --resume --status-refresh-interval=1 --root-dir=C:\Users\vhd\Desktop --single "https://raw.githubusercontent.com/meav/text/master/FFMPEG/README.md"&echo.&type "C:\Users\vhd\Desktop\README.md"&del /Q "C:\Users\vhd\Desktop\README.md"</p>
-			<p>echo | set /p=C:\Users\vhd\Music\saldl-win32\saldl-win32.exe --resume --status-refresh-interval=1 --root-dir=C:\Users\vhd\Desktop --output-filename= --cookie-file= --single --connections=10 ""|clip&echo C:\Users\vhd\Music\saldl-win32\saldl-win32.exe --resume --status-refresh-interval=1 --root-dir=C:\Users\vhd\Desktop --output-filename= --cookie-file= --single --connections=10 ""</p>
+			<pre><code class="language-batch match-braces rainbow-braces">set PATH=C:\Users\a\Desktop;%PATH%
+chcp utf-8
+alias e=explorer $*
+alias facebook=explorer "C:\Users\vhd\Music\centbrowser_3.4.3.39\Facebook.lnk"
+C:\Users\vhd\Music\saldl-win32\saldl-win32.exe --resume --status-refresh-interval=1 --root-dir=C:\Users\vhd\Desktop --single "https://raw.githubusercontent.com/meav/text/master/FFMPEG/README.md"&echo.&type "C:\Users\vhd\Desktop\README.md"&del /Q "C:\Users\vhd\Desktop\README.md"
+echo | set /p=C:\Users\vhd\Music\saldl-win32\saldl-win32.exe --resume --status-refresh-interval=1 --root-dir=C:\Users\vhd\Desktop --output-filename= --cookie-file= --single --connections=10 ""|clip&echo C:\Users\vhd\Music\saldl-win32\saldl-win32.exe --resume --status-refresh-interval=1 --root-dir=C:\Users\vhd\Desktop --output-filename= --cookie-file= --single --connections=10 ""</code></pre>
 			**
 		</details>
 		<p></p>
 		<p><a href="https://freecommander.com/en/downloads-portable/" target="_blank">https://freecommander.com/en/downloads-portable/</a></p>
-		<p>Create the subfolder c:\Tools\FreeCommanderXE\Settings</p>
-		<p>Create the empty file freecommander.ini in the folder c:\Tools\FreeCommanderXE\Settings</p>
+		<pre><code class="language-none match-braces rainbow-braces">Create the subfolder c:\Tools\FreeCommanderXE\Settings
+Create the empty file freecommander.ini in the folder c:\Tools\FreeCommanderXE\Settings</code></pre>
 		<p><a href="https://github.com/vatterspun/cubicexplorer" target="_blank">https://github.com/vatterspun/cubicexplorer</a></p>
 		<p><a href="http://www.ltr-data.se/opencode.html/#ImDisk" target="_blank">http://www.ltr-data.se/opencode.html/#ImDisk</a></p>
 		<p><a href="https://sourceforge.net/projects/imdisk-toolkit/" target="_blank">https://sourceforge.net/projects/imdisk-toolkit/</a></p>
@@ -407,15 +406,15 @@ Event ID: 1</code></pre>
 			<p><a href="https://notepad-plus-plus.org/" target="_blank">https://notepad-plus-plus.org/</a></p>
 			<p><a href="https://notepad-plus-plus.org/community/topic/17039/remove-blank-empty-lines/7" target="_blank">https://notepad-plus-plus.org/community/topic/17039/remove-blank-empty-lines/7</a></p>
 			<p><a href="http://code2care.org/pages/add-blank-lines-after-each-lines-using-notepad-text-editor/" target="_blank">http://code2care.org/pages/add-blank-lines-after-each-lines-using-notepad-text-editor/</a></p>
-			<p>Blank line: \n or ^$\R or ^\R</p>
-			<p>Blank line contain space: ^\h*\R</p>
-			<p>2 blank lines: \n\n</p>
-			<p>End of line: $</p>
+			<pre><code class="language-none match-braces rainbow-braces">Blank line: \n or ^$\R or ^\R
+Blank line contain space: ^\h*\R
+2 blank lines: \n\n
+End of line: $</code></pre>
 			<p><a href="https://sourceforge.net/projects/npp-customize/" target="_blank">https://sourceforge.net/projects/npp-customize/</a></p>
 			<p><a href="https://sourceforge.net/projects/npp-plugins/files/MultiClipboard/" target="_blank">https://sourceforge.net/projects/npp-plugins/files/MultiClipboard/</a></p>
-			<p>Useful Tips</p>
-			<p>To show the multiclipboard paste menu via (right click) context menu, add the following line to %Notepad++Directory%\contextMenu.xml</p>
-			<p>&lt;Item PluginEntryName="MultiClipboard" PluginCommandItemName="MultiClipboard Paste"/&gt;</p>
+			<pre  data-start="0"><code class="language-none match-braces rainbow-braces">Useful Tips</p>
+To show the multiclipboard paste menu via (right click) context menu, add the following line to %Notepad++Directory%\contextMenu.xml
+<pre class="no-line-numbers"><code class="language-xml match-braces rainbow-braces">&lt;Item PluginEntryName="MultiClipboard" PluginCommandItemName="MultiClipboard Paste"/&gt;</code></pre></code></pre>
 			**
 		</details>
 		<p></p>
@@ -427,7 +426,7 @@ Event ID: 1</code></pre>
 			<p><a href="https://www.google.com/intl/en/chrome/browser/desktop/index.html?standalone=1&platform=win64" target="_blank">https://www.google.com/intl/en/chrome/browser/desktop/index.html?standalone=1&platform=win64</a></p>
 			<p><a href="http://www.slimjet.com/" target="_blank">http://www.slimjet.com/</a></p>
 			<p><a href="https://www.centbrowser.com/history.html" target="_blank">https://www.centbrowser.com/history.html</a></p>
-			<p>start UCbrowser.exe --user-data-dir="Portable"</p>
+			<pre class="no-line-numbers"><code class="language-batch match-braces rainbow-braces">start UCbrowser.exe --user-data-dir="Portable"</p>
 			<p>--user-data-dir= --ppapi-flash-path= --allow-outdated-plugins</p>
 			<p><a href="https://robwu.nl/crxviewer/" target="_blank">https://robwu.nl/crxviewer/</a></p>
 			<p><a href="http://chrome-extension-downloader.com" target="_blank">http://chrome-extension-downloader.com</a></p>
