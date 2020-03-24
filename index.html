@@ -1531,8 +1531,19 @@ $('.navbar-collapse').collapse('hide');
 });
 </script>
 <style type="text/css" media="screen">
-* {
--webkit-overflow-scrolling: touch;
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
 }
 </style>
 <pre class="no-line-numbers"><code class="language-css match-braces rainbow-braces">
