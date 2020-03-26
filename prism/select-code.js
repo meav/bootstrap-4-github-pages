@@ -1,6 +1,6 @@
 Prism.plugins.toolbar.registerButton('select-code', function(env) {
 	var button = document.createElement('button');
-	button.innerHTML = 'Select Code';
+	button.innerHTML = 'Select';
 
 	button.addEventListener('click', function () {
 		// Source: http://stackoverflow.com/a/11128179/2757940
