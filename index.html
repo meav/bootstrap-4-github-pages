@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <nav class="navbar fixed-bottom navbar-dark bg-primary justify-content-center" id="navbarbottom">
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
 		<span style="font-size:16pt;color:red;">Text</span>
@@ -41,6 +42,7 @@ layout: default
 		</ul>
 	</div>
 </nav>
+
 <div class="tab-content" id="scroll-item">
 	<div id="tab-0" class="tab-pane show active">
 		<p></p>
@@ -1501,6 +1503,7 @@ var clearlinkF=function(a){url=a.getAttribute("href");if(0!==url.indexOf("http")
 		<p>hpduyenpham@gmail.com </p>
 	</div>
 </div>
+
 <script js>
 $('.nav li a').on('click', function(){
 if(!$( this ).hasClass('dropdown-toggle')){
@@ -1531,11 +1534,16 @@ const browser = bowser.getParser(window.navigator.userAgent);
 
 if (`desktop` === `${browser.getPlatformType()}`) {
  $('head').append('<link rel="stylesheet" type="text/css" href="bowser/scrollbar.css">');
-
 }
-
 </script>
+
 <style type="text/css" media="screen">
+:not(pre) > code[class*="language-"] {
+	padding: 1em;
+	border-radius: 1em;
+	white-space: normal;
+}
 </style>
+
 <pre class="language-none"><pre class="no-line-numbers"><code class="language-xml match-braces rainbow-braces">
 </code></pre></pre>
