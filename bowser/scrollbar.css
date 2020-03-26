@@ -5,9 +5,9 @@
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
 	background-color: rgba(255, 255, 255, 0.2);
-    -webkit-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.4); 
+    -webkit-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.2); 
 }
 pre.language-none ::-webkit-scrollbar-thumb {
 	background-color: rgba(0, 0, 0, 0) !important;
-	-webkit-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.1) !important;
+	-webkit-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.3) !important;
 }
