@@ -1080,13 +1080,6 @@ echo cookie=[COOKIE]
 			**
 		</details>
 		<p></p>
-		<details><summary><span style="font-size:1.2em;"> Pornhub</span></summary>
-			<p></p>
-			<p>zxcvbnm19111993</p>
-			<p>Qwe123456</p>
-			**
-		</details>
-		<p></p>
 	</div>
 	<div id="tab-10" class="tab-pane">
 		<p></p>
@@ -1537,47 +1530,5 @@ var clearlinkF=function(a){url=a.getAttribute("href");if(0!==url.indexOf("http")
 	</div>
 </div>
 
-<script js>
-$('.nav li a').on('click', function(){
-if(!$( this ).hasClass('dropdown-toggle')){
-$('.navbar-collapse').collapse('hide');
-event.preventDefault();
-$('html, body').animate({ scrollTop: 0 });
-}
-else {$('.nav').animate({ scrollTop: $("#scroll-item").offset().top }, 1500);
-}
-});
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbarbottom").style.bottom = "0";
-  } else {
-    document.getElementById("navbarbottom").style.bottom = "-60px";
-  }
-  prevScrollpos = currentScrollPos;
-};
-
-$(document).on("click", function(e) {
-$('.navbar-collapse').collapse('hide');
-});
-
-const browser = bowser.getParser(window.navigator.userAgent);
-
-if (`desktop` === `${browser.getPlatformType()}`) {
- $('head').append('<link rel="stylesheet" type="text/css" href="bowser/scrollbar.css">');
-}
-</script>
-
-<style type="text/css" media="screen">
-:not(pre) > code[class*="language-"] {
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-	border-radius: 0.3em;
-	white-space: normal;
-}
-</style>
-
-<pre class="language-none"><pre data-toolbar-order="copy-to-clipboard" class="no-line-numbers"><code class="language-xml match-braces rainbow-braces">
+<pre class="language-none"><pre data-toolbar-order="copy-to-clipboard" class="line-numbers"><code class="language-xml match-braces rainbow-braces">
 </code></pre></pre>
