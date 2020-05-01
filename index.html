@@ -1460,7 +1460,7 @@ font-size: 14pt !important }</code></pre>
 		<p></p>
 		<details><summary><span style="font-size:1.2em;"> Clickable Text</span></summary>
 			<p></p>
-			<pre><code class="language-js match-braces rainbow-braces">/*TEXT link to Clickable Hyperlink*/
+			<pre data-toolbar-order="copy-to-clipboard" class="line-numbers" style="white-space:pre-wrap;"><code class="language-js match-braces rainbow-braces">/*TEXT link to Clickable Hyperlink*/
 var clearLink,excludedTags,filter,linkMixInit,linkPack,linkify,observePage,observer,setLink,url_regexp,xpath;url_regexp=/((https?:\/\/|www\.)[\x21-\x7e]+[\w\/]|(\w[\w._-]+\.(com|cn|org|net|info|tv|cc))(\/[\x21-\x7e]*[\w\/])?|ed2k:\/\/[\x21-\x7e]+\|\/|thunder:\/\/[\x21-\x7e]+=)/gi;
 clearLink=function(a){var b;a=null!=(b=a.originalTarget)?b:a.target;if(null!=a&amp;&amp;"a"===a.localName&amp;&amp;-1!==a.className.indexOf("texttolink")&amp;&amp;(b=a.getAttribute("href"),0!==b.indexOf("http")&amp;&amp;0!==b.indexOf("ed2k://")&amp;&amp;0!==b.indexOf("thunder://")))return a.setAttribute("href","http://"+b)};document.addEventListener("mouseover",clearLink);
 setLink=function(a){if(null!=a&amp;&amp;-1===a.parentNode.className.indexOf("texttolink")&amp;&amp;"#cdata-section"!==a.nodeName){var b=a.textContent.replace(url_regexp,'&lt;a href="$1" target="_blank" class="texttolink"&gt;$1&lt;/a&gt;');if(a.textContent.length!==b.length){var c=document.createElement("span");c.innerHTML=b;return a.parentNode.replaceChild(c,a)}}};excludedTags="a svg canvas applet input button area pre embed frame frameset head iframe img option map meta noscript object script style textarea code".split(" ");
