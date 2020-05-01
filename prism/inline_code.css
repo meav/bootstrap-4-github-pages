@@ -1,0 +1,6 @@
+:not(pre) > code[class*="language-"] {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	border-radius: 0.3em;
+	white-space: normal;
+}
