@@ -6,4 +6,4 @@ $('html, body').animate({ scrollTop: 0 });
 }
 else {$('.nav').animate({ scrollTop: $("#scroll-item").offset().top }, 1500);
 }
-});
+})
