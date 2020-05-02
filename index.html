@@ -355,15 +355,14 @@ layout: default
 			<p></p>
 			<pre data-toolbar-order="copy-to-clipboard"><code class="language-batch match-braces rainbow-braces">cmd.exe /c start "" C:\Users\aa\Documents\WW1\ConEmuPack.171025\ConEmu.exe /MIN /Title ConEmu</code></pre>
 			<pre data-toolbar-order="copy-to-clipboard"><code class="language-batch match-braces rainbow-braces">msg * /time:999999 Fan Case</code></pre>
-			<pre class="language-none">Fan case.bat<pre data-toolbar-order="copy-to-clipboard"><code class="language-batch match-braces rainbow-braces">@Echo off
+			<pre class="language-none">Fan case.bat<pre data-toolbar-order="copy-to-clipboard" class="line-numbers"><code class="language-batch match-braces rainbow-braces">@Echo off
 cmd.exe /c start /min "" "C:\Windows\notepad.exe" "C:\Users\a\Documents\Empty\WW\Fan case.txt"</code></pre></pre>
 			<pre data-toolbar-order="copy-to-clipboard"><code class="language-batch match-braces rainbow-braces">cmd.exe /c explorer "D:\Me Doanh\TH Tu Liem"</code></pre>
 			<p><a href="https://social.technet.microsoft.com/Forums/windows/en-US/0462579d-780a-460a-befd-90f755e902aa/how-to-schedule-a-task-on-resume-from-sleep?forum=itprovistaapps" target="_blank">https://social.technet.microsoft.com/Forums/windows/en-US/0462579d-780a-460a-befd-90f755e902aa/how-to-schedule-a-task-on-resume-from-sleep?forum=itprovistaapps</a></p>
-			<pre data-toolbar-order=""><code class="language-none match-braces rainbow-braces">Triggers
-Begin the task: "On an event"
+			<pre class="language-none">Triggers:<pre data-toolbar-order="" class="line-numbers"><code class="language-none match-braces rainbow-braces">Begin the task: "On an event"
 Log: System
 Source: Power-Troubleshooter
-Event ID: 1</code></pre>
+Event ID: 1</code></pre></pre>
 			<p></p>
 			**
 		</details>
@@ -373,21 +372,23 @@ Event ID: 1</code></pre>
 			<p><a href="https://github.com/Maximus5/ConEmu" target="_blank">https://github.com/Maximus5/ConEmu</a></p>
 			<p><a href="https://github.com/Maximus5/ConEmu/issues/1120" target="_blank">https://github.com/Maximus5/ConEmu/issues/1120</a></p>
 			<details><summary><span style="font-size:1.2em;"> Tweaking the CmdInit.cmd file:</span></summary>
-				<pre><code class="language-batch match-braces rainbow-braces">Add: echo.
+				<pre class="line-numbers"><code class="language-batch match-braces rainbow-braces">Add: echo.
 Add: echo %date:~0,3%day %date:~7,2%/%date:~4,2%/%date:~10,4% (dd/mm/yyyy)&time /T
 Remove this: set ConEmuPrompt0=$E[m$E[32m$E]9;8;"USERNAME"$E\@$E]9;8;"COMPUTERNAME"$E\$S
 Edit: set ConEmuPrompt2=$_$E[90mAdmin$$
 Edit last line to: PROMPT $E[23B$E[23A%ConEmuPrompt1%%ConEmuPrompt2%%ConEmuPrompt3%</code></pre>
+				<p></p>
 				**
 			</details>
 			<p></p>
 			<p><a href="https://github.com/joonro/ConEmu-Color-Themes/blob/master/themes/monokai.xml" target="_blank">https://github.com/joonro/ConEmu-Color-Themes/blob/master/themes/monokai.xml</a></p>
-			<pre><code class="language-batch match-braces rainbow-braces">set PATH=C:\Users\a\Desktop;%PATH%
+			<pre class="line-numbers"><code class="language-batch match-braces rainbow-braces">set PATH=C:\Users\a\Desktop;%PATH%
 chcp utf-8
 alias e=explorer $*
 alias facebook=explorer "C:\Users\vhd\Music\centbrowser_3.4.3.39\Facebook.lnk"
 alias ffmpegguide=C:\Users\vhd\Music\saldl-win32\saldl-win32.exe --resume --status-refresh-interval=1 --root-dir=C:\Users\vhd\Desktop --single "https://raw.githubusercontent.com/meav/text/master/FFMPEG/README.md"&echo.&type "C:\Users\vhd\Desktop\README.md"&del /Q "C:\Users\vhd\Desktop\README.md"
 alias saldl=echo | set /p=C:\Users\vhd\Music\saldl-win32\saldl-win32.exe --resume --status-refresh-interval=1 --root-dir=C:\Users\vhd\Desktop --output-filename= --cookie-file= --single --connections=10 ""|clip&echo.&echo C:\Users\vhd\Music\saldl-win32\saldl-win32.exe --resume --status-refresh-interval=1 --root-dir=C:\Users\vhd\Desktop --output-filename= --cookie-file= --single --connections=10 ""</code></pre>
+			<p></p>
 			**
 		</details>
 		<p></p>
