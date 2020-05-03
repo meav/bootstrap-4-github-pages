@@ -384,8 +384,8 @@ Event ID: 1</code></pre></pre>
 		</details>
 		<p></p>
 		<p><a href="https://freecommander.com/en/downloads-portable/" target="_blank">https://freecommander.com/en/downloads-portable/</a></p>
-		<pre class="meav">Create the subfolder <code class="language-none match-braces rainbow-braces">c:\Tools\FreeCommanderXE\Settings</code>
-Create the empty file freecommander.ini in the folder <code class="language-none match-braces rainbow-braces">c:\Tools\FreeCommanderXE\Settings</code></pre>
+		<pre data-toolbar-order=""><code class="language-none match-braces rainbow-braces">Create the subfolder <code class="meav">c:\Tools\FreeCommanderXE\Settings</code>
+Create the empty file freecommander.ini in the folder <code class="meav">c:\Tools\FreeCommanderXE\Settings</code></code></pre>
 		<p><a href="https://github.com/vatterspun/cubicexplorer" target="_blank">https://github.com/vatterspun/cubicexplorer</a></p>
 		<p><a href="http://www.ltr-data.se/opencode.html/#ImDisk" target="_blank">http://www.ltr-data.se/opencode.html/#ImDisk</a></p>
 		<p><a href="https://sourceforge.net/projects/imdisk-toolkit/" target="_blank">https://sourceforge.net/projects/imdisk-toolkit/</a></p>
@@ -1537,9 +1537,8 @@ var clearlinkF=function(a){url=a.getAttribute("href");if(0!==url.indexOf("http")
 </div>
 
 <style>
-pre.meav {
-	color: black;
-	background: none;
+code.meav {
+	color: #657b83; /* base00 */
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 1em;
 	text-align: left;
@@ -1547,6 +1546,7 @@ pre.meav {
 	word-spacing: normal;
 	word-break: normal;
 	word-wrap: normal;
+
 	line-height: 1.5;
 
 	-moz-tab-size: 4;
@@ -1557,27 +1557,26 @@ pre.meav {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
-	
-	position: relative;
-	margin: .5em 0;
-	overflow: visible;
-	padding: 0;
-	
-	background-color: #fdfdfd;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	margin-bottom: 1em;
-	
-	position: relative;
-	border-left: 10px solid #358ccb;
-	box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
-	background-color: #fdfdfd;
-	background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
-	background-size: 3em 3em;
-	background-origin: content-box;
-	background-attachment: local;
 }
+
+code.meav::-moz-selection, code.meav ::-moz-selection {
+	background: #073642; /* base02 */
+}
+
+code.meav::selection, code.meav ::selection {
+	background: #073642; /* base02 */
+}
+
+code.meav {
+	background-color: #fdf6e3; /* base3 */
+}
+
+/* Inline code */
+code.meav {
+	padding: .1em;
+	border-radius: .3em;
+}
+
 </style>
 
 <pre class="language-none"><pre data-toolbar-order="copy-to-clipboard" class="no-line-numbers"><code class="language-xml match-braces rainbow-braces">
