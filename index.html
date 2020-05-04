@@ -384,8 +384,8 @@ Event ID: 1</code></pre></pre>
 		</details>
 		<p></p>
 		<p><a href="https://freecommander.com/en/downloads-portable/" target="_blank">https://freecommander.com/en/downloads-portable/</a></p>
-		<pre data-toolbar-order="" class="match-braces rainbow-braces language-none"><code>Create the </code><code class="highlight">subfolder</code> <code class="highlight">c:\Tools\FreeCommanderXE\Settings</code><code>
-Create the empty file </code><code class="highlight">freecommander.ini</code><code> in the folder </code><code class="highlight">c:\Tools\FreeCommanderXE\Settings</code></pre>
+		<pre data-toolbar-order="" class="match-braces rainbow-braces language-none"><code>Create the <mark>subfolder</mark> <mark>c:\Tools\FreeCommanderXE\Settings</mark>
+Create the empty file <mark>freecommander.ini</mark> in the folder <mark>c:\Tools\FreeCommanderXE\Settings</mark></code></pre>
 		<p><a href="https://github.com/vatterspun/cubicexplorer" target="_blank">https://github.com/vatterspun/cubicexplorer</a></p>
 		<p><a href="http://www.ltr-data.se/opencode.html/#ImDisk" target="_blank">http://www.ltr-data.se/opencode.html/#ImDisk</a></p>
 		<p><a href="https://sourceforge.net/projects/imdisk-toolkit/" target="_blank">https://sourceforge.net/projects/imdisk-toolkit/</a></p>
@@ -1535,6 +1535,10 @@ var clearlinkF=function(a){url=a.getAttribute("href");if(0!==url.indexOf("http")
 		<p></p>
 	</div>
 </div>
+
+<script>
+"undefined"!=typeof self&&self.Prism&&self.document&&document.createRange&&(Prism.plugins.KeepMarkup=!0,Prism.hooks.add("before-highlight",function(e){if(e.element.children.length){var a=0,s=[],l=function(e,n){var o={};n||(o.clone=e.cloneNode(!1),o.posOpen=a,s.push(o));for(var t=0,d=e.childNodes.length;t<d;t++){var r=e.childNodes[t];1===r.nodeType?l(r):3===r.nodeType&&(a+=r.data.length)}n||(o.posClose=a)};l(e.element,!0),s&&s.length&&(e.keepMarkup=s)}}),Prism.hooks.add("after-highlight",function(n){if(n.keepMarkup&&n.keepMarkup.length){var a=function(e,n){for(var o=0,t=e.childNodes.length;o<t;o++){var d=e.childNodes[o];if(1===d.nodeType){if(!a(d,n))return!1}else 3===d.nodeType&&(!n.nodeStart&&n.pos+d.data.length>n.node.posOpen&&(n.nodeStart=d,n.nodeStartPos=n.node.posOpen-n.pos),n.nodeStart&&n.pos+d.data.length>=n.node.posClose&&(n.nodeEnd=d,n.nodeEndPos=n.node.posClose-n.pos),n.pos+=d.data.length);if(n.nodeStart&&n.nodeEnd){var r=document.createRange();return r.setStart(n.nodeStart,n.nodeStartPos),r.setEnd(n.nodeEnd,n.nodeEndPos),n.node.clone.appendChild(r.extractContents()),r.insertNode(n.node.clone),r.detach(),!1}}return!0};n.keepMarkup.forEach(function(e){a(n.element,{node:e,pos:0})}),n.highlightedCode=n.element.innerHTML}}));
+</script>
 
 <pre class="language-none"><pre data-toolbar-order="copy-to-clipboard" class="no-line-numbers"><code class="language-xml match-braces rainbow-braces">
 </code></pre></pre>
