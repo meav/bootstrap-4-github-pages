@@ -2,6 +2,9 @@ mark {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 	border-radius: 0.3em;
+	outline-color: red;
+    outline-style: solid;
+    outline-width: 0.4em;
 	border-color: red;
 	color: black;
 	background-color: #f5f2f0;
