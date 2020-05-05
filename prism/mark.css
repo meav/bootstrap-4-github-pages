@@ -5,9 +5,9 @@ mark {
 	outline-color: red;
     outline-style: solid;
     outline-width: 0.4em;
-	border-color: red;
-	color: black;
-	background-color: #f5f2f0;
-	text-shadow: 0 1px white;
+	outline-offset: 0.4em;
+	color: #f8f8f2;
+	background-color: #272822;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }
