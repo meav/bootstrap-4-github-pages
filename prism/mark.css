@@ -1,11 +1,8 @@
 mark {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
-	border-radius: 0.3em;
-	text-decoration: none ;
-	position: relative ;
-	border: 2px solid #000 ;
-	overflow:visible;
+	border-radius: 0.5em;
+	border: 2px solid red;
 	color: #f8f8f2;
 	background-color: #272822;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
