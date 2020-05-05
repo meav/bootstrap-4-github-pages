@@ -4,8 +4,8 @@ mark {
 	border-radius: 0.3em;
 	outline-color: red;
     outline-style: solid;
-    outline-width: 0.4em;
-	outline-offset: 0.4em;
+    outline-width: 0.1em;
+	outline-offset: 0.1em;
 	color: #f8f8f2;
 	background-color: #272822;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
