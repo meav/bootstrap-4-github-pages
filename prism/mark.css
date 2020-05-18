@@ -1,12 +1,8 @@
 mark {
-background-color: #e7f2fa;
-border-top: solid 3px #6ab0de;
-font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-color: #000;
-list-style: none;
-list-style-image: none;
-box-sizing: border-box;
-display: inline-block;
-line-height: normal;
-position: relative;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	border-top: solid 3px #6ab0de;
+	color: #000;
+	background-color: #e7f2fa;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }
