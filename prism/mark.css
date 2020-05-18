@@ -1,18 +1,9 @@
 mark {
-list-style: none;
-list-style-image: none;
-box-sizing: border-box;
-display: inline-block;
-font-size: 90%;
-line-height: normal;
-background: #e7f2fa;
+margin: 6px 0;
+background-color: #e7f2fa;
 border-top: solid 3px #6ab0de;
-position: relative;
-margin-top: 0;
-
-white-space: nowrap;
-max-width: 100%;
+padding: 6px;
+text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-overflow-x: auto;
 color: #000;
 }
