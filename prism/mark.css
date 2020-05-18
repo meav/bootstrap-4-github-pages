@@ -1,19 +1,12 @@
 mark {
-margin: 6px 0;
 background-color: #e7f2fa;
 border-top: solid 3px #6ab0de;
-padding: 6px;
-text-shadow: 0 1px rgba(0, 0, 0, 0.3);
 font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 color: #000;
 list-style: none;
 list-style-image: none;
 box-sizing: border-box;
-font-weight: bold;
 display: inline-block;
 line-height: normal;
-border-top: solid 3px #6ab0de;
-padding: 6px;
 position: relative;
-margin-top: 0;
 }
