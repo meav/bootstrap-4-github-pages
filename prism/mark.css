@@ -1,10 +1,17 @@
 mark {
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-	border-radius: 0.5em;
-	border: 0.07em solid red;
-	color: #f8f8f2;
-	background-color: #272822;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
+list-style: none;
+list-style-image: none;
+box-sizing: border-box;
+font-weight: bold;
+display: inline-block;
+margin: 6px 0;
+font-size: 90%;
+line-height: normal;
+background: #e7f2fa;
+color: #2980B9;
+border-top: solid 3px #6ab0de;
+padding: 6px;
+position: relative;
+margin-top: 0;
 }
