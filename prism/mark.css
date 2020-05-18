@@ -1,5 +1,4 @@
 mark {
-font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
 list-style: none;
 list-style-image: none;
 box-sizing: border-box;
@@ -14,4 +13,10 @@ border-top: solid 3px #6ab0de;
 padding: 6px;
 position: relative;
 margin-top: 0;
+
+white-space: nowrap;
+max-width: 100%;
+font-family: Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,monospace;
+overflow-x: auto;
+text-color: #000;
 }
