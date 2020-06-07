@@ -1412,22 +1412,22 @@ echo cookie=[COOKIE]
 			<p></p>
 			<p><a href="https://userstyles.org/styles/102922/remove-outlook-com-ad-bar-and-reclaim-space" target="_blank">https://userstyles.org/styles/102922/remove-outlook-com-ad-bar-and-reclaim-space</a></p>
 			<p></p>
-			<pre><code class="language-css match-braces rainbow-braces">/**
-* Remove the right ad bar of Outlook.com and reclaim the space
-* @author Xiangyu Bu (xybu92@live.com)
-*/
-@-moz-document domain(live.com)
-{
-/* For old Outlook.com */
-#RightRailContainer { display: none; }
-.WithRightRail { right: 0 !important; }
-/* For new Outlook.com */
-._n_h { display: none; width: 0; }
-#primaryContainer div[style*="right: 165px;"] { right: 0 !important; }
-/* For Outlook.com Beta */
-#app > div > div:nth-child(2) > div > div > div:nth-child(4) {display: none}
-#app > div > div:nth-child(2) > div > div:nth-child(2) {display: none}
-}</code></pre>
+			<pre data-toolbar-order="copy-to-clipboard" class="language-css match-braces rainbow-braces"><code style="display: inline-block;">/**</code>
+<code style="display: inline-block;">* Remove the right ad bar of Outlook.com and reclaim the space</code>
+<code style="display: inline-block;">* @author Xiangyu Bu (xybu92@live.com)</code>
+<code style="display: inline-block;">*/</code>
+<code style="display: inline-block;">@-moz-document domain(live.com)</code>
+<code style="display: inline-block;">{</code>
+<code style="display: inline-block;">/* For old Outlook.com */</code>
+<code style="display: inline-block;">#RightRailContainer { display: none; }</code>
+<code style="display: inline-block;">.WithRightRail { right: 0 !important; }</code>
+<code style="display: inline-block;">/* For new Outlook.com */</code>
+<code style="display: inline-block;">._n_h { display: none; width: 0; }</code>
+<code style="display: inline-block;">#primaryContainer div[style*="right: 165px;"] { right: 0 !important; }</code>
+<code style="display: inline-block;">/* For Outlook.com Beta */</code>
+<code style="display: inline-block;">#app > div > div:nth-child(2) > div > div > div:nth-child(4) {display: none}</code>
+<code style="display: inline-block;">#app > div > div:nth-child(2) > div > div:nth-child(2) {display: none}</code>
+<code style="display: inline-block;">}</code></pre>
 			**
 		</details>
 		<p></p>
