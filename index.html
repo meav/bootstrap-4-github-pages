@@ -622,7 +622,7 @@ echo cookie=[COOKIE]
 			<p></p>
 			<pre class="language-none">
 <pre data-toolbar-order="" class="no-line-numbers"><code><a href="https://www.gnu.org/software/wget/faq.html#download" target="_blank">https://www.gnu.org/software/wget/faq.html#download</a></code>
-<pre data-toolbar-order="copy-to-clipboard" class="no-line-numbers language-batch match-braces rainbow-braces"><code>mpv --continue --progress=bar:force:noscroll --output-document= --load-cookies</code></pre></pre></pre>
+<pre data-toolbar-order="copy-to-clipboard" class="no-line-numbers language-batch match-braces rainbow-braces"><code>wget --continue --progress=bar:force:noscroll --output-document= --load-cookies</code></pre></pre></pre>
 			**
 		</details>
 		<p></p>
@@ -758,14 +758,15 @@ HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers</code></pre></pre>
 		<p></p>
 		<details><summary><span style="font-size:1.2em;"></span></summary>
 			<p></p>
-			<pre class="language-none" data-toolbar-order="" style="line-height: 250%;"><code>gpedit.msc</code>
-<code>msconfig</code>
-<code>%appdata%</code>
-<code style="white-space: pre-line">Phải tinh chỉnh bang tay 1 chút là bỏ hiệu ứng trong <mark>Advance System Settings</mark>. Bỏ hết tất cả chỉ giữ lại <mark>Enable Peek</mark>, <mark>Show thumnails instead of icons</mark> và <mark>Smooth edges of screen fonts</mark>. Vào <mark>msconfig</mark> chọn <mark>Boot</mark> > chọn <mark>No GUI boot</mark>, chọn <mark>Advance options</mark>, chọn <mark>Number of proccessors</mark> và chọn <mark>max số CPU</mark>.</code></pre>
+			<pre class="language-none" data-toolbar-order="">
+<code style="display: inline-block; line-height: 250%; white-space: pre-line;">gpedit.msc
+msconfig
+%appdata%
+Phải tinh chỉnh bang tay 1 chút là bỏ hiệu ứng trong <mark>Advance System Settings</mark>. Bỏ hết tất cả chỉ giữ lại <mark>Enable Peek</mark>, <mark>Show thumnails instead of icons</mark> và <mark>Smooth edges of screen fonts</mark>. Vào <mark>msconfig</mark> chọn <mark>Boot</mark> > chọn <mark>No GUI boot</mark>, chọn <mark>Advance options</mark>, chọn <mark>Number of proccessors</mark> và chọn <mark>max số CPU</mark>.</code></pre>
 			<p style="display: inline-block; margin-bottom: 1.5em;"></p>
 			<pre class="language-none">
-<pre data-toolbar-order=""><code style="display: inline-block; line-height: 250%;"><a href="https://www.quora.com/How-do-I-turn-off-windows-auto-update-in-Windows-8-1" target="_blank">https://www.quora.com/How-do-I-turn-off-windows-auto-update-in-Windows-8-1</a></code>
-<code style="display: inline-block; line-height: 250%;"><a href="https://vn-zoom.org/threads/huong-dan-tat-update-windows-10-bang-tay.14457/" target="_blank">https://vn-zoom.org/threads/huong-dan-tat-update-windows-10-bang-tay.14457/</a></code>
+<pre data-toolbar-order=""><code style="display: inline-block; line-height: 250%;"><a href="https://www.quora.com/How-do-I-turn-off-windows-auto-update-in-Windows-8-1" target="_blank">https://www.quora.com/How-do-I-turn-off-windows-auto-update-in-Windows-8-1</a>
+<a href="https://vn-zoom.org/threads/huong-dan-tat-update-windows-10-bang-tay.14457/" target="_blank">https://vn-zoom.org/threads/huong-dan-tat-update-windows-10-bang-tay.14457/</a></code>
 <pre data-toolbar-order=""><code style="display: inline-block; white-space: pre-line; line-height: 250%;"><mark>Services</mark> -> <mark>Windows Updates</mark> (trượt xuống cuối cùng sẽ thấy) -> <mark>Stop</mark> -> <mark>Disabled</mark></code>
 <code style="display: inline-block; white-space: pre-line; line-height: 250%;"><mark>Edit group policy</mark> -> <mark>Computer Configuration</mark> -> <mark>Administrative Templates</mark> -> <mark>System</mark> -> <mark>Internet Communication Management</mark> -> <mark>Internet Communication Settings</mark>: Tại đây tìm mục: <mark>Turn off access to all Windows Update futures</mark> ấn <mark>Edit</mark>: chọn <mark>Enabled</mark> (theo hướng dẫn của nhân viên microsoft).</code></pre>
 <code style="display: inline-block; line-height: 250%;"><a href="https://social.technet.microsoft.com/Forums/Lync/en-US/d6a74709-d370-4d81-b311-91935af04872/official-method-to-disable-auto-update-on-ltsb-on-windows-10?forum=win10itprogeneral" target="_blank">https://social.technet.microsoft.com/Forums/Lync/en-US/d6a74709-d370-4d81-b311-91935af04872/official-method-to-disable-auto-update-on-ltsb-on-windows-10?forum=win10itprogeneral</a></code>
@@ -778,28 +779,35 @@ HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers</code></pre></pre>
 			<p><a href="http://www.eightforums.com/tutorials/4692-system-restore-how-do-windows-8-a.html" target="_blank">http://www.eightforums.com/tutorials/4692-system-restore-how-do-windows-8-a.html</a></p>
 			<p><a href="http://winaero.com/blog/how-to-disable-or-enable-fast-startup-in-windows-8-1/" target="_blank">http://winaero.com/blog/how-to-disable-or-enable-fast-startup-in-windows-8-1/</a></p>
 			<p><a href="http://www.thewindowsclub.com/disable-defragmentation-ssd" target="_blank">http://www.thewindowsclub.com/disable-defragmentation-ssd</a></p>
-			<pre class="language-none" data-toolbar-order="" style="line-height: 250%;"><code><a href="http://www.fixedbyvonnie.com/2015/02/how-to-uninstall-internet-explorer-windows-8-1/" target="_blank">http://www.fixedbyvonnie.com/2015/02/how-to-uninstall-internet-explorer-windows-8-1/</a></code>
-<code style="white-space: pre-line">Change name <mark>all file .exe</mark> in folder <mark>"Internet Explorer"</mark> and <mark>"Windows Media Player"</mark></code></pre>
+			<pre class="language-none" data-toolbar-order=""><code style="display: inline-block; line-height: 250%;"><a href="http://www.fixedbyvonnie.com/2015/02/how-to-uninstall-internet-explorer-windows-8-1/" target="_blank">http://www.fixedbyvonnie.com/2015/02/how-to-uninstall-internet-explorer-windows-8-1/</a></code>
+<code style="display: inline-block; line-height: 250%; white-space: pre-line;">Change name <mark>all file .exe</mark> in folder <mark>"Internet Explorer"</mark> and <mark>"Windows Media Player"</mark></code></pre>
 			<p style="display: inline-block; margin-bottom: 1.5em;"></p>
 			<pre class="language-none">
-<pre data-toolbar-order="" class="no-line-numbers"><code><a href="http://ictnews.vn/the-gioi-so/thu-thuat/dat-ten-folder-la-1-khoang-trang-11370.ict" target="_blank">http://ictnews.vn/the-gioi-so/thu-thuat/dat-ten-folder-la-1-khoang-trang-11370.ict</a></code>
-<pre data-toolbar-order="" class="no-line-numbers"><code>Alt + 0, 1, 6, 0 </code></pre></pre></pre>
+<pre data-toolbar-order="" class="no-line-numbers">
+<code style="display: inline-block; margin-bottom: 1.5em;"><a href="http://ictnews.vn/the-gioi-so/thu-thuat/dat-ten-folder-la-1-khoang-trang-11370.ict" target="_blank">http://ictnews.vn/the-gioi-so/thu-thuat/dat-ten-folder-la-1-khoang-trang-11370.ict</a></code>
+<pre data-toolbar-order="" class="no-line-numbers"><code style="white-space: pre-line;"><mark>Alt</mark> + <mark>0</mark>, <mark>1</mark>, <mark>6</mark>, <mark>0</mark> </code></pre></pre></pre>
 			<p style="display: inline-block; margin-bottom: 1.5em;"></p>
 			<pre class="language-none">
-<pre data-toolbar-order="" class="no-line-numbers"><code><a href="http://www.thewindowsclub.com/disable-data-execution-prevention" target="_blank">http://www.thewindowsclub.com/disable-data-execution-prevention</a></code>
-<pre data-toolbar-order="copy-to-clipboard" class="language-batch match-braces rainbow-braces" data-start="1"><code>bcdedit.exe /set {current} nx AlwaysOff</code></pre>
-<pre data-toolbar-order="copy-to-clipboard" class="language-batch match-braces rainbow-braces" data-start="2"><code>bcdedit.exe /set {current} nx AlwaysOn</code></pre></pre></pre>
+<pre data-toolbar-order="" class="no-line-numbers">
+<code style="display: inline-block; margin-bottom: 1.5em;"><a href="http://www.thewindowsclub.com/disable-data-execution-prevention" target="_blank">http://www.thewindowsclub.com/disable-data-execution-prevention</a></code>
+<pre data-toolbar-order="copy-to-clipboard" class="language-batch match-braces rainbow-braces" data-start="1"><code style="display: inline-block">bcdedit.exe /set {current} nx AlwaysOff</code></pre>
+<pre data-toolbar-order="copy-to-clipboard" class="language-batch match-braces rainbow-braces" data-start="2"><code style="display: inline-block;">bcdedit.exe /set {current} nx AlwaysOn</code></pre></pre></pre>
 			<p><a href="http://vnhow.vn/howto/cach-them-recycle-bin-vao-my-computer-tren-windows-vista-hoac-windows-7" target="_blank">http://vnhow.vn/howto/cach-them-recycle-bin-vao-my-computer-tren-windows-vista-hoac-windows-7</a></p>
 			<p><a href="http://www.askvg.com/fix-input-indicator-icon-comes-back-in-taskbar-notification-area-after-restarting-windows/" target="_blank">http://www.askvg.com/fix-input-indicator-icon-comes-back-in-taskbar-notification-area-after-restarting-windows/</a></p>
-			<p><a href="https://superuser.com/questions/1263315/how-to-close-a-particular-opened-folder-using-cmd-or-batch-file" target="_blank">https://superuser.com/questions/1263315/how-to-close-a-particular-opened-folder-using-cmd-or-batch-file</a></p>
-			<p>set shell = createobject("wscript.shell") : if shell.appactivate("TH Tu Liem") then shell.sendkeys "%{F4}"</p>
-			<p><a href="https://jpsoft.com/forums/threads/ot-show-desktop-from-command-line.4151/post-23609" target="_blank">https://jpsoft.com/forums/threads/ot-show-desktop-from-command-line.4151/post-23609</a></p>
-			<p>CreateObject("Shell.Application").ToggleDesktop </p>
-			<p><a href="http://winaero.com/blog/how-to-create-shortcut-for-shutdown-windows-dialog/" target="_blank">http://winaero.com/blog/how-to-create-shortcut-for-shutdown-windows-dialog/</a></p>
-			<p>dim objShell</p>
-			<p>set objShell = CreateObject("shell.application")</p>
-			<p>objshell.ShutdownWindows</p>
-			<p>set objShell = nothing</p>
+			<pre class="language-none">
+<pre data-toolbar-order="" class="no-line-numbers"><code><a href="https://superuser.com/questions/1263315/how-to-close-a-particular-opened-folder-using-cmd-or-batch-file" target="_blank">https://superuser.com/questions/1263315/how-to-close-a-particular-opened-folder-using-cmd-or-batch-file</a></code>
+<pre data-toolbar-order="copy-to-clipboard" class="no-line-numbers language-visual-basic match-braces rainbow-braces"><code>set shell = createobject("wscript.shell") : if shell.appactivate("TH Tu Liem") then shell.sendkeys "%{F4}"</code></pre></pre></pre>
+			<p style="display: inline-block; margin-bottom: 1.5em;"></p>
+			<pre class="language-none">
+<pre data-toolbar-order="" class="no-line-numbers"><code><a href="https://jpsoft.com/forums/threads/ot-show-desktop-from-command-line.4151/post-23609" target="_blank">https://jpsoft.com/forums/threads/ot-show-desktop-from-command-line.4151/post-23609</a></code>
+<pre data-toolbar-order="copy-to-clipboard" class="no-line-numbers language-visual-basic match-braces rainbow-braces"><code>CreateObject("Shell.Application").ToggleDesktop</code></pre></pre></pre>
+			<p style="display: inline-block; margin-bottom: 1.5em;"></p>
+			<pre class="language-none">
+<pre data-toolbar-order="" class="no-line-numbers"><code><a href="http://winaero.com/blog/how-to-create-shortcut-for-shutdown-windows-dialog/" target="_blank">http://winaero.com/blog/how-to-create-shortcut-for-shutdown-windows-dialog/</a></code>
+<pre data-toolbar-order="copy-to-clipboard" class="language-visual-basic match-braces rainbow-braces"><code style="display: inline-block; line-height: 250%;">dim objShell
+set objShell = CreateObject("shell.application")
+objshell.ShutdownWindows
+set objShell = nothing</code></pre></pre></pre>
 			<p><a href="http://helpdeskgeek.com/windows-7/windows-7-how-to-delete-files-protected-by-trustedinstaller/" target="_blank">http://helpdeskgeek.com/windows-7/windows-7-how-to-delete-files-protected-by-trustedinstaller/</a></p>
 			<p><a href="https://stackoverflow.com/questions/34218333/pyinstaller-onefile-does-not-start-on-some-windows-7-machines" target="_blank">https://stackoverflow.com/questions/34218333/pyinstaller-onefile-does-not-start-on-some-windows-7-machines</a></p>
 			<p><a href="https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows" target="_blank">https://support.microsoft.com/en-us/help/2999226/update-for-universal-c-runtime-in-windows</a></p>
@@ -810,7 +818,7 @@ HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers</code></pre></pre>
 			<p><a href="http://www.sony.com.vn/support/product/sve14136cv/download" target="_blank">http://www.sony.com.vn/support/product/sve14136cv/download</a></p>
 			<p><a href="http://hanoilab.com/v2/huong-dan-recovery-cho-sony-vaio/" target="_blank">http://hanoilab.com/v2/huong-dan-recovery-cho-sony-vaio/</a></p>
 			<p><a href="http://laptopvaiochinhhang.blogspot.com/2013/01/huong-dan-recovery-sony-vaio-win-8.html" target="_blank">http://laptopvaiochinhhang.blogspot.com/2013/01/huong-dan-recovery-sony-vaio-win-8.html</a></p>
-			<p>alias word="C:\Program Files\Microsoft Office\Office14\WINWORD.EXE" /n $*</p>
+			<pre data-toolbar-order="copy-to-clipboard" class="no-line-numbers language-batch match-braces rainbow-braces"><code>alias word="C:\Program Files\Microsoft Office\Office14\WINWORD.EXE" /n $*</code></pre>
 			<p><a href="https://support.office.com/en-us/article/Uninstall-Office-2013-Office-2016-or-Office-365-from-a-PC-9dd49b83-264a-477a-8fcc-2fdf5dbf61d8" target="_blank">https://support.office.com/en-us/article/Uninstall-Office-2013-Office-2016-or-Office-365-from-a-PC-9dd49b83-264a-477a-8fcc-2fdf5dbf61d8</a></p>
 			<p><a href="http://support.microsoft.com/kb/971179" target="_blank">http://support.microsoft.com/kb/971179</a></p>
 			<p><a href="https://support.microsoft.com/en-us/help/822005/how-to-reset-user-options-and-registry-settings-in-word" target="_blank">https://support.microsoft.com/en-us/help/822005/how-to-reset-user-options-and-registry-settings-in-word</a></p>
