@@ -1,0 +1,9 @@
+table.table-bordered{
+    border:1px solid #057B43;
+  }
+table.table-bordered > thead > tr > th{
+    border:1px solid #057B43;
+}
+table.table-bordered > tbody > tr > td{
+    border:1px solid #057B43;
+}
