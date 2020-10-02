@@ -1,0 +1,21 @@
+table.table-bordered{
+    border:1px solid #057B43;
+  }
+table.table-bordered > thead > tr > th{
+    border:1px solid #057B43;
+}
+table.table-bordered > tbody > tr > td{
+    border:1px solid #057B43;
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th
+{  
+    background-color: #458c6d;  
+    color: #ebedec;  
+}  
+
+.table-hover tbody tr:hover td  
+{  
+    background-color: #6ab0de;  
+    color: #ebedec;  
+}  
