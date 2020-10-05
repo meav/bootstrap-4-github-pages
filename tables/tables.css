@@ -1,3 +1,11 @@
+td {
+  white-space: normal !important; 
+  word-wrap: break-word;  
+}
+table {
+  table-layout: fixed;
+}
+
 table.table-bordered{
     border:1px solid #057B43;
   }
