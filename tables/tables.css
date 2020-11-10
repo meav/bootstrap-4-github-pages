@@ -16,14 +16,26 @@ table.table-bordered > tbody > tr > td{
     border:1px solid #057B43;
 }
 
+[data-toggle="modal"] { font-weight: bold }
+
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th
 {  
     background-color: #458c6d;  
     color: #ebedec;  
 }  
 
-.table-hover tbody tr:hover td  
+.table-striped > tbody > tr:nth-child(2n+1) > td > a, .table-striped > tbody > tr:nth-child(2n+1) > th > a
+{  
+    color: #ebedec; 
+}  
+
+.table-hover tbody tr:hover td
 {  
     background-color: #6ab0de;  
+    color: #ebedec;  
+}  
+
+.table-hover tbody tr:hover td a
+{  
     color: #ebedec;  
 }  
