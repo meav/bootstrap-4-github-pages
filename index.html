@@ -845,6 +845,11 @@ HKEY_CLASSES_ROOT\Directory\shellex\ContextMenuHandlers</code></pre></pre>
 			<div class="modal-footer"><button type="button" class="btn btn-success" data-dismiss="modal">Close</button></div>
 			</div></div></div>
 			<p><a href="https://msguides.com/" target="_blank">https://msguides.com/</a></p>
+			<pre class="language-none">
+<pre data-toolbar-order="copy-to-clipboard" class="language-batch match-braces rainbow-braces" data-start="1"><code style="display: inline-block;">bcdedit /default {current}</code></pre>
+<pre data-toolbar-order="copy-to-clipboard" class="language-batch match-braces rainbow-braces" data-start="2"><code style="display: inline-block;">bcdedit /set "{current}" bootmenupolicy legacy</code></pre>
+<pre data-toolbar-order="copy-to-clipboard" class="language-batch match-braces rainbow-braces" data-start="3"><code style="display: inline-block;">bcdedit /timeout 0</code></pre>
+<pre data-toolbar-order="copy-to-clipboard" class="language-batch match-braces rainbow-braces" data-start="4"><code style="display: inline-block;">bcdedit /set {802d5e32-0784-11da-bd33-000476eba25f} description "Windows 10 NullModem"</code></pre></pre>
 			<pre class="language-none" data-toolbar-order="">
 <code style="display: inline-block; line-height: 250%; white-space: pre-line;">gpedit.msc
 msconfig
