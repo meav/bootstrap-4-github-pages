@@ -40,4 +40,3 @@ exclude:
   - update_boostrap.sh
   - [vendor]
   - .git
-  - http-watcher.exe
